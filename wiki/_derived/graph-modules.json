@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "graph": "modules",
+  "domains": [
+    "design",
+    "domain",
+    "product"
+  ],
+  "modules": [],
+  "edges": []
+}

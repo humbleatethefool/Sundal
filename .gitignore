@@ -1,0 +1,6 @@
+# agent-kit deploy-managed
+.agent-kit/dist/
+.agent-kit/state/
+.agent-kit/cache/
+.vyasa/
+.claude/

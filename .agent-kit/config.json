@@ -1,0 +1,13 @@
+{
+  "domains": {
+    "dev": {
+      "languages": { "include": [] },
+      "standards": { "exclude": [] },
+      "workflows": { "exclude": [] }
+    },
+    "design": {}
+  },
+  "wiki": { "include": ["domain", "product", "design"], "location": "wiki" },
+  "work": { "include": ["all"] },
+  "subagents": { "include": ["all"] }
+}

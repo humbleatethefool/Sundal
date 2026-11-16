@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "graph": "surfaces",
+  "domains": [
+    "design",
+    "domain",
+    "product"
+  ],
+  "pages": [],
+  "flows": []
+}

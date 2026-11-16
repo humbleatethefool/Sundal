@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "graph": "entities",
+  "domains": [
+    "design",
+    "domain",
+    "product"
+  ],
+  "entities": [],
+  "edges": [],
+  "abstractEntities": []
+}

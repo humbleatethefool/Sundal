@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "graph": "engineering",
+  "domains": [
+    "design",
+    "domain",
+    "product"
+  ],
+  "nodes": [],
+  "uses": [],
+  "realizes": [],
+  "backing": null
+}

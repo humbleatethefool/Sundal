@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "graph": "journeys",
+  "domains": [
+    "design",
+    "domain",
+    "product"
+  ],
+  "journeys": []
+}

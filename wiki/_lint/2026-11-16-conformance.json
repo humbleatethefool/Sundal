@@ -1,0 +1,473 @@
+{
+  "schemaVersion": 1,
+  "report": "conformance",
+  "date": "2026-11-16",
+  "scope": "tree",
+  "base": null,
+  "verdict": "PASS",
+  "pageCount": 1,
+  "findings": [],
+  "notAudited": [],
+  "heldBack": [],
+  "outcomes": [
+    {
+      "check": "template-sections",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "template-extra-sections",
+      "severity": "info",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "template-bullets",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "template-owner",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "template-frontmatter",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "template-version-valid",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "empty-section",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "pending-slot",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "table-columns",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "unsubstituted-token",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "template-example-line",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "unsubstituted-placeholder",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "callout-type",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "callout-status-restatement",
+      "severity": "warning",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "row-ids",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "template-excluded-sections",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "template-lives-at",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "template-module-page",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "inbound-regression",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "variant-sections",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "required-section-content",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "section-order",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "heading-restatement",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "code-pointer",
+      "severity": "error",
+      "state": "ran",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 0,
+      "skipped": 0
+    },
+    {
+      "check": "fold-citation",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "cell-grammar",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "flow-step-coverage",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "surface-action-kinds",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "bullet-qualifier",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "type-reference-agreement",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "common-fields-target",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "common-field-clash",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "surface-kind",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "surface-placement",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "surface-unreached",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "surface-same-as",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "sitemap-structure",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "sitemap-composition",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-structure",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-title",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "catalog-code-column",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "layout-pattern-structure",
+      "severity": "error",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "layout-pattern-coverage",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "layout-pattern-fit",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "sitemap-node-coverage",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-stage-coverage",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-stage-flow-mismatch",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-role-mismatch",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-uncited",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-walk-gap",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    },
+    {
+      "check": "journey-stage-no-flow",
+      "severity": "warning",
+      "state": "not-applicable",
+      "findings": 0,
+      "notes": 0,
+      "exempt": 1,
+      "skipped": 0
+    }
+  ]
+}
