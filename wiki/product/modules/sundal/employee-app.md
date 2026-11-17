@@ -34,7 +34,7 @@ Mobile only. Employees use it on a phone at the shop.
 
 ## Navigation
 
-An employee signs in and lands on the home screen. The catalog lists the vendor's categories, and each category opens to its items. The cart is reached from the cart bar, and each recorded purchase has its own detail page.
+An employee signs in with their mobile number and an OTP, and lands on the home screen, which is the list of the vendor's categories. Each category opens to its items. A tab bar at the bottom holds Browse, Logs and Profile.
 
 
 ## Features
@@ -62,7 +62,5 @@ None.
 
 | Question | Owner | Resume condition |
 |---|---|---|
-| What does the home screen show? | Shivani Erlewad | The employee app design starts |
-| What sign-in method does an employee use? | Shivani Erlewad | The employee app design starts |
 | How long is a saved cart kept? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
 

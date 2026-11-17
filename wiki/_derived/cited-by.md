@@ -7,13 +7,35 @@ A parenthesized field name is a typed back-reference declared in that frontmatte
 a bare entry is a citation from the page body. Rebuild with `/wiki-reindex`; `/wiki-lint`
 reports a mismatch between this file and the current page set.
 
+## design
+
+| Page | Cited by |
+|---|---|
+| `information-architecture\employee-app.md` | — |
+| `layout-patterns\employee-app-shell.md` | `design:information-architecture/employee-app.md` (layout-patterns) |
+
+## domain
+
+| Page | Cited by |
+|---|---|
+| `entities\cart.md` | `design:information-architecture/employee-app.md`, `domain:entities/purchase.md` |
+| `entities\catalog.md` | `design:information-architecture/employee-app.md` |
+| `entities\category.md` | `design:information-architecture/employee-app.md`, `domain:entities/catalog.md`, `domain:entities/item.md` |
+| `entities\entry.md` | `domain:entities/item.md`, `domain:entities/purchase.md` |
+| `entities\item.md` | `design:information-architecture/employee-app.md`, `domain:entities/cart.md`, `domain:entities/catalog.md`, `domain:entities/category.md`, `domain:entities/entry.md` |
+| `entities\otp.md` | `design:information-architecture/employee-app.md` |
+| `entities\profile.md` | `design:information-architecture/employee-app.md`, `domain:entities/otp.md` |
+| `entities\purchase.md` | `design:information-architecture/employee-app.md`, `domain:entities/cart.md`, `domain:entities/entry.md` |
+
 ## product
 
 | Page | Cited by |
 |---|---|
-| `features\sundal\employee-app\record-a-purchase.md` | `product:flows/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal/employee-app.md` |
-| `flows\sundal\employee-app\record-a-purchase.md` | `product:features/sundal/employee-app/record-a-purchase.md` |
-| `modules\sundal.md` | `product:modules/sundal/employee-app.md` (related) |
-| `modules\sundal\employee-app.md` | `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:personas/employee.md` (related) |
-| `personas\employee.md` | `product:features/sundal/employee-app/record-a-purchase.md`, `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
-| `prds\sundal.md` | `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md` (related), `product:personas/employee.md` (related) |
+| `app-base.md` | `design:layout-patterns/employee-app-shell.md` (realizes) |
+| `catalogs\roles.md` | `design:information-architecture/employee-app.md` |
+| `features\sundal\employee-app\record-a-purchase.md` | `product:flows/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
+| `flows\sundal\employee-app\record-a-purchase.md` | `design:information-architecture/employee-app.md`, `product:features/sundal/employee-app/record-a-purchase.md` |
+| `modules\sundal.md` | `product:app-base.md`, `product:catalogs/roles.md`, `product:modules/sundal/employee-app.md` (related) |
+| `modules\sundal\employee-app.md` | `design:information-architecture/employee-app.md`, `product:app-base.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:personas/employee.md` (related) |
+| `personas\employee.md` | `design:information-architecture/employee-app.md`, `product:features/sundal/employee-app/record-a-purchase.md`, `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
+| `prds\sundal.md` | `design:information-architecture/employee-app.md`, `product:catalogs/roles.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md` (related), `product:personas/employee.md` (related) |

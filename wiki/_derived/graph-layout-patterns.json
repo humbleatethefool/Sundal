@@ -6,5 +6,59 @@
     "domain",
     "product"
   ],
-  "patterns": []
+  "patterns": [
+    {
+      "key": "design:layout-patterns/employee-app-shell",
+      "title": "Employee app shell",
+      "platforms": [
+        "mobile"
+      ],
+      "kinds": [
+        "list",
+        "detail"
+      ],
+      "regions": [
+        {
+          "id": "header",
+          "name": "Header",
+          "role": "The page title, and a Back control on Items and Purchase",
+          "landmark": {
+            "role": "banner",
+            "note": null
+          }
+        },
+        {
+          "id": "content",
+          "name": "Content",
+          "role": "The screen's own content",
+          "landmark": {
+            "role": "main",
+            "note": null
+          }
+        },
+        {
+          "id": "cart-bar",
+          "name": "Cart bar",
+          "role": "The item count and total, and a way into the Cart. Hidden while the cart is empty.",
+          "landmark": {
+            "role": "region",
+            "note": "labeled \"Cart\""
+          }
+        },
+        {
+          "id": "tab-bar",
+          "name": "Tab bar",
+          "role": "The Browse, Logs and Profile tabs",
+          "landmark": {
+            "role": "navigation",
+            "note": "labeled \"Main\""
+          }
+        }
+      ],
+      "surfaces": [],
+      "applications": [
+        "design:information-architecture/employee-app"
+      ]
+    }
+  ]
 }

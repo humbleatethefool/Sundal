@@ -4,4 +4,21 @@
 
 The composed sitemap of every `information-architecture` page: its own nodes and those of the pages it includes. An edge runs from a node's Parent to the node, and a dashed edge from each of its Also under parents. Rebuild with `/wiki-reindex`.
 
-No information-architecture pages.
+## design:information-architecture/employee-app
+
+```mermaid
+flowchart TD
+    design_information_architecture_employee_app_browse["Browse"]
+    design_information_architecture_employee_app_cart["Cart"]
+    design_information_architecture_employee_app_categories["Categories"]
+    design_information_architecture_employee_app_category_items["Items"]
+    design_information_architecture_employee_app_logs["Logs"]
+    design_information_architecture_employee_app_mobile_number["Mobile number"]
+    design_information_architecture_employee_app_otp["OTP"]
+    design_information_architecture_employee_app_profile["Profile"]
+    design_information_architecture_employee_app_purchase_detail["Purchase"]
+    design_information_architecture_employee_app_browse --> design_information_architecture_employee_app_categories
+    design_information_architecture_employee_app_categories --> design_information_architecture_employee_app_category_items
+    design_information_architecture_employee_app_mobile_number --> design_information_architecture_employee_app_otp
+    design_information_architecture_employee_app_logs --> design_information_architecture_employee_app_purchase_detail
+```

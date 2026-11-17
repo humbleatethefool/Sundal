@@ -40,7 +40,7 @@ Each person sees only the area for their role: employees record purchases, vendo
 
 ## Features
 
-None.
+- [[features/sundal/employee-app/record-a-purchase]] — an employee records what they took from the shop
 
 
 ## Entities
@@ -63,9 +63,5 @@ None.
 
 | Question | Owner | Resume condition |
 |---|---|---|
-| What measurable target defines "simple for non-technical users and light on data"? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
-| What does the home screen show for each role? | Shivani Erlewad | The employee app design starts |
-| In what order do the vendor app and company access follow the employee app? | Shivani Erlewad | The employee app design is complete |
-| Who adds companies and employees to Sundal, and how do employees get their sign-in? | Shivani Erlewad | The employee app design starts |
-
+| Who adds companies and employees to Sundal? | Shivani Erlewad | The employee app design starts |
 

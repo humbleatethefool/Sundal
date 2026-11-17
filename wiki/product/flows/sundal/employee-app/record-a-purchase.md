@@ -28,6 +28,7 @@ An employee ([[personas/employee]]) records the snacks they took from the shop o
 
 None.
 
+
 ## Steps
 
 **S1 — The employee starts a purchase.**
@@ -137,7 +138,5 @@ flowchart TD
 
 ## Open questions
 
-| Question | Owner | Resume condition |
-|---|---|---|
-| How does the employee reach the categories from the home screen? | Shivani Erlewad | The employee app design starts |
+None.
 

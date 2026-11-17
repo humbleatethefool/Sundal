@@ -4,4 +4,6 @@
 
 Every `layout-pattern` page, the platforms and surface kinds it suits, and how many regions, surface citations and applications it has. Rebuild with `/wiki-reindex`.
 
-No layout patterns.
+| Pattern | Platforms | Kinds | Regions | Surfaces | Applications |
+|---|---|---|---|---|---|
+| `design:layout-patterns/employee-app-shell` | mobile | list, detail | 4 | 0 | 1 |

@@ -2,8 +2,14 @@
 
 # Product Wiki Index
 
+## Catalog (SLO: 365d)
+- [Roles](catalogs\roles.md) — The roles catalog lists the people who use Sundal and the role each one holds.
+
 ## Persona (SLO: 180d)
 - [Employee](personas\employee.md) — The employee works at a company that a snack shop vendor serves, and takes snacks from the vendor's shop.
+
+## App Base (SLO: 180d)
+- [Sundal app base](app-base.md) — The Sundal app base is the foundation that every Sundal app stands on: the shared look and page frames that no single…
 
 ## Product Module (SLO: 180d)
 
@@ -15,7 +21,7 @@
 - [Record a purchase](features\sundal\employee-app\record-a-purchase.md) — Record a purchase lets an employee add the snacks they took from the shop to a purchase cart, review the total, and…
 
 ## PRD (SLO: 180d)
-- [Sundal](prds\sundal.md) — A snack shop vendor serving several companies has very little time to spare, yet must keep stock counts, know what each…
+- [Sundal](prds\sundal.md) — A snack shop vendor serves the employees of several companies.
 
 ## Task Flow (SLO: 90d)
 - [Record a purchase](flows\sundal\employee-app\record-a-purchase.md) — An employee (Employee) records the snacks they took from the shop on their phone.

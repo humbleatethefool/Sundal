@@ -6,5 +6,227 @@
     "domain",
     "product"
   ],
-  "pages": []
+  "pages": [
+    {
+      "key": "design:information-architecture/employee-app",
+      "title": "Employee app",
+      "kind": "application",
+      "platforms": [
+        "mobile"
+      ],
+      "includes": [],
+      "opensOn": {
+        "page": "design:information-architecture/employee-app",
+        "node": "mobile-number"
+      },
+      "nodes": [
+        {
+          "id": "browse",
+          "label": "Browse",
+          "parent": null,
+          "reachedBy": "global",
+          "route": null,
+          "landsOn": {
+            "page": "design:information-architecture/employee-app",
+            "node": "categories"
+          },
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 1,
+          "group": "tab-bar",
+          "icon": null
+        },
+        {
+          "id": "categories",
+          "label": "Categories",
+          "parent": {
+            "page": "design:information-architecture/employee-app",
+            "node": "browse"
+          },
+          "reachedBy": "local",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 1,
+          "group": null,
+          "icon": null
+        },
+        {
+          "id": "category-items",
+          "label": "Items",
+          "parent": {
+            "page": "design:information-architecture/employee-app",
+            "node": "categories"
+          },
+          "reachedBy": "contextual",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 1,
+          "group": null,
+          "icon": null
+        },
+        {
+          "id": "logs",
+          "label": "Logs",
+          "parent": null,
+          "reachedBy": "global",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 2,
+          "group": "tab-bar",
+          "icon": null
+        },
+        {
+          "id": "purchase-detail",
+          "label": "Purchase",
+          "parent": {
+            "page": "design:information-architecture/employee-app",
+            "node": "logs"
+          },
+          "reachedBy": "contextual",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 1,
+          "group": null,
+          "icon": null
+        },
+        {
+          "id": "profile",
+          "label": "Profile",
+          "parent": null,
+          "reachedBy": "global",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 3,
+          "group": "tab-bar",
+          "icon": null
+        },
+        {
+          "id": "cart",
+          "label": "Cart",
+          "parent": null,
+          "reachedBy": "utility",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 4,
+          "group": null,
+          "icon": null
+        },
+        {
+          "id": "mobile-number",
+          "label": "Mobile number",
+          "parent": null,
+          "reachedBy": "global",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 5,
+          "group": null,
+          "icon": null
+        },
+        {
+          "id": "otp",
+          "label": "OTP",
+          "parent": {
+            "page": "design:information-architecture/employee-app",
+            "node": "mobile-number"
+          },
+          "reachedBy": "contextual",
+          "route": null,
+          "landsOn": null,
+          "alsoUnder": [],
+          "shownTo": [
+            "employee"
+          ],
+          "order": 1,
+          "group": null,
+          "icon": null
+        }
+      ],
+      "composed": [
+        {
+          "node": "design:information-architecture/employee-app#browse",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#cart",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#categories",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#category-items",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#logs",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#mobile-number",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#otp",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#profile",
+          "surfaces": {
+            "mobile": []
+          }
+        },
+        {
+          "node": "design:information-architecture/employee-app#purchase-detail",
+          "surfaces": {
+            "mobile": []
+          }
+        }
+      ]
+    }
+  ]
 }

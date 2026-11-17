@@ -15,7 +15,11 @@ confidence: medium
 
 ## Problem statement
 
-A snack shop vendor serving several companies has very little time to spare, yet must keep stock counts, know what each company's employees have taken, and work out what each company owes each month. Recording every purchase by hand at the shop costs time the vendor doesn't have.
+A snack shop vendor serves the employees of several companies. The vendor is busy making tea and doing other work, so purchases often go unrecorded, and even with time to spare they prefer not to record them. Instead, the vendor relies on each company to record its bill and pay every month.
+
+- **Vendor:** has no record of their own, so they trust each company's bill. They still need to keep stock counts, know what each company's employees took, and work out what each company owes.
+- **Employee:** one employee in each company records a whole day's purchases from everyone, and not only their own.
+- **Company admin:** receives that bill from the employee and pays the vendor every month.
 
 
 ## Metadata
@@ -24,6 +28,7 @@ A snack shop vendor serving several companies has very little time to spare, yet
 - Target release: Employee mobile app first. Vendor and company mobile app follow, with no dates set.
 - Core team: Shivani Erlewad, UX designer (sole team member).
 
+
 ## Why now / evidence
 
 None yet.
@@ -31,7 +36,7 @@ None yet.
 
 ## Objective & goals
 
-Give the vendor a fast way to manage stock and see what each company owes. Let employees record their own purchases on their phones. Let each company see the monthly amount it owes, as a cumulative total, so the vendor spends no time on data entry.
+Give the vendor a fast way to manage stock and see what each company owes. Let employees record their own purchases on their phones, so the vendor has a record without recording anything. Let each company see the monthly amount it owes, as a cumulative total.
 
 
 ## Target audience / users
@@ -109,7 +114,7 @@ For the first release, an employee can record their everyday purchase easily. Th
 | How will "records a purchase with ease" be measured, and what number counts as success? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
 | In what order do the vendor app and company access follow the employee app? | Shivani Erlewad | The employee app design is complete |
 | How will the company pay in V2? | Shivani Erlewad | V2 scope is taken up |
-| Who adds companies and employees to Sundal, and how do employees get their sign-in? | Shivani Erlewad | The employee app design starts |
+| Who adds companies and employees to Sundal? | Shivani Erlewad | The employee app design starts |
 
 
 ## Supporting documentation

@@ -21,12 +21,12 @@ Record a purchase lets an employee add the snacks they took from the shop to a p
 
 ## Problem it solves
 
-A snack shop vendor serving several companies has very little time to spare, and recording every purchase by hand at the shop costs time the vendor doesn't have. With this feature, employees ([[personas/employee]]) record their own purchases on their phones, so the vendor spends no time on data entry.
+A snack shop vendor serving several companies is busy and has very little time to spare, so purchases often go unrecorded. Today one employee in each company records a whole day's purchases from everyone and gives the bill to the manager. With this feature, employees ([[personas/employee]]) record their own purchases on their phones, so the vendor has a record of every purchase without recording any of them.
 
 
 ## User story or flow
 
-As an employee, I want to record the snacks I took from the shop on my phone, so that it's quick and I don't have to wait and ask the vendor to write them down.
+As an employee, I want to record the snacks I took from the shop on my phone, so that it's quick and no one has to record my purchases for me.
 
 
 ## Acceptance criteria

@@ -2,4 +2,8 @@
 
 # Design Wiki Index
 
-No pages yet.
+## Layout Pattern (SLO: 180d)
+- [Employee app shell](layout-patterns\employee-app-shell.md) — The employee app shell is the arrangement every employee-app page sits in: a header, the page's content, a cart bar and…
+
+## Information Architecture (SLO: 180d)
+- [Employee app](information-architecture\employee-app.md) — The employee app is the phone app an employee of a company the vendor serves uses to record their own purchases, look…
