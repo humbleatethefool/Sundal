@@ -2,6 +2,9 @@
 
 # Design Wiki Index
 
+## User Journey (SLO: 180d)
+- [Employee — Record a purchase](journeys\employee-record-a-purchase.md) — This journey follows an employee from taking snacks at the shop to recording the purchase and checking it later.
+
 ## Layout Pattern (SLO: 180d)
 - [Employee app shell](layout-patterns\employee-app-shell.md) — The employee app shell is the arrangement every employee-app page sits in: a header, the page's content, a cart bar and…
 

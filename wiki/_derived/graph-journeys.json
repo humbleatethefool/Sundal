@@ -6,5 +6,118 @@
     "domain",
     "product"
   ],
-  "journeys": []
+  "journeys": [
+    {
+      "key": "design:journeys/employee-record-a-purchase",
+      "title": "Employee — Record a purchase",
+      "scenario": "Record a purchase",
+      "actor": "product:personas/employee",
+      "roles": [
+        "employee"
+      ],
+      "artifacts": [],
+      "stages": [
+        {
+          "id": "take-snacks",
+          "name": "Take snacks at the shop",
+          "next": [
+            "sign-in",
+            "choose-snacks"
+          ],
+          "flows": {
+            "kind": "outside",
+            "keys": []
+          },
+          "evidence": {
+            "links": [],
+            "assumptions": 2
+          },
+          "surfaces": [],
+          "placements": {}
+        },
+        {
+          "id": "sign-in",
+          "name": "Sign in",
+          "next": [
+            "choose-snacks"
+          ],
+          "flows": {
+            "kind": "none",
+            "keys": []
+          },
+          "evidence": {
+            "links": [],
+            "assumptions": 2
+          },
+          "surfaces": [],
+          "placements": {}
+        },
+        {
+          "id": "choose-snacks",
+          "name": "Choose snacks",
+          "next": [
+            "review-and-record"
+          ],
+          "flows": {
+            "kind": "links",
+            "keys": [
+              "product:flows/sundal/employee-app/record-a-purchase"
+            ]
+          },
+          "evidence": {
+            "links": [],
+            "assumptions": 3
+          },
+          "surfaces": [],
+          "placements": {}
+        },
+        {
+          "id": "review-and-record",
+          "name": "Review and record",
+          "next": [
+            "look-back"
+          ],
+          "flows": {
+            "kind": "links",
+            "keys": [
+              "product:flows/sundal/employee-app/record-a-purchase"
+            ]
+          },
+          "evidence": {
+            "links": [],
+            "assumptions": 3
+          },
+          "surfaces": [],
+          "placements": {}
+        },
+        {
+          "id": "look-back",
+          "name": "Look back at purchases",
+          "next": [],
+          "flows": {
+            "kind": "none",
+            "keys": []
+          },
+          "evidence": {
+            "links": [],
+            "assumptions": 2
+          },
+          "surfaces": [],
+          "placements": {}
+        }
+      ],
+      "opportunities": [
+        {
+          "id": "move-to-new-phone",
+          "stage": "sign-in",
+          "change": "Give an employee who changes phone a clear way to carry on, given one sign-in on one phone at a time",
+          "owner": "design",
+          "metric": null,
+          "openQuestion": "how often do employees change phone",
+          "surfaces": []
+        }
+      ],
+      "citedBy": []
+    }
+  ]
 }

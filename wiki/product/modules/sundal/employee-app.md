@@ -19,17 +19,17 @@ platforms: [mobile]
 
 ## Summary
 
-The employee app is where an employee of a company the vendor serves records their own purchases at the shop. They add snacks to a purchase cart, review the total, and record it, and each snack line becomes its own entry. Employees cannot cancel an entry.
+The employee app is where an employee of a company the vendor serves records their own purchases. They add snacks to a purchase cart, review the total, and record it, and each snack line becomes its own entry. Employees cannot cancel an entry.
 
 
 ## Target users
 
-- [[personas/employee]]: records their own purchases at the shop.
+- [[personas/employee]]: records their own purchases.
 
 
 ## Platform
  
-Mobile only. Employees use it on a phone at the shop.
+Mobile only. Employees use it on a phone, at the shop or elsewhere.
 
 
 ## Navigation

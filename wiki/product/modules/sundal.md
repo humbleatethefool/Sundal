@@ -18,13 +18,13 @@ platforms: [mobile]
 
 ## Summary
 
-Sundal is a mobile app that helps a snack shop vendor manage stock and see how much each company owes for the snacks its employees took that month. Employees of the companies record their own purchases at the shop, and the vendor sees what each company's employees bought and each company's monthly total. Company admins see only their company's monthly total.
+Sundal is a mobile app that helps a snack shop vendor manage stock and see how much each company owes for the snacks its employees took that month. Employees of the companies record their own purchases, and the vendor sees what each company's employees bought and each company's monthly total. Company admins see only their company's monthly total.
 
 
 ## Target users
 
 - Vendor: runs the shop and manages stock, prices and what each company owes.
-- [[personas/employee]]: records their own purchases at the shop.
+- [[personas/employee]]: records their own purchases.
 - Company admin: sees the company's monthly total.
 
 

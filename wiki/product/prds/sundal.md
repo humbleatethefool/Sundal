@@ -42,7 +42,7 @@ Give the vendor a fast way to manage stock and see what each company owes. Let e
 ## Target audience / users
 
 - Vendor: runs the shop from a phone and has very little time to spare. Serves several companies, sets prices and stock, and can void one entry.
-- Employee: works at a company the vendor serves. Uses a phone at the shop, has one personal sign-in on one phone at a time, and records only their own purchases.
+- Employee: works at a company the vendor serves. Uses a phone, has one personal sign-in on one phone at a time, and records only their own purchases.
 - Company admin: uses a phone. Sees the company's monthly total only, never who bought what.
 
 
@@ -54,7 +54,7 @@ For the first release, an employee can record their everyday purchase easily. Th
 ## Assumptions
 
 - Vendors keep stock counts accurate by updating them themselves. Walk-in cash sales happen outside the app and are not recorded, so counts can drift from the shelf.
-- Employees take only what they record, and record their own purchases at the shop.
+- Employees take only what they record, and record their own purchases, at the shop or later.
 - Vendors, employees and company admins all have a phone with an internet connection. The app works only online.
 - A company admin needs only a monthly total. They don't need to see who bought what.
 
@@ -65,7 +65,7 @@ For the first release, an employee can record their everyday purchase easily. Th
 
 | Requirement | Priority |
 |---|---|
-| As an employee, I record my own purchases at the shop from my phone. | Must |
+| As an employee, I record my own purchases from my phone. | Must |
 | As a vendor, I set prices and manage stock from my phone. | Must |
 | As a vendor, I see what each company's employees have bought and the monthly total each company owes. | Must |
 | As a vendor, I void one entry. | Must |

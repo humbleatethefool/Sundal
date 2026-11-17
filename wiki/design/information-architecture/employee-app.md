@@ -44,7 +44,8 @@ The whole employee app: the sign-in screens, the categories list and the items i
 - The company's own bill: one employee records a whole day's purchases from everyone and gives the bill to the company admin, who pays the vendor every month. The app is meant to replace this.
 
 **Contexts**
-- At the shop, standing, with a phone, wanting it quick. This is the main context.
+- At the shop, standing, with a phone, wanting it quick.
+- Away from the shop, recording later from memory, with or without a connection. The wiki does not yet record how often this happens.
 - Offline. The phone can lose its connection. A toast says "You're offline". Tapping anything that needs the server shows "You're offline" with Retry ([[product:modules/sundal/employee-app]]).
 - The wiki records nothing about phone sizes, network speed or how often an employee uses the app.
 
@@ -78,7 +79,7 @@ The whole employee app: the sign-in screens, the categories list and the items i
 
 **C. One flat list of all items, with category chips across the top.** The pattern is heterarchical. It classifies by item name, with category as a filter, so the classification is ambiguous. The cost is that it contradicts the feature, where a category opens to its items, and the list grows long.
 
-A won because it matches the designer's decision, keeps the cart-bar rule intact so the feature, the module and the task flow need no change, and gives each task one tab that stays in view, which suits an employee standing at the shop wanting it quick.
+A won because it matches the designer's decision, keeps the cart-bar rule intact so the feature, the module and the task flow need no change, and gives each task one tab that stays in view, which suits an employee who wants it quick, at the shop or elsewhere.
 
 ## Navigation model
 

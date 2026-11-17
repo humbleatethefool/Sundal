@@ -11,7 +11,8 @@ reports a mismatch between this file and the current page set.
 
 | Page | Cited by |
 |---|---|
-| `information-architecture\employee-app.md` | — |
+| `information-architecture\employee-app.md` | `design:journeys/employee-record-a-purchase.md` (related) |
+| `journeys\employee-record-a-purchase.md` | — |
 | `layout-patterns\employee-app-shell.md` | `design:information-architecture/employee-app.md` (layout-patterns) |
 
 ## domain
@@ -34,8 +35,8 @@ reports a mismatch between this file and the current page set.
 | `app-base.md` | `design:layout-patterns/employee-app-shell.md` (realizes) |
 | `catalogs\roles.md` | `design:information-architecture/employee-app.md` |
 | `features\sundal\employee-app\record-a-purchase.md` | `product:flows/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
-| `flows\sundal\employee-app\record-a-purchase.md` | `design:information-architecture/employee-app.md`, `product:features/sundal/employee-app/record-a-purchase.md` |
+| `flows\sundal\employee-app\record-a-purchase.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `product:features/sundal/employee-app/record-a-purchase.md` |
 | `modules\sundal.md` | `product:app-base.md`, `product:catalogs/roles.md`, `product:modules/sundal/employee-app.md` (related) |
-| `modules\sundal\employee-app.md` | `design:information-architecture/employee-app.md`, `product:app-base.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:personas/employee.md` (related) |
-| `personas\employee.md` | `design:information-architecture/employee-app.md`, `product:features/sundal/employee-app/record-a-purchase.md`, `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
-| `prds\sundal.md` | `design:information-architecture/employee-app.md`, `product:catalogs/roles.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md` (related), `product:personas/employee.md` (related) |
+| `modules\sundal\employee-app.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `product:app-base.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:personas/employee.md` (related) |
+| `personas\employee.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (actor, related), `product:features/sundal/employee-app/record-a-purchase.md`, `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
+| `prds\sundal.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `product:catalogs/roles.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md` (related), `product:personas/employee.md` (related) |

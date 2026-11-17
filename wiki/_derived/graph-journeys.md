@@ -4,4 +4,18 @@
 
 Every `user-journey` page's stages, drawn left to right, with an edge from a stage to each stage its Next leads to; a stage with no Next leads to the next one on the page. Rebuild with `/wiki-reindex`.
 
-No journeys.
+## design:journeys/employee-record-a-purchase
+
+```mermaid
+flowchart LR
+    stage_0["Take snacks at the shop"]
+    stage_1["Sign in"]
+    stage_2["Choose snacks"]
+    stage_3["Review and record"]
+    stage_4["Look back at purchases"]
+    stage_0 --> stage_1
+    stage_0 --> stage_2
+    stage_1 --> stage_2
+    stage_2 --> stage_3
+    stage_3 --> stage_4
+```

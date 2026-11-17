@@ -15,7 +15,7 @@
 
 ### Applications
 - [Sundal](modules\sundal.md) — Sundal is a mobile app that helps a snack shop vendor manage stock and see how much each company owes for the snacks…
-  - [Employee app](modules\sundal\employee-app.md) — The employee app is where an employee of a company the vendor serves records their own purchases at the shop.
+  - [Employee app](modules\sundal\employee-app.md) — The employee app is where an employee of a company the vendor serves records their own purchases.
 
 ## Feature (SLO: 90d)
 - [Record a purchase](features\sundal\employee-app\record-a-purchase.md) — Record a purchase lets an employee add the snacks they took from the shop to a purchase cart, review the total, and…

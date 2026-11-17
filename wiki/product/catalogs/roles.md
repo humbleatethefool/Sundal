@@ -20,7 +20,7 @@ The roles catalog lists the people who use Sundal and the role each one holds. T
 | Code | Meaning | Governed by | Notes |
 |---|---|---|---|
 | `vendor` | Runs the snack shop and serves several companies. Sets prices and stock, sees what each company's employees bought and what each company owes, and can void one entry. | product | Uses a phone. |
-| `employee` | Works at a company the vendor serves. Records their own purchases at the shop. Cannot cancel an entry. | product | Uses a phone. Signs in with their mobile number. One sign-in, active on one phone at a time. |
+| `employee` | Works at a company the vendor serves. Records their own purchases. Cannot cancel an entry. | product | Uses a phone. Signs in with their mobile number. One sign-in, active on one phone at a time. |
 | `company-admin` | Works at a company the vendor serves. Sees the company's monthly total, never who bought what. Fills in the details of the company's employees. | product | Uses a phone. |
 
 ## Governance

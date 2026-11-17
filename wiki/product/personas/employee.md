@@ -15,7 +15,7 @@ confidence: low
 
 ## Summary
 
-The employee works at a company that a snack shop vendor serves, and takes snacks from the vendor's shop. They use a phone at the shop, have one personal sign-in on one phone at a time, and record only their own purchases.
+The employee works at a company that a snack shop vendor serves, and takes snacks from the vendor's shop. They use a phone, have one personal sign-in on one phone at a time, and record only their own purchases.
 
 
 ## Goals
@@ -31,7 +31,7 @@ The employee works at a company that a snack shop vendor serves, and takes snack
 
 ## Behaviors
 
-- Takes snacks at the shop and records them on a phone there.
+- Takes snacks at the shop and records them on a phone, at the shop or later.
 
 
 ## Quotes
