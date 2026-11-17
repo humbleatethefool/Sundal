@@ -2,5 +2,20 @@
 
 # Product Wiki Index
 
+## Persona (SLO: 180d)
+- [Employee](personas\employee.md) — The employee works at a company that a snack shop vendor serves, and takes snacks from the vendor's shop.
+
+## Product Module (SLO: 180d)
+
+### Applications
+- [Sundal](modules\sundal.md) — Sundal is a mobile app that helps a snack shop vendor manage stock and see how much each company owes for the snacks…
+  - [Employee app](modules\sundal\employee-app.md) — The employee app is where an employee of a company the vendor serves records their own purchases at the shop.
+
+## Feature (SLO: 90d)
+- [Record a purchase](features\sundal\employee-app\record-a-purchase.md) — Record a purchase lets an employee add the snacks they took from the shop to a purchase cart, review the total, and…
+
 ## PRD (SLO: 180d)
 - [Sundal](prds\sundal.md) — A snack shop vendor serving several companies has very little time to spare, yet must keep stock counts, know what each…
+
+## Task Flow (SLO: 90d)
+- [Record a purchase](flows\sundal\employee-app\record-a-purchase.md) — An employee (Employee) records the snacks they took from the shop on their phone.

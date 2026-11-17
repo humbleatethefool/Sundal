@@ -6,6 +6,33 @@
     "domain",
     "product"
   ],
-  "modules": [],
+  "modules": [
+    {
+      "key": "product:modules/sundal",
+      "title": "Sundal",
+      "kind": "application",
+      "parent": null,
+      "level": 0,
+      "dependsOn": [],
+      "dependents": [],
+      "features": []
+    },
+    {
+      "key": "product:modules/sundal/employee-app",
+      "title": "Employee app",
+      "kind": "area",
+      "parent": "product:modules/sundal",
+      "level": 0,
+      "dependsOn": [],
+      "dependents": [],
+      "features": [
+        {
+          "key": "product:features/sundal/employee-app/record-a-purchase",
+          "title": "Record a purchase",
+          "dependsOn": []
+        }
+      ]
+    }
+  ],
   "edges": []
 }

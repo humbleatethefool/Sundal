@@ -4,4 +4,37 @@
 
 The product modules and the `depends-on` edges between them. An arrow runs from a module to a module it depends on; a module's features, and its dependencies that are not modules, are in its section below. A level is the build level `/dev-status` reports: 0 for a module that depends on nothing, otherwise one above its deepest dependency, and `—` for a module on a dependency cycle or downstream of one. Rebuild with `/wiki-reindex`.
 
-No product modules.
+```mermaid
+flowchart TD
+  subgraph subgraph_product_modules_sundal["Sundal"]
+    product_modules_sundal["Sundal"]:::application
+    product_modules_sundal_employee_app["Employee app"]:::area
+  end
+  classDef application fill:#dbeafe,stroke:#1d4ed8
+  classDef library fill:#dcfce7,stroke:#15803d
+  classDef area fill:#fef9c3,stroke:#a16207
+  classDef shared fill:#f3e8ff,stroke:#7e22ce
+  classDef unknown fill:#f3f4f6,stroke:#6b7280,stroke-dasharray: 4 2
+```
+
+## `product:modules/sundal`
+
+Sundal · kind `application` · parent — · level 0
+
+- Depends on:
+  - none
+- Dependents:
+  - none
+- Features:
+  - none
+
+## `product:modules/sundal/employee-app`
+
+Employee app · kind `area` · parent `product:modules/sundal` · level 0
+
+- Depends on:
+  - none
+- Dependents:
+  - none
+- Features:
+  - `product:features/sundal/employee-app/record-a-purchase` — Record a purchase
