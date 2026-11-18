@@ -34,14 +34,13 @@ This journey follows an employee from taking snacks at the shop to recording the
 
 ### Sign in
 - **Id** — sign-in
-- **Actions** — An employee who is signed out opens the app, enters their mobile number and then the OTP they receive. An employee the app already keeps signed in skips this stage.
+- **Actions** — An employee who is signed out opens the app, enters their mobile number and then the OTP they receive. An employee the app already keeps signed in skips this stage. An employee on a new phone signs in the same way, with their mobile number and an OTP.
 - **Flows** — None.
 - **Touchpoints** — The employee's own phone.
 - **Mindset** — The employee wants to get past sign-in and start recording. This rests on no research.
-- **Pain points** — Each employee has one sign-in that works on one phone at a time, so an employee who changes phone has no recorded way to carry on.
-- **Opportunities** —
-  - **move-to-new-phone** — Give an employee who changes phone a clear way to carry on, given one sign-in on one phone at a time. Owner: design. Open question: how often do employees change phone
-- **Evidence** — Assumption: most visits skip sign-in because the app keeps the employee signed in; Assumption: an employee who changes phone is a common enough case to design for
+- **Pain points** — None. An employee signs in with their mobile number and an OTP on any phone, so moving to a new phone is the same sign-in.
+- **Opportunities** — None.
+- **Evidence** — Assumption: most visits skip sign-in because the app keeps the employee signed in
 - **Next** — None.
 
 ### Choose snacks
@@ -88,7 +87,7 @@ This journey follows an employee from taking snacks at the shop to recording the
 | Question | Owner | Resume condition |
 |---|---|---|
 | take-snacks: Does the employee record straight away or later, and where are they when they do? | Shivani Erlewad | A shop visit with employees is done |
-| sign-in: How often is an employee signed out, and how often do employees change phone? | Shivani Erlewad | The sign-in screens are designed and employees have been asked |
+| sign-in: How often is an employee signed out? | Shivani Erlewad | The sign-in screens are designed and employees have been asked |
 | choose-snacks: Does the employee know which category holds their snack, can they remember what they took when they record later, and how often does a snack they took show "Out of stock"? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
 | review-and-record: Does the employee read the cart before recording, how often does a notice appear, and do they have a connection where they record? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
 | look-back: Do employees check past purchases, and how often is a recorded line wrong? | Shivani Erlewad | The vendor has voided entries for some time or employees have been asked |

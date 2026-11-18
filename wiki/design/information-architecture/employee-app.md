@@ -6,7 +6,8 @@ kind: application
 platforms: [mobile]
 includes: []
 opens-on: "mobile-number"
-journeys: []
+journeys:
+  - "[[design:journeys/employee-record-a-purchase]]"
 layout-patterns:
   - "[[design:layout-patterns/employee-app-shell]]"
 sources: []
@@ -136,6 +137,7 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 | Sign-in has two screens, mobile number then OTP | adopted | Designer sign-off, 2026-11-17 |
 | The sign-in screens show no tab bar and no cart bar | adopted | Designer sign-off, 2026-11-17 |
 | The app keeps the employee signed in between visits | adopted | Designer sign-off, 2026-11-17 |
+| An employee on a new phone signs in with their mobile number and an OTP, as in any sign-in | adopted | Designer sign-off, 2026-11-17 |
 | Purchase detail sits under Logs only. Landing on it after recording is a flow step, not a second parent. | proposed | |
 | Cart is a root node reached by utility navigation | proposed | |
 | A Back control replaces breadcrumbs | proposed | |
@@ -154,7 +156,6 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 | Does the cart bar show on the Cart screen and on Purchase detail? | Shivani Erlewad | The surface pages are written |
 | Does the app need search? | Shivani Erlewad | The vendor's catalog size is known |
 | In what order does Logs list purchases, and does a voided entry show? | Shivani Erlewad | The Logs surface is written |
-| How does an employee move to a new phone, given one sign-in on one phone at a time? | Shivani Erlewad | The sign-in screens are designed |
 
 ## Related
 
