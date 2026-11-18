@@ -34,6 +34,7 @@ Use it to keep the cart in sight while the employee browses.
 | Container | Required | The whole bar, which is one tap target. |
 | Item count | Required | How many items the cart holds. |
 | Total | Required | The price of everything in the cart, in rupees. |
+| Label | Required | The words "View cart", which name where a tap goes. |
 
 ## Variants
 
@@ -48,7 +49,7 @@ None. No token set exists, so the gap is recorded under Open questions.
 | State | Treatment |
 |---|---|
 | Hidden | Nothing shows, because the cart is empty. |
-| Shown | The item count and the total. |
+| Shown | The item count, the total and the label "View cart". |
 | Pressed | Feedback while the employee's finger is on the bar. Its form waits for the design system. |
 | Focus | A visible focus indication. Its form waits for the design system. |
 
@@ -79,13 +80,14 @@ None. The component is shown on phones only.
 
 ## Content guidelines
 
-The bar shows numbers, so its only wording is the word for the items counted. It follows the app's vocabulary and the project's UX-writing standard. The price shows in rupees. English only, so no translation or right-to-left layout applies.
+The bar reads, for example, "1 item in the cart · ₹20" with the label "View cart". The count takes "item" for one and "items" for more. It follows the app's vocabulary and the project's UX-writing standard. The price shows in rupees. English only, so no translation or right-to-left layout applies.
 
 ## Decisions
 
 | Decision | State | Decided |
 |---|---|---|
 | The whole bar is the tap target | proposed | |
+| The bar's label reads "View cart", the same words each surface's action row uses | proposed | |
 
 Where the bar sits, and the screens on which it shows or hides, are recorded on [[layout-patterns/employee-app-shell]], [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]].
 
