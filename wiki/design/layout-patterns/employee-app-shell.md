@@ -50,7 +50,9 @@ Only the compact width class is designed, because the app is phones only.
 
 ## Components placed
 
-None.
+- [[design:components/sundal/employee-app/cart-bar]] — in the cart-bar region.
+- [[design:components/sundal/employee-app/page-header]] — in the header region.
+- [[design:components/sundal/employee-app/tab-bar]] — in the tab-bar region.
 
 ## Decisions
 
