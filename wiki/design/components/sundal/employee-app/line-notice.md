@@ -99,4 +99,5 @@ Each notice says what changed and what happened to the quantity, in the reader's
 ## Related
 
 - [[components/sundal/employee-app/item-card]] — the card the notice sits under on Category items.
-- [[surfaces/sundal/employee-app/cart]] and [[surfaces/sundal/employee-app/category-items]] — the surfaces that show the notice.
+- [[surfaces/sundal/employee-app/cart]] — a surface that shows the notice under a cart line.
+- [[surfaces/sundal/employee-app/category-items]] — a surface that shows the notice under an item card.

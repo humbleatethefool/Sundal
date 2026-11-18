@@ -101,4 +101,7 @@ None. The header's placement and where Back shows are recorded on [[layout-patte
 ## Related
 
 - [[layout-patterns/employee-app-shell]] — the shell that places the header at the top of every screen.
-- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces whose titles and Back the header shows.
+- [[surfaces/sundal/employee-app/cart]] — a surface whose title the header shows.
+- [[surfaces/sundal/employee-app/categories]] — a surface whose title the header shows.
+- [[surfaces/sundal/employee-app/category-items]] — a surface whose title and Back the header shows.
+- [[surfaces/sundal/employee-app/purchase-detail]] — a surface whose title and Back the header shows.

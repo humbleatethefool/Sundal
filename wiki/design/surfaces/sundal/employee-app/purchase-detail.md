@@ -19,7 +19,7 @@ confidence: low
 
 ## Surface reference
 
-The employee sees one recorded purchase on the Purchase detail screen: what they took, what it cost and when it was recorded.
+On the Purchase detail screen the employee sees one purchase: what they took, what it cost and when.
 
 ## Platform scope
 

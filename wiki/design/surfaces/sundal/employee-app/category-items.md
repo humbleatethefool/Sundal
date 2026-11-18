@@ -19,7 +19,7 @@ confidence: low
 
 ## Surface reference
 
-The employee looks through the items of one category on the Category items screen and adds the snacks they took to the purchase cart.
+On the Category items screen the employee browses one category's items and adds the snacks they took to the cart.
 
 ## Platform scope
 

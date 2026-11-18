@@ -23,7 +23,7 @@ confidence: medium
 
 ## Application identity
 
-The employee app is the phone app an employee of a company the vendor serves uses to record their own purchases, look back at them and see their own details. It serves the Employee ([[product:personas/employee]]) and holds three areas, Browse, Logs and Profile, plus the cart that the cart bar opens and the sign-in screens. Its shell is [[design:layout-patterns/employee-app-shell]].
+The employee app is the phone app where an employee records purchases, looks back at them and sees their details. It serves the Employee ([[product:personas/employee]]), who works at a company the vendor serves and records only their own purchases, and holds three areas, Browse, Logs and Profile, plus the cart that the cart bar opens and the sign-in screens. Its shell is [[design:layout-patterns/employee-app-shell]].
 
 The employee signs in with their mobile number ([[domain:entities/profile]]) and an OTP ([[domain:entities/otp]]), and the sign-in screens belong to this app. The app keeps the employee signed in between visits. The vendor app and company access are outside this map.
 
@@ -159,8 +159,14 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 
 ## Related
 
+- [[domain:entities/cart]] — the concept behind the Cart label.
+- [[domain:entities/catalog]] — the concept behind the Browse label.
+- [[domain:entities/category]] — the concept behind the Categories label.
+- [[domain:entities/item]] — the concept behind the Items label.
+- [[domain:entities/log]] — the concept behind the Logs label.
+- [[domain:entities/profile]] — the concept behind the Profile and Mobile number labels.
+- [[domain:entities/purchase]] — the concept behind the Purchase label.
+- [[product:catalogs/roles]] — the roles the sitemap's "Shown to" column names.
+- [[product:flows/sundal/employee-app/record-a-purchase]] — the task flow the structure supports.
 - [[product:modules/sundal/employee-app]] — the module this map organizes.
 - [[product:personas/employee]] — the actor it serves.
-- [[product:flows/sundal/employee-app/record-a-purchase]] — the task flow the structure supports.
-- [[product:catalogs/roles]] — the roles the sitemap's "Shown to" column names.
-- [[domain:entities/catalog]], [[domain:entities/category]], [[domain:entities/item]], [[domain:entities/cart]], [[domain:entities/purchase]], [[domain:entities/log]], [[domain:entities/profile]] — the glossary concepts its labels name.

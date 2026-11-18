@@ -64,6 +64,18 @@ on it; where a cell holds several values, `;` separates them.
   included, then ` — ` and the outcome: `[[product:flows/billing/pay-invoice]] — the user pays an
   open invoice`. The audit errors on a bullet that does not open with a link, a link to a page that is
   not a `task-flow`, and a link with no outcome.
+- **`scenario-steps`** — the step references closing a test-scenario row's Scenario cell, a
+  parenthesized list after the keyword `flow` or `flows`: `(flow #S1, #A2)`, a range as
+  `#S1–S2`. A bare id names a step of the flow the page verifies. A feature page's e2e row
+  spans several flows, so each id there carries its flow's link,
+  `(flows [[product:flows/billing/pay-invoice]]#S1, [[product:flows/billing/set-invoice-due-date]]#E1)`,
+  naming a flow the feature lists under its Task flows. A cell with no such list states none.
+  Each id, and both ends of a range, must be one its flow defines, so a step renumbered or
+  removed leaves a finding. The audit reports a list in no known form, a bare id on a page whose
+  subject is not a flow, a link to a page that is not a `task-flow`, a flow the page's subject
+  does not cover, and an id the flow lacks, all as warnings (`scenario-step-refs`). `scenario-e2e-spans-flows`
+  also warns on a feature page's e2e row whose links name one flow only, and points to that flow's
+  scenario page.
 - **`step-marker`** — the parenthetical of a step id's label: empty, or `(<marker>)` with the
   marker one of `system`, `agent` or `external`. `()` is an unknown marker, not an unmarked step.
 

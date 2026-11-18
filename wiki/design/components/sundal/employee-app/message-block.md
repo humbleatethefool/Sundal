@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The message block fills a screen's content region with a message when the screen has nothing else to show: an empty list, a failed load or no connection. It says what happened and, where there is one, offers the next step. The employee app's screens use it.
+The message block fills a screen's content region with a message when the screen has nothing else to show. It stands in for an empty list, a failed load or no connection, says what happened and, where there is one, offers the next step. The employee app's screens use it.
 
 Use it when a whole content region is replaced by a message.
 - Do give it a title, and a body when the title alone does not say what to do.
@@ -101,5 +101,8 @@ Each message says what happened and then what to do, in the reader's words. It l
 
 - [[components/sundal/employee-app/button]] — the control the block's action uses.
 - [[components/sundal/employee-app/toast]] — the short message used instead when the screen should stay as it is.
-- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces that use the block, each with its own wording.
+- [[surfaces/sundal/employee-app/cart]] — a surface that uses the block, with its own wording.
+- [[surfaces/sundal/employee-app/categories]] — a surface that uses the block, with its own wording.
+- [[surfaces/sundal/employee-app/category-items]] — a surface that uses the block, with its own wording.
+- [[surfaces/sundal/employee-app/purchase-detail]] — a surface that uses the block, with its own wording.
 - [[product:modules/sundal/employee-app]] — the module whose offline rules the offline variant follows.

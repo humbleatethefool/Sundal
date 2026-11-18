@@ -25,11 +25,11 @@ A LOGICAL model — one row per field. Omit physical concerns (indexes, column t
 **Columns:**
 
 - **Field** — the field name. See *Field naming* below.
-- **Type** — a logical type: `String | Text | Integer | Decimal | Boolean | Timestamp | Date | Money | ID | Email | Phone | Secret | Enum(...) | Reference(Entity) | List<T> | Map<K, V>`. `Email`, `Phone` and `Secret` type an email address, a phone number and a credential or token, so their examples can be held to a fictional or masked form. `Map<K, V>` is for an open set of keys only — a payload, a configuration bag. A fixed set of keys is prefix-grouped fields, a list of composite values is a child entity with a Relationship, and there is no `Object(<Name>)`.
+- **Type** — a logical type: `String | Text | Integer | Decimal | Boolean | Timestamp | Date | Money | Money(<field>) | ID | Email | Phone | Secret | Enum(...) | Reference(Entity) | Value(Name) | List<T> | Map<K, V>`. `Email`, `Phone` and `Secret` type an email address, a phone number and a credential or token, so their examples can be held to a fictional or masked form. `Money` is an amount with its currency code in the example. `Money(<field>)` is a bare amount whose currency the named field of the same entity holds; that field is typed `Reference(Currency)`, `Enum(<Name>)` or `String`. `Value(<Name>)` types a field with a shared composite that has no identity: `<Name>` is a `data-model-entity` page marked `value-type: true`, which the row's References cell links (see *Value types* below); `List<Value(X)>` and `Map<K, Value(X)>` compose. `Map<K, V>` is for an open set of keys only — a payload, a configuration bag. A fixed set of keys is prefix-grouped fields. A composite with a shape of its own is a child entity with a Relationship or a value type: anything that references one instance on its own, or whose one instance changes on its own, is a child entity; a composite equal by value that lives only inside its owner is a value type. There is no `Object(<Name>)` and no inline structure such as `List<{currency_id, amount}>`; name the structure as a value type.
 - **Required** — necessity for the surface's user (the customer for `data-model-entity`, the internal operator for `system-entity`). Decided from usability of the surface, NOT persistence enforcement — a field can be required for the task yet unenforced in code; track such deltas in `engineering/`.
 - **Searchable** — the surface's filter/search/sort capability over the field. A product capability for `data-model-entity`, an internal-tooling capability for `system-entity`; either way it is the surface's behavior, NOT engineering's `Indexed`.
 - **References** — the entity a `Reference`/`ID` points to, or the entity that owns a borrowed `Enum(...)`, as `[[entities/<module>/<entity>]]`.
-- **Description / Example** — one-line meaning, and a concrete, invented value in inline code, in the form its type takes (`wiki-entity-cell-grammars` §Entity cell grammars).
+- **Description / Example** — one-line meaning, and a concrete, invented value in inline code, in the form its type takes (`wiki-entity-cell-grammars` §Entity cell grammars). A row that `Money(<field>)` names carries its Example too: when that example is an ISO 4217 code, the amount's decimals are held to the currency's minor units, unless the amount's own `## Entries` row or value example gives that field an ISO 4217 code, which wins.
 
 Common fields (tenant id, soft-delete flag, extensibility bag) are defined once, on an abstract entity: `abstract: true` in its frontmatter and the same `## Data model` table, placed where its type's pages live. Each entity that carries them names the abstract entity in `common-fields:`; the engine adds those fields to the entity's own, so the entity's table omits them. A policy `concept` may state the rule behind them, and the abstract entity links it from `## Invariants`. Expansion is one level: `common-fields:` on an abstract entity is a `common-fields-target` error.
 The sub-wiki README and `_templates/` are agent-kit's and the wiki's scaffold step rewrites them, so a project's rules never go there.
@@ -49,3 +49,16 @@ Owner-homed enums only — define here ONLY the enums this entity owns (its `typ
 ## Relationships
 
 Cardinality to other entities — one bullet each: `<this> 1—* <other> ([[entities/<module>/<other>]]) — meaning`. Cover composition, references, and back-references. Cross-module links use the full `[[entities/<owner-module>/<entity>]]` path; the entity is homed by its system of record.
+
+## Value types
+
+A value type is a shared composite with no identity of its own — an address, a coordinate — written once as a `data-model-entity` page with `value-type: true` in its frontmatter and the same `## Data model` table. A field of another entity takes it as its Type, `Value(<Name>)`, and links the page in that row's References cell. Its example is `{field: value, …}`: each key a field of the value type and each value in that field's type.
+
+A value type has no identity, so it holds none:
+
+- No `ID` field, whether the page defines it or takes it through `common-fields:`, and no `instance-scope`.
+- `## Relationships` reads `None.`, and no Relationship targets it.
+- No `Reference(...)` and no `common-fields:` entry targets it, and it is never abstract.
+- Its fields may carry `Reference(...)` and may nest other value types, with no cycle.
+
+A `Value(<Name>)` row draws no relationship edge: the link in its References cell is a type reference, not a relationship, so the entity graph shows the field and no line to the value type.

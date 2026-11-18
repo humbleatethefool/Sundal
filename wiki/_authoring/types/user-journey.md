@@ -39,6 +39,8 @@ You may not link to `engineering/`, `operations/`, `gtm/`, `governance/`. Those 
 
 Keep every heading, in this order: `## Actor & scope`, `## Stages`, `## Cross-stage insights`, `## Open questions`.
 
+**This type must not carry** `## Journey diagram` — that content has another home.
+
 **Table columns you may not drop:**
 
 - `## Open questions` — `Question` | `Owner` | `Resume condition`
@@ -53,7 +55,7 @@ Keep every heading, in this order: `## Actor & scope`, `## Stages`, `## Cross-st
 
 ## What the audit checks on this page
 
-Because of the declarations above: template-sections, section-order, table-columns, template-bullets, cell-grammar. Every page is also checked for empty sections, heading restatement, callout types and code pointers. Run `/wiki-conformance-audit` to see the full list with its verdict.
+Because of the declarations above: template-sections, section-order, table-columns, template-bullets, cell-grammar, template-excluded-sections. Every page is also checked for empty sections, heading restatement, callout types and code pointers. Run `/wiki-conformance-audit` to see the full list with its verdict.
 
 ## After you save
 

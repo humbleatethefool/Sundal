@@ -15,4 +15,7 @@ flowchart LR
     design_surfaces_sundal_employee_app_cart_cart_list -->|"Record purchase, a primary [[design:components/sundal/employee-app/button]]"| design_surfaces_sundal_employee_app_purchase_detail_purchase_detail_detail
     design_surfaces_sundal_employee_app_cart_cart_list -->|"Browse snacks, a [[design:components/sundal/employee-app/button]]"| design_surfaces_sundal_employee_app_categories_categories_list
     design_surfaces_sundal_employee_app_categories_categories_list -->|"[[design:components/sundal/employee-app/category-card]], labeled with the category's name"| design_surfaces_sundal_employee_app_category_items_category_items_list
+    design_surfaces_sundal_employee_app_categories_categories_list -->|"View cart, in the shell's [[design:components/sundal/employee-app/cart-bar]]"| design_surfaces_sundal_employee_app_cart_cart_list
+    design_surfaces_sundal_employee_app_category_items_category_items_list -->|"View cart, in the shell's [[design:components/sundal/employee-app/cart-bar]]"| design_surfaces_sundal_employee_app_cart_cart_list
+    design_surfaces_sundal_employee_app_purchase_detail_purchase_detail_detail -->|"View cart, in the shell's [[design:components/sundal/employee-app/cart-bar]]"| design_surfaces_sundal_employee_app_cart_cart_list
 ```

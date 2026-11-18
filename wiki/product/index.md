@@ -9,16 +9,16 @@
 - [Employee](personas\employee.md) — The employee works at a company that a snack shop vendor serves, and takes snacks from the vendor's shop.
 
 ## App Base (SLO: 180d)
-- [Sundal app base](app-base.md) — The Sundal app base is the foundation that every Sundal app stands on: the shared look and page frames that no single…
+- [Sundal app base](app-base.md) — Sundal is a snack shop product with a separate mobile app for each of its users: employees, vendors and company admins.
 
 ## Product Module (SLO: 180d)
 
 ### Applications
-- [Sundal](modules\sundal.md) — Sundal is a mobile app that helps a snack shop vendor manage stock and see how much each company owes for the snacks…
+- [Sundal](modules\sundal.md) — Sundal is a snack shop product with a separate mobile app for each of its users: employees, vendors and company admins.
   - [Employee app](modules\sundal\employee-app.md) — The employee app is where an employee of a company the vendor serves records their own purchases.
 
 ## Feature (SLO: 90d)
-- [Record a purchase](features\sundal\employee-app\record-a-purchase.md) — Record a purchase lets an employee add the snacks they took from the shop to a purchase cart, review the total, and…
+- [Record a purchase](features\sundal\employee-app\record-a-purchase.md) — Record a purchase lets an employee add the snacks they took to a purchase cart, review the total, and record it.
 
 ## PRD (SLO: 180d)
 - [Sundal](prds\sundal.md) — A snack shop vendor serves the employees of several companies.

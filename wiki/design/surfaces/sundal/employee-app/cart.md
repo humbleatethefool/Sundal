@@ -19,7 +19,7 @@ confidence: low
 
 ## Surface reference
 
-The employee checks the purchase cart and its total on the Cart screen, changes quantities if needed and records the purchase.
+On the Cart screen the employee checks the cart and its total, changes quantities if needed and records the purchase.
 
 ## Platform scope
 

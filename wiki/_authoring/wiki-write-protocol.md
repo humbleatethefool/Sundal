@@ -31,7 +31,7 @@ Write authority is partitioned across `/wiki-*` skills; every write-side wiki sk
 - **Pointer-side:** `/wiki-attach-artifact` adds, replaces or removes one `artifacts:` entry on a page whose type takes the field, and changes no other line; removing a page's last entry removes the key line with it.
 - **Read-side appends:** `/wiki-query` and `/wiki-review` each make a `log.md` append. `/wiki-grill-me` is read-only against pages: it optionally writes an ephemeral report and, when it does, a `log.md` append.
 
-Each `log.md` write above, in a write-set or as an append, runs only when its operation's `wiki.logging` key allows it; the keys and their defaults are in `wiki-configuration` §Narrative-op logging.
+Each `log.md` write above, in a write-set or as an append, runs only when its operation's logging setting allows it: the operation's `wiki.logging` key, or for ingest the wiki's own `logging.md`. The keys, the policy file and their defaults are in `wiki-configuration` §Narrative-op logging.
 
 Write authority is further keyed on each page **type's** default authorship hedge (per the `wiki-page-types` lookup):
 

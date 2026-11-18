@@ -4,7 +4,7 @@ type: persona
 template-version: 1
 kind: product
 sources: []
-related: ["[[prds/sundal]]", "[[modules/sundal/employee-app]]"]
+related: ["[[modules/sundal/employee-app]]", "[[prds/sundal]]"]
 created: 2026-11-16
 updated: 2026-11-16
 owner: product

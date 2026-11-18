@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The tab bar is the bar at the bottom of the employee app that moves the employee between its areas: Browse, Logs and Profile. It is the app's main navigation, and it stays in view on every screen after sign-in. The selected tab tells the employee where they are.
+The tab bar is the bar at the bottom of the employee app that moves the employee between Browse, Logs and Profile. It is the app's main navigation, and it stays in view on every screen after sign-in. The selected tab tells the employee where they are.
 
 Use it for moving between the app's areas.
 - Do keep it to Browse, Logs and Profile, in that order.

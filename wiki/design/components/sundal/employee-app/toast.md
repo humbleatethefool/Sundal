@@ -91,4 +91,7 @@ The text is the module's own wording, "You're offline". It leaves out "please" a
 ## Related
 
 - [[components/sundal/employee-app/message-block]] — the block shown instead when the employee taps something that needs the server while offline.
-- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces on which the toast can appear.
+- [[surfaces/sundal/employee-app/cart]] — a surface on which the toast can appear.
+- [[surfaces/sundal/employee-app/categories]] — a surface on which the toast can appear.
+- [[surfaces/sundal/employee-app/category-items]] — a surface on which the toast can appear.
+- [[surfaces/sundal/employee-app/purchase-detail]] — a surface on which the toast can appear.

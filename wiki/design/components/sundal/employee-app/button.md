@@ -106,4 +106,7 @@ A label names the action with a verb, in sentence case, with no article and no "
 ## Related
 
 - [[components/sundal/employee-app/message-block]] — the block whose action is a button.
-- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces that use Record purchase, Retry and Browse snacks.
+- [[surfaces/sundal/employee-app/cart]] — a surface that uses the button for its actions, such as Record purchase.
+- [[surfaces/sundal/employee-app/categories]] — a surface that uses the button for its actions, such as Retry.
+- [[surfaces/sundal/employee-app/category-items]] — a surface that uses the button for its actions, such as Retry.
+- [[surfaces/sundal/employee-app/purchase-detail]] — a surface that uses the button for its actions, such as Retry.

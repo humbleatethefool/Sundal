@@ -31,5 +31,5 @@ An entry exists once its purchase is confirmed. It keeps the price it was made a
 
 ## Related entities
 
-- [[entities/purchase]] — the purchase that holds the entry.
 - [[entities/item]] — what the entry took.
+- [[entities/purchase]] — the purchase that holds the entry.

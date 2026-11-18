@@ -8,7 +8,7 @@ the rules that apply to every page are in `wiki-authoring-spec.md` beside this f
 - **Lives at** `product/entities/<module>/<kebab-name>.md` (module carried by path, not frontmatter)
 - **Authorship** `curated` — an agent may draft it; a human approves
 - **Freshness** stale after 180d
-- **Template version** 1 — set `template-version: 1`
+- **Template version** 2 — set `template-version: 2`
 
 ## Frontmatter
 
@@ -36,7 +36,7 @@ You may not link to `design/`, `engineering/`, `operations/`, `gtm/`, `governanc
 
 ## Sections
 
-Keep every heading, in this order: `## Definition`, `## Data model`, `## Enumerations`, `## Invariants`, `## Lifecycle`, `## Relationships`.
+Keep every heading, in this order: `## Definition`, `## Data model`, `## Enumerations`, `## Entries`, `## Invariants`, `## Lifecycle`, `## Relationships`.
 
 **This type must not carry** `## Boundaries` — that content has another home.
 

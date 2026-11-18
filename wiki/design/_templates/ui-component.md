@@ -18,15 +18,17 @@
     a reusable part appearing on one. A dialog that is a step in a flow is a surface; a dialog reused
     across features is a component. The feature's `## Surfaces` inventory owns the surface
     vocabulary; this page owns the component.
-  Discipline: the visual anatomy and interactive states live in a design tool, component workbench or
-    project design file where one exists (linked, never copied), and in this page's text where none
-    does — this page holds the structured spec plus the pointers, not pasted screenshots. Record those pointers in
-    the `artifacts:` frontmatter field (a dash-list of "kind:target" entries; kind ∈ figma | storybook | file,
-    where a `file:` entry takes a path relative to the project root to a file with no comment syntax
+  Discipline: the visual anatomy and interactive states live in a design tool or project design file
+    where one exists (linked, never copied), and in this page's text where none does — this page holds
+    the structured spec plus the pointers, not pasted screenshots. Record those pointers in
+    the `artifacts:` frontmatter field (a dash-list of "kind:target" entries; kind from the `artifact-kind`
+    vocabulary in `wiki-page-spec`, where a `file:` entry takes a path relative to the project root to a file with no comment syntax
     and no original in a design tool), scaffolded commented below —
     uncomment and fill when a pointer exists (optional). A component reference in a file with comment
-    syntax names this page with `@prototypes`; a component held in a design tool or workbench is linked
-    as `storybook:` or `figma:`. Document
+    syntax names this page with `@prototypes`, and importable code that renders the built component
+    cites it with `@realizes`; a component held in a design tool is linked with that tool's kind. A hosted
+    component workbench is no `artifacts:` kind: link its story or controls in the page text (States, Props / API)
+    where one exists; a story that is code is not linked, because the code cites this page. Document
     the component to design-system component-doc completeness; iOS vs Android control idioms and visual
     deltas are Platform-variations prose in THIS page, never separate component pages or design systems.
   Columns: Decisions — Decision | State | Decided; Open questions — Question | Owner | Resume condition.
@@ -51,8 +53,7 @@ status: {{STATUS}}
 realizes:
   - "[[product:features/<module>/<feature-slug>]]"
 # artifacts:                                    # uncomment & fill when a pointer exists (optional field)
-#   - "figma:https://figma.com/file/…"          # "kind:target" — kind ∈ figma | storybook | file
-#   - "storybook:https://storybook…/story/…"
+#   - "figma:https://figma.com/file/…"          # "kind:target" — kind from the artifact-kind vocabulary
 #   - "file:design/sketches/<component-slug>.png"   # a project file with no comment syntax and no original in a design tool
 sources: []
 related: []
@@ -89,14 +90,14 @@ confidence: {{CONFIDENCE}}
 
 ## States
 <!-- The interaction/display states: default, hover, focus, active, selected, disabled, read-only, error,
-     warning, loading — whichever apply. Note the visual treatment of each, or point to the story where a component workbench holds one.
+     warning, loading — whichever apply. Note the visual treatment of each, or link the hosted workbench story that shows one.
      Loading keeps its own treatment: the control blocks a repeat activation at full strength, never the
      disabled dimming. -->
 
 ## Props / API
 <!-- The configurable contract, when an implemented component is documented: the props/inputs, their
      types, defaults, and required vs optional. Every user-visible string is a prop; a prop is deprecated
-     before it is removed or renamed. Link the component workbench's controls where one exists. "None documented yet."
+     before it is removed or renamed. Link the hosted workbench's controls where one exists. "None documented yet."
      if the component is design-only so far. -->
 
 ## Behavior & interaction
@@ -144,4 +145,4 @@ confidence: {{CONFIDENCE}}
 ## Related
 <!-- The design-system ([[design:design-system]]), the tokens it consumes (a design [[design:catalogs/<token-group>]]
      page or the design-system foundations section), and the surfaces that use it ([[design:surfaces/<module>/<feature>]]).
-     The Figma, Storybook or `file:` pointer itself lives in the `artifacts:` frontmatter field, not here. Order and annotate per [[_authoring:wiki-authoring-spec#authoring-for-readability]]. -->
+     The design-tool or `file:` pointer itself lives in the `artifacts:` frontmatter field, not here. Order and annotate per [[_authoring:wiki-authoring-spec#authoring-for-readability]]. -->

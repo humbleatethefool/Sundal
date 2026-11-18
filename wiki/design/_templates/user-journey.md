@@ -14,6 +14,8 @@
   Blocks: Stages.
   Cells: Stages › Id — kebab-id; Stages › Flows — flow-list; Stages › Opportunities — opportunities;
     Stages › Evidence — evidence; Stages › Next — next-stages.
+  Excluded: `## Journey diagram` → `_derived/graph-journeys.md`, the journey graph the wiki builds
+    from Stages › Next. A hand-drawn copy restates a derived fact and drifts from the stages.
   Extra frontmatter: `actor` is REQUIRED — the one actor the journey follows, a persona
     ([[domain:personas/<slug>]] or [[product:personas/<slug>]]) or a domain-object
     ([[domain:entities/<role>]]). `scenario` is REQUIRED — free text naming what the actor
@@ -21,7 +23,7 @@
     `roles` (OPTIONAL) — the bare names of the roles the actor holds in this scenario, each an
     entry of the role catalog ([[product:catalogs/roles]]); absent or empty when the actor holds
     no catalog role, as a buyer does. `artifacts` (OPTIONAL) — dash-list of "kind:target" entries
-    (kind ∈ figma | storybook | file); a rendered export of the journey map goes here.
+    (kind from the `artifact-kind` vocabulary in `wiki-page-spec`); a rendered export of the journey map goes here.
   Disposition: keep every header; "None." when empty.
   Substitute: {{TITLE}} {{DATE}} {{CONFIDENCE}} {{ORIGINATION}}.
 -->
@@ -33,7 +35,7 @@ actor: "[[domain:personas/<slug>]]"
 scenario: <what the actor sets out to do>
 roles: []
 # artifacts:                                    # uncomment & fill when a rendered export exists (optional field)
-#   - "figma:https://figma.com/file/…"          # "kind:target" — kind ∈ figma | storybook | file
+#   - "figma:https://figma.com/file/…"          # "kind:target" — kind from the artifact-kind vocabulary
 #   - "file:design/journeys/<name>.png"         # a project file with no comment syntax and no original in a design tool
 sources: []
 related: []

@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The item card shows one item in a category, with its image, name, description and price, and the control for adding it to the cart. It is the card the Category items screen lists. It is where an employee decides what they took.
+The item card shows one item in a category: its image, name, description, price and the control for adding it. It is the card the Category items screen lists. It is where an employee decides what they took.
 
 Use it for an item in a category's list.
 - Do keep the control in the same place on every card.

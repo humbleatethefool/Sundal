@@ -67,6 +67,25 @@
               }
             },
             {
+              "label": "Item image",
+              "platform": null,
+              "format": "image, at the start of the line, in the item card's image shape",
+              "source": {
+                "raw": "[[domain:entities/item]] `image`",
+                "graded": true,
+                "value": {
+                  "kind": "entity-field",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/item",
+                      "field": "image"
+                    }
+                  ]
+                },
+                "codes": []
+              }
+            },
+            {
               "label": "Item name",
               "platform": null,
               "format": "text",
@@ -523,6 +542,33 @@
                 ],
                 "codes": []
               }
+            },
+            {
+              "label": "View cart, in the shell's [[design:components/sundal/employee-app/cart-bar]]",
+              "platform": null,
+              "kind": {
+                "raw": "nav",
+                "graded": true,
+                "value": "nav",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/cart#cart-list]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/cart",
+                      "anchor": "cart-list"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
             }
           ],
           "container": [
@@ -906,6 +952,33 @@
                 ],
                 "codes": []
               }
+            },
+            {
+              "label": "View cart, in the shell's [[design:components/sundal/employee-app/cart-bar]]",
+              "platform": null,
+              "kind": {
+                "raw": "nav",
+                "graded": true,
+                "value": "nav",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/cart#cart-list]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/cart",
+                      "anchor": "cart-list"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
             }
           ],
           "container": [
@@ -1177,6 +1250,33 @@
                   {
                     "target": {
                       "kind": "stay"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "View cart, in the shell's [[design:components/sundal/employee-app/cart-bar]]",
+              "platform": null,
+              "kind": {
+                "raw": "nav",
+                "graded": true,
+                "value": "nav",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/cart#cart-list]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/cart",
+                      "anchor": "cart-list"
                     },
                     "platform": null,
                     "scope": null,

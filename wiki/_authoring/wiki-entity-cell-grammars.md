@@ -1,6 +1,6 @@
 ---
 name: wiki-entity-cell-grammars
-description: The cell grammars that tie a page's cells to entities — `field-source`, `logical-type`, `typed-example` and `field-name` — and how an entity carries the common fields of an abstract one. Use when writing a Field inventory's Source cell, an entity's Data model row or its example, or reading a finding about a field source, type, reference or common field.
+description: The cell grammars that tie a page's cells to entities — `field-source`, `logical-type`, `typed-example` and `field-name`, and the cells of an `## Entries` table — and how an entity carries the common fields of an abstract one. Use when writing a Field inventory's Source cell, an entity's Data model row, its example or its Entries rows, or reading a finding about a field source, type, reference or common field.
 user-invokable: false
 type: reference
 reader: author
@@ -43,16 +43,20 @@ The grammars a cell takes where it names an entity's field, its logical type or 
   not reference the next entity, a derived value naming no field or no rule, an `input` with no
   Input rules row, and a Required that contradicts the entity's.
 - **`logical-type`** — one logical type from `wiki-entity-data-model`'s Type list, which says what each means:
-  `Timestamp`, `Enum(OrderStatus)`, `List<Reference(Order)>`, `Map<String, Integer>`. Any other value is an error,
-  `DateTime`, `Number` and `Object` among them, and so is `Map<K,V>` with its placeholder letters left in.
+  `Timestamp`, `Money(currency_id)`, `Enum(OrderStatus)`, `List<Reference(Order)>`, `Value(Address)`,
+  `Map<String, Integer>`. Any other value is an error, `DateTime`, `Number` and `Object` among them, and so is
+  `Map<K,V>` with its placeholder letters left in.
   A `Reference(X)` or `List<Reference(X)>` Type also links the entity X in the row's References cell: X names the
   entity's file once case, `-`, `_` and spaces are folded, so `Reference(OrderLine)` links `order-line.md` wherever
-  it sits. X is never an abstract entity, which has no instances to reference. `/wiki-conformance-audit` errors
+  it sits. X is never an abstract entity, which has no instances to reference, nor a value type, which has no identity
+  to reference. A `Value(X)` Type, alone or inside a `List<…>` or `Map<…>`, links the value-type page named for X in
+  the same cell, and that page carries `value-type: true`. `/wiki-conformance-audit` errors
   (`type-reference-agreement`) on a row whose References cell links no such entity, and on one whose link for X is
-  an abstract entity or a page of another type. The entity graph draws a relationship from exactly these rows.
+  an abstract entity, a value type or a page of another type, and on a `Value(X)` row whose cell links no value-type
+  page named for X. The entity graph draws a relationship from exactly the `Reference` rows.
 - **Common fields** — an entity carries the fields of the abstract entities its `common-fields:` names, so its own
   `## Data model` table omits them, and a `Source` cell may cite one through the entity that carries it.
-  `/wiki-conformance-audit` errors on a `common-fields:` target that is not an abstract entity
+  `/wiki-conformance-audit` errors on a `common-fields:` target that is not an abstract entity, a value type included
   (`common-fields-target`) and on a field name defined twice, by the entity's table and an abstract entity or by
   two abstract entities (`common-field-clash`). Expansion is one level, so `common-fields:` on an abstract entity is
   an error too.
@@ -70,13 +74,26 @@ The grammars a cell takes where it names an entity's field, its logical type or 
   | `Timestamp` | a real UTC time, `YYYY-MM-DDTHH:MM:SS[.sss]Z` | `2026-02-01T09:30:00Z` |
   | `Date` | a real date, `YYYY-MM-DD` | `2026-02-01` |
   | `Money` | an amount and its ISO 4217 currency code, the amount carrying exactly that currency's minor-unit digits | `10000.00 INR`, `1500 JPY`, `2.500 KWD` |
+  | `Money(<field>)` | a bare amount in decimal form; the named field of the same entity holds the currency, and the amount carries the minor-unit digits of the ISO 4217 code its own row gives that field (an `## Entries` row, or the same `{field: value}` example), else of the code that field's example is | `1500000`, `1500.50` |
   | `Enum(<Name>)` | a value `<Name>` declares — in this page's `## Enumerations`, or else in the Enumerations of an entity this row's References cell links | `draft` |
   | `Reference(<Entity>)`, `ID` | one token with no spaces | `ord_1042` |
+  | `Value(<Name>)` | `{field: value}`, at least one entry, each key a field of the value-type page the row's References cell links and each value in that field's type | `{street: 12 Main Street, floor: 3}` |
   | `List<T>` | `[a, b]`, at least one item, each in `T`'s form | `[draft, sent]` |
   | `Map<K, V>` | `{key: value}`, at least one entry, each key in `K`'s form and each value in `V`'s | `{retries: 3}` |
   | `Email` | an address at `example.com`, `example.net` or `example.org`, a subdomain of one, or under the `.test` or `.example` domain | `ada@example.com` |
   | `Phone` | an international number, `+` and its country code first, its last four digits masked as `XXXX` | `+91 98765 4XXXX` |
   | `Secret` | masked: at least four `•`, then up to four visible characters | `••••••a1b2` |
 
+  The error for a `Money(<field>)` row names which rule failed: the named field is not on the entity, it is not typed
+  `Reference(Currency)`, `Enum(<Name>)` or `String`, the example is not a bare amount, or its decimals do not match the
+  currency's minor units.
+
+- **`## Entries`** — the governed rows of a reference-data entity, such as a launch set of
+  currencies: one table, each column a field of the entity (its own, or one it carries through
+  `common-fields:`), named as the Data model's `Field` column writes it, and each cell in that
+  field's example form from the table above, inline code around it allowed. A cell reading `—`
+  or left blank states no value. `/wiki-conformance-audit` errors (`entries-cells`) on a column
+  naming no field and on a cell outside its field's form. The section is `None.` when the entity
+  has no governed rows.
 - **`field-name`** — a snake_case field name, lowercase words joined by single underscores:
   `order_total`, `created_at`. Inline code around the name is allowed.

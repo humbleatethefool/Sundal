@@ -61,15 +61,19 @@ lookup's §Fact ownership sets out.
 ## Realization membership
 
 Whether a page has a build state of its own, and whether a code citation naming it grounds
-anything, is decided by one rule. A page is a **realization entry** when it declares any one of:
+anything, is decided by one rule. A page is a **realization entry** when it declares one of:
 
 - `realizes:` — the substrate types (`system-component`, `api-contract`, `integration`,
   `ui-component`, `algorithm`), `design-system` and `layout-pattern`.
 - `feature:` on a `ui-surface-impl` — the build spec for a feature's surfaces. Its design
   counterpart `ui-surface` carries the same value and is **not** an entry; the pair is
   separated by type, not by which field is present, or one build fact would count twice.
-- `verifies:` on a `test-scenario`, for the subject link naming a `flows/` page. A
-  `features/` target in the same list is a spec-coverage pointer, not a membership claim.
+
+A `test-scenario` is **not** an entry: its `verifies:` links are verification-axis pointers,
+and the page carries no build state. A task flow has no entries either; its build state is
+derived from the features that list it under `## Task flows`, so a flow reads built when
+every listing feature is built, partial when some is built or partial, and a flow no
+feature lists has no build state.
 
 A resolved `@realizes` code citation grounds its target as built only when that target is an
 entry. A citation naming a **grouping** page — `feature`, `product-module`, `task-flow`,

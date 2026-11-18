@@ -14,7 +14,7 @@ confidence: medium
 
 ## Summary
 
-The Sundal app base is the foundation that every Sundal app stands on: the shared look and page frames that no single app owns. It is not an app, and it holds no features.
+Sundal is a snack shop product with a separate mobile app for each of its users: employees, vendors and company admins.
 
 
 ## Scope

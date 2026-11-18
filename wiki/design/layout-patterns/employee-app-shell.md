@@ -18,7 +18,7 @@ confidence: medium
 
 ## Purpose & usage
 
-The employee app shell is the arrangement every employee-app page sits in: a header, the page's content, a cart bar and a tab bar. Every screen after sign-in follows it. The sign-in screens show no tab bar and no cart bar. It does not describe the contents of a screen, which each surface page does.
+The employee app shell is what every employee-app page sits in: a header, the content, a cart bar and a tab bar. Every screen after sign-in follows it. The sign-in screens show no tab bar and no cart bar. It does not describe the contents of a screen, which each surface page does.
 
 ## Regions
 

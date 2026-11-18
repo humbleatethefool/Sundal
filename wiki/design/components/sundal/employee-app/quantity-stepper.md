@@ -123,5 +123,6 @@ The visible strings are the Add button's label and the limit message. Everything
 
 ## Related
 
-- [[surfaces/sundal/employee-app/cart]] and [[surfaces/sundal/employee-app/category-items]] — the surfaces that use the stepper, Category items and Cart.
+- [[surfaces/sundal/employee-app/cart]] — the surface that shows the stepper beside each cart line.
+- [[surfaces/sundal/employee-app/category-items]] — the surface that shows the stepper on an item's card.
 - [[product:modules/sundal/employee-app]] — the module whose rule keeps quantity changes to + and −.

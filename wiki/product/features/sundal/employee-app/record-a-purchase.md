@@ -16,7 +16,7 @@ confidence: medium
 
 ## Summary
 
-Record a purchase lets an employee add the snacks they took from the shop to a purchase cart, review the total, and record it. Each snack line becomes its own entry.
+Record a purchase lets an employee add the snacks they took to a purchase cart, review the total, and record it.
 
 
 ## Problem it solves

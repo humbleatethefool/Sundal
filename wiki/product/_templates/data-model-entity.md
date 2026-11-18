@@ -25,14 +25,16 @@
   Extra frontmatter: `instance-scope` (tenant | user | global) is REQUIRED — who owns this entity's
     instances; see `wiki-structure-fields` §Structure fields. `common-fields` is optional — links to the
     abstract entities whose fields this entity carries; `abstract: true` marks an abstract entity,
-    which carries no `instance-scope` (the author removes the `instance-scope` line).
+    which carries no `instance-scope` (the author removes the `instance-scope` line). `value-type:
+    true` marks a value type, a shared composite with no identity that other entities take as
+    `Value(<Name>)`; it carries no `instance-scope` either (see [[_authoring:wiki-entity-data-model#value-types]]).
   Disposition: keep every header; "None." when empty.
   Substitute: {{TITLE}} {{DATE}} {{CONFIDENCE}} {{INSTANCE_SCOPE}}.
 -->
 ---
 title: {{TITLE}}
 type: data-model-entity
-template-version: 1
+template-version: 2
 common-fields: []
 sources: []
 related: []
@@ -66,6 +68,12 @@ instance-scope: {{INSTANCE_SCOPE}}
 
 <!-- Only the fixed value sets this entity itself owns — the closed lists a field may hold.
      Author them per the shared spec: see [[_authoring:wiki-entity-data-model]]. -->
+
+## Entries
+
+<!-- The governed rows of a reference-data entity, such as a launch set of currencies or tax rates:
+one table, a column per field of this entity, named as the `## Data model` table names it, and a
+cell per field in that field's example form. "None." when the entity has no governed rows. -->
 
 ## Invariants
 

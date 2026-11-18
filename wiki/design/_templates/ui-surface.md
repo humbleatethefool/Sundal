@@ -12,8 +12,8 @@
   Owner: fixed to `design`, do not substitute.
   Discipline: any visual lives in a design tool or the project's own design files (linked, never copied) — this page
     holds the STRUCTURED spec plus the pointer, never a pasted screenshot as the source of truth. Record
-    that pointer in the `artifacts:` frontmatter field (a dash-list of "kind:target" entries; kind ∈
-    figma | storybook | file, where a `file:` entry takes a path relative to the project root to a
+    that pointer in the `artifacts:` frontmatter field (a dash-list of "kind:target" entries; kind from
+    the `artifact-kind` vocabulary in `wiki-page-spec`, where a `file:` entry takes a path relative to the project root to a
     file with no comment syntax and no original in a design tool; a design reference with comment
     syntax names this page with `@prototypes` instead, and an export of a tool-held frame is linked
     at the frame),
@@ -48,7 +48,7 @@ flows:
   - "[[product:flows/<module>/<flow-slug>]]"
 platforms: [web]
 # artifacts:                                    # uncomment & fill when a pointer exists (optional field)
-#   - "figma:https://figma.com/file/…"          # "kind:target" — kind ∈ figma | storybook | file
+#   - "figma:https://figma.com/file/…"          # "kind:target" — kind from the artifact-kind vocabulary
 #   - "file:design/sketches/<feature-slug>.png"   # a project file with no comment syntax and no original in a design tool
 sources: []
 related: []

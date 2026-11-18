@@ -103,4 +103,7 @@ Where the bar sits, and the screens on which it shows or hides, are recorded on 
 
 - [[components/sundal/employee-app/quantity-stepper]] — the control whose confirmed changes update the bar.
 - [[layout-patterns/employee-app-shell]] — the shell that places the bar above the tab bar.
-- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces on which the bar shows or hides.
+- [[surfaces/sundal/employee-app/cart]] — the surface the bar opens, and where it does not show.
+- [[surfaces/sundal/employee-app/categories]] — a surface on which the bar shows or hides.
+- [[surfaces/sundal/employee-app/category-items]] — a surface on which the bar shows or hides.
+- [[surfaces/sundal/employee-app/purchase-detail]] — a surface on which the bar shows or hides.
