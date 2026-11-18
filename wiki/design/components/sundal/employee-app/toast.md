@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:modules/sundal/employee-app]]"
 sources: []
-related: ["[[components/sundal/employee-app/message-block]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
+related: ["[[components/sundal/employee-app/message-block]]", "[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/categories]]", "[[surfaces/sundal/employee-app/category-items]]", "[[surfaces/sundal/employee-app/purchase-detail]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -91,4 +91,4 @@ The text is the module's own wording, "You're offline". It leaves out "please" a
 ## Related
 
 - [[components/sundal/employee-app/message-block]] — the block shown instead when the employee taps something that needs the server while offline.
-- [[surfaces/sundal/employee-app/record-a-purchase]] — the surfaces on which the toast can appear.
+- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces on which the toast can appear.

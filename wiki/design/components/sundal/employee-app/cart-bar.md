@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[components/sundal/employee-app/quantity-stepper]]", "[[layout-patterns/employee-app-shell]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
+related: ["[[components/sundal/employee-app/quantity-stepper]]", "[[layout-patterns/employee-app-shell]]", "[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/categories]]", "[[surfaces/sundal/employee-app/category-items]]", "[[surfaces/sundal/employee-app/purchase-detail]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -87,7 +87,7 @@ The bar shows numbers, so its only wording is the word for the items counted. It
 |---|---|---|
 | The whole bar is the tap target | proposed | |
 
-Where the bar sits, and the screens on which it shows or hides, are recorded on [[layout-patterns/employee-app-shell]] and [[surfaces/sundal/employee-app/record-a-purchase]].
+Where the bar sits, and the screens on which it shows or hides, are recorded on [[layout-patterns/employee-app-shell]], [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]].
 
 ## Open questions
 
@@ -101,4 +101,4 @@ Where the bar sits, and the screens on which it shows or hides, are recorded on 
 
 - [[components/sundal/employee-app/quantity-stepper]] — the control whose confirmed changes update the bar.
 - [[layout-patterns/employee-app-shell]] — the shell that places the bar above the tab bar.
-- [[surfaces/sundal/employee-app/record-a-purchase]] — the surfaces on which the bar shows or hides.
+- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces on which the bar shows or hides.

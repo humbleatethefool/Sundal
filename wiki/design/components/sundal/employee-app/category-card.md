@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[surfaces/sundal/employee-app/record-a-purchase]]"]
+related: ["[[surfaces/sundal/employee-app/categories]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -92,4 +92,4 @@ The name is the vendor's own text and shows in full, wrapping where it must. Eng
 
 ## Related
 
-- [[surfaces/sundal/employee-app/record-a-purchase]] — the Categories surface that lays the cards out.
+- [[surfaces/sundal/employee-app/categories]] — the Categories surface that lays the cards out.

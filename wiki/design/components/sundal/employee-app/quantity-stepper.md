@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[surfaces/sundal/employee-app/record-a-purchase]]", "[[product:modules/sundal/employee-app]]"]
+related: ["[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/category-items]]", "[[product:modules/sundal/employee-app]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -123,5 +123,5 @@ The visible strings are the Add button's label and the limit message. Everything
 
 ## Related
 
-- [[surfaces/sundal/employee-app/record-a-purchase]] — the surfaces that use the stepper, Category items and Cart.
+- [[surfaces/sundal/employee-app/cart]] and [[surfaces/sundal/employee-app/category-items]] — the surfaces that use the stepper, Category items and Cart.
 - [[product:modules/sundal/employee-app]] — the module whose rule keeps quantity changes to + and −.

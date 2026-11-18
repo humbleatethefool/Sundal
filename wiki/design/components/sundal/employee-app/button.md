@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:modules/sundal/employee-app]]"
 sources: []
-related: ["[[components/sundal/employee-app/message-block]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
+related: ["[[components/sundal/employee-app/message-block]]", "[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/categories]]", "[[surfaces/sundal/employee-app/category-items]]", "[[surfaces/sundal/employee-app/purchase-detail]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -106,4 +106,4 @@ A label names the action with a verb, in sentence case, with no article and no "
 ## Related
 
 - [[components/sundal/employee-app/message-block]] — the block whose action is a button.
-- [[surfaces/sundal/employee-app/record-a-purchase]] — the surfaces that use Record purchase, Retry and Browse snacks.
+- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces that use Record purchase, Retry and Browse snacks.

@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:modules/sundal/employee-app]]"
 sources: []
-related: ["[[layout-patterns/employee-app-shell]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
+related: ["[[layout-patterns/employee-app-shell]]", "[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/categories]]", "[[surfaces/sundal/employee-app/category-items]]", "[[surfaces/sundal/employee-app/purchase-detail]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -101,4 +101,4 @@ None. The header's placement and where Back shows are recorded on [[layout-patte
 ## Related
 
 - [[layout-patterns/employee-app-shell]] — the shell that places the header at the top of every screen.
-- [[surfaces/sundal/employee-app/record-a-purchase]] — the surfaces whose titles and Back the header shows.
+- [[surfaces/sundal/employee-app/cart]], [[surfaces/sundal/employee-app/categories]], [[surfaces/sundal/employee-app/category-items]] and [[surfaces/sundal/employee-app/purchase-detail]] — the surfaces whose titles and Back the header shows.

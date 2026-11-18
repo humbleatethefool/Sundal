@@ -8,8 +8,377 @@
   ],
   "pages": [
     {
-      "key": "design:surfaces/sundal/employee-app/record-a-purchase",
-      "title": "Record a purchase",
+      "key": "design:surfaces/sundal/employee-app/cart",
+      "title": "Cart",
+      "templateVersion": 2,
+      "platforms": [
+        "mobile"
+      ],
+      "codes": [],
+      "flows": [
+        {
+          "key": "product:flows/sundal/employee-app/record-a-purchase",
+          "type": "task-flow"
+        }
+      ],
+      "surfaces": [
+        {
+          "name": "Cart",
+          "kind": "list",
+          "anchor": "cart-list",
+          "codes": [],
+          "platforms": [
+            "mobile"
+          ],
+          "flowSteps": [
+            {
+              "platform": null,
+              "raw": "[[product:flows/sundal/employee-app/record-a-purchase]] S5, S6, A1, E3, E4, E5",
+              "graded": true,
+              "value": [
+                {
+                  "flow": "product:flows/sundal/employee-app/record-a-purchase",
+                  "ids": [
+                    "S5",
+                    "S6",
+                    "A1",
+                    "E3",
+                    "E4",
+                    "E5"
+                  ]
+                }
+              ],
+              "codes": []
+            }
+          ],
+          "fields": [
+            {
+              "label": "Cart",
+              "platform": null,
+              "format": "text, as the page title",
+              "source": {
+                "raw": "static",
+                "graded": true,
+                "value": {
+                  "kind": "static",
+                  "note": null
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Item name",
+              "platform": null,
+              "format": "text",
+              "source": {
+                "raw": "[[domain:entities/item]] `name`",
+                "graded": true,
+                "value": {
+                  "kind": "entity-field",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/item",
+                      "field": "name"
+                    }
+                  ]
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Price",
+              "platform": null,
+              "format": "money, in rupees, for one item",
+              "source": {
+                "raw": "[[domain:entities/item]] `price per item`",
+                "graded": true,
+                "value": {
+                  "kind": "entity-field",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/item",
+                      "field": "price per item"
+                    }
+                  ]
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Quantity",
+              "platform": null,
+              "format": "number between the − and + buttons",
+              "source": {
+                "raw": "[[domain:entities/cart]] `lines`",
+                "graded": true,
+                "value": {
+                  "kind": "entity-field",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/cart",
+                      "field": "lines"
+                    }
+                  ]
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Total",
+              "platform": null,
+              "format": "money, in rupees",
+              "source": {
+                "raw": "[[domain:entities/cart]] `total`",
+                "graded": true,
+                "value": {
+                  "kind": "entity-field",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/cart",
+                      "field": "total"
+                    }
+                  ]
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Notice",
+              "platform": null,
+              "format": "text under the line",
+              "source": {
+                "raw": "system: a price, an item or its stock changed while the cart was open",
+                "graded": true,
+                "value": {
+                  "kind": "system",
+                  "text": "a price, an item or its stock changed while the cart was open"
+                },
+                "codes": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "label": "Record purchase, a primary [[design:components/sundal/employee-app/button]]",
+              "platform": null,
+              "kind": {
+                "raw": "primary",
+                "graded": true,
+                "value": "primary",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/purchase-detail#purchase-detail-detail]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/purchase-detail",
+                      "anchor": "purchase-detail-detail"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "+",
+              "platform": null,
+              "kind": {
+                "raw": "secondary",
+                "graded": true,
+                "value": "secondary",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "—",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "stay"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "−",
+              "platform": null,
+              "kind": {
+                "raw": "secondary",
+                "graded": true,
+                "value": "secondary",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "—",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "stay"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "Retry, a [[design:components/sundal/employee-app/button]]",
+              "platform": null,
+              "kind": {
+                "raw": "secondary",
+                "graded": true,
+                "value": "secondary",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "—",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "stay"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "Browse snacks, a [[design:components/sundal/employee-app/button]]",
+              "platform": null,
+              "kind": {
+                "raw": "nav",
+                "graded": true,
+                "value": "nav",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/categories#categories-list]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/categories",
+                      "anchor": "categories-list"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            }
+          ],
+          "container": [
+            {
+              "platform": null,
+              "raw": "page",
+              "graded": true,
+              "value": "page",
+              "codes": []
+            }
+          ],
+          "platformsCell": [
+            {
+              "platform": null,
+              "raw": "mobile",
+              "graded": true,
+              "value": [
+                "mobile"
+              ],
+              "codes": []
+            }
+          ],
+          "node": [
+            {
+              "platform": null,
+              "raw": "[[design:information-architecture/employee-app]] cart",
+              "graded": true,
+              "value": [
+                {
+                  "kind": "node",
+                  "page": "design:information-architecture/employee-app",
+                  "node": "cart"
+                }
+              ],
+              "codes": []
+            }
+          ],
+          "shownIn": [
+            {
+              "platform": null,
+              "raw": "None.",
+              "graded": true,
+              "value": [],
+              "codes": []
+            }
+          ],
+          "openedFrom": [
+            {
+              "platform": null,
+              "raw": "None.",
+              "graded": true,
+              "value": [],
+              "codes": []
+            }
+          ],
+          "layoutPatterns": [
+            {
+              "platform": null,
+              "raw": "[[design:layout-patterns/employee-app-shell]]",
+              "graded": true,
+              "value": [
+                "design:layout-patterns/employee-app-shell"
+              ],
+              "codes": []
+            }
+          ],
+          "journeyStages": [
+            {
+              "platform": null,
+              "raw": "[[design:journeys/employee-record-a-purchase]] review-and-record",
+              "graded": true,
+              "value": [
+                {
+                  "journey": "design:journeys/employee-record-a-purchase",
+                  "ids": [
+                    "review-and-record"
+                  ]
+                }
+              ],
+              "codes": []
+            }
+          ],
+          "sameAs": {
+            "Field inventory": null,
+            "Input rules": null,
+            "State transitions": null
+          }
+        }
+      ]
+    },
+    {
+      "key": "design:surfaces/sundal/employee-app/categories",
+      "title": "Categories",
       "templateVersion": 2,
       "platforms": [
         "mobile"
@@ -113,13 +482,13 @@
                 "codes": []
               },
               "leadsTo": {
-                "raw": "[[design:surfaces/sundal/employee-app/record-a-purchase#category-items-list]]",
+                "raw": "[[design:surfaces/sundal/employee-app/category-items#category-items-list]]",
                 "graded": true,
                 "value": [
                   {
                     "target": {
                       "kind": "surface",
-                      "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                      "key": "design:surfaces/sundal/employee-app/category-items",
                       "anchor": "category-items-list"
                     },
                     "platform": null,
@@ -241,7 +610,24 @@
             "Input rules": null,
             "State transitions": null
           }
-        },
+        }
+      ]
+    },
+    {
+      "key": "design:surfaces/sundal/employee-app/category-items",
+      "title": "Category items",
+      "templateVersion": 2,
+      "platforms": [
+        "mobile"
+      ],
+      "codes": [],
+      "flows": [
+        {
+          "key": "product:flows/sundal/employee-app/record-a-purchase",
+          "type": "task-flow"
+        }
+      ],
+      "surfaces": [
         {
           "name": "Category items",
           "kind": "list",
@@ -607,359 +993,24 @@
             "Input rules": null,
             "State transitions": null
           }
-        },
+        }
+      ]
+    },
+    {
+      "key": "design:surfaces/sundal/employee-app/purchase-detail",
+      "title": "Purchase detail",
+      "templateVersion": 2,
+      "platforms": [
+        "mobile"
+      ],
+      "codes": [],
+      "flows": [
         {
-          "name": "Cart",
-          "kind": "list",
-          "anchor": "cart-list",
-          "codes": [],
-          "platforms": [
-            "mobile"
-          ],
-          "flowSteps": [
-            {
-              "platform": null,
-              "raw": "[[product:flows/sundal/employee-app/record-a-purchase]] S5, S6, A1, E3, E4, E5",
-              "graded": true,
-              "value": [
-                {
-                  "flow": "product:flows/sundal/employee-app/record-a-purchase",
-                  "ids": [
-                    "S5",
-                    "S6",
-                    "A1",
-                    "E3",
-                    "E4",
-                    "E5"
-                  ]
-                }
-              ],
-              "codes": []
-            }
-          ],
-          "fields": [
-            {
-              "label": "Cart",
-              "platform": null,
-              "format": "text, as the page title",
-              "source": {
-                "raw": "static",
-                "graded": true,
-                "value": {
-                  "kind": "static",
-                  "note": null
-                },
-                "codes": []
-              }
-            },
-            {
-              "label": "Item name",
-              "platform": null,
-              "format": "text",
-              "source": {
-                "raw": "[[domain:entities/item]] `name`",
-                "graded": true,
-                "value": {
-                  "kind": "entity-field",
-                  "refs": [
-                    {
-                      "entity": "domain:entities/item",
-                      "field": "name"
-                    }
-                  ]
-                },
-                "codes": []
-              }
-            },
-            {
-              "label": "Price",
-              "platform": null,
-              "format": "money, in rupees, for one item",
-              "source": {
-                "raw": "[[domain:entities/item]] `price per item`",
-                "graded": true,
-                "value": {
-                  "kind": "entity-field",
-                  "refs": [
-                    {
-                      "entity": "domain:entities/item",
-                      "field": "price per item"
-                    }
-                  ]
-                },
-                "codes": []
-              }
-            },
-            {
-              "label": "Quantity",
-              "platform": null,
-              "format": "number between the − and + buttons",
-              "source": {
-                "raw": "[[domain:entities/cart]] `lines`",
-                "graded": true,
-                "value": {
-                  "kind": "entity-field",
-                  "refs": [
-                    {
-                      "entity": "domain:entities/cart",
-                      "field": "lines"
-                    }
-                  ]
-                },
-                "codes": []
-              }
-            },
-            {
-              "label": "Total",
-              "platform": null,
-              "format": "money, in rupees",
-              "source": {
-                "raw": "[[domain:entities/cart]] `total`",
-                "graded": true,
-                "value": {
-                  "kind": "entity-field",
-                  "refs": [
-                    {
-                      "entity": "domain:entities/cart",
-                      "field": "total"
-                    }
-                  ]
-                },
-                "codes": []
-              }
-            },
-            {
-              "label": "Notice",
-              "platform": null,
-              "format": "text under the line",
-              "source": {
-                "raw": "system: a price, an item or its stock changed while the cart was open",
-                "graded": true,
-                "value": {
-                  "kind": "system",
-                  "text": "a price, an item or its stock changed while the cart was open"
-                },
-                "codes": []
-              }
-            }
-          ],
-          "actions": [
-            {
-              "label": "Record purchase, a primary [[design:components/sundal/employee-app/button]]",
-              "platform": null,
-              "kind": {
-                "raw": "primary",
-                "graded": true,
-                "value": "primary",
-                "codes": []
-              },
-              "leadsTo": {
-                "raw": "[[design:surfaces/sundal/employee-app/record-a-purchase#purchase-detail-detail]]",
-                "graded": true,
-                "value": [
-                  {
-                    "target": {
-                      "kind": "surface",
-                      "key": "design:surfaces/sundal/employee-app/record-a-purchase",
-                      "anchor": "purchase-detail-detail"
-                    },
-                    "platform": null,
-                    "scope": null,
-                    "condition": null
-                  }
-                ],
-                "codes": []
-              }
-            },
-            {
-              "label": "+",
-              "platform": null,
-              "kind": {
-                "raw": "secondary",
-                "graded": true,
-                "value": "secondary",
-                "codes": []
-              },
-              "leadsTo": {
-                "raw": "—",
-                "graded": true,
-                "value": [
-                  {
-                    "target": {
-                      "kind": "stay"
-                    },
-                    "platform": null,
-                    "scope": null,
-                    "condition": null
-                  }
-                ],
-                "codes": []
-              }
-            },
-            {
-              "label": "−",
-              "platform": null,
-              "kind": {
-                "raw": "secondary",
-                "graded": true,
-                "value": "secondary",
-                "codes": []
-              },
-              "leadsTo": {
-                "raw": "—",
-                "graded": true,
-                "value": [
-                  {
-                    "target": {
-                      "kind": "stay"
-                    },
-                    "platform": null,
-                    "scope": null,
-                    "condition": null
-                  }
-                ],
-                "codes": []
-              }
-            },
-            {
-              "label": "Retry, a [[design:components/sundal/employee-app/button]]",
-              "platform": null,
-              "kind": {
-                "raw": "secondary",
-                "graded": true,
-                "value": "secondary",
-                "codes": []
-              },
-              "leadsTo": {
-                "raw": "—",
-                "graded": true,
-                "value": [
-                  {
-                    "target": {
-                      "kind": "stay"
-                    },
-                    "platform": null,
-                    "scope": null,
-                    "condition": null
-                  }
-                ],
-                "codes": []
-              }
-            },
-            {
-              "label": "Browse snacks, a [[design:components/sundal/employee-app/button]]",
-              "platform": null,
-              "kind": {
-                "raw": "nav",
-                "graded": true,
-                "value": "nav",
-                "codes": []
-              },
-              "leadsTo": {
-                "raw": "[[design:surfaces/sundal/employee-app/record-a-purchase#categories-list]]",
-                "graded": true,
-                "value": [
-                  {
-                    "target": {
-                      "kind": "surface",
-                      "key": "design:surfaces/sundal/employee-app/record-a-purchase",
-                      "anchor": "categories-list"
-                    },
-                    "platform": null,
-                    "scope": null,
-                    "condition": null
-                  }
-                ],
-                "codes": []
-              }
-            }
-          ],
-          "container": [
-            {
-              "platform": null,
-              "raw": "page",
-              "graded": true,
-              "value": "page",
-              "codes": []
-            }
-          ],
-          "platformsCell": [
-            {
-              "platform": null,
-              "raw": "mobile",
-              "graded": true,
-              "value": [
-                "mobile"
-              ],
-              "codes": []
-            }
-          ],
-          "node": [
-            {
-              "platform": null,
-              "raw": "[[design:information-architecture/employee-app]] cart",
-              "graded": true,
-              "value": [
-                {
-                  "kind": "node",
-                  "page": "design:information-architecture/employee-app",
-                  "node": "cart"
-                }
-              ],
-              "codes": []
-            }
-          ],
-          "shownIn": [
-            {
-              "platform": null,
-              "raw": "None.",
-              "graded": true,
-              "value": [],
-              "codes": []
-            }
-          ],
-          "openedFrom": [
-            {
-              "platform": null,
-              "raw": "None.",
-              "graded": true,
-              "value": [],
-              "codes": []
-            }
-          ],
-          "layoutPatterns": [
-            {
-              "platform": null,
-              "raw": "[[design:layout-patterns/employee-app-shell]]",
-              "graded": true,
-              "value": [
-                "design:layout-patterns/employee-app-shell"
-              ],
-              "codes": []
-            }
-          ],
-          "journeyStages": [
-            {
-              "platform": null,
-              "raw": "[[design:journeys/employee-record-a-purchase]] review-and-record",
-              "graded": true,
-              "value": [
-                {
-                  "journey": "design:journeys/employee-record-a-purchase",
-                  "ids": [
-                    "review-and-record"
-                  ]
-                }
-              ],
-              "codes": []
-            }
-          ],
-          "sameAs": {
-            "Field inventory": null,
-            "Input rules": null,
-            "State transitions": null
-          }
-        },
+          "key": "product:flows/sundal/employee-app/record-a-purchase",
+          "type": "task-flow"
+        }
+      ],
+      "surfaces": [
         {
           "name": "Purchase detail",
           "kind": "detail",

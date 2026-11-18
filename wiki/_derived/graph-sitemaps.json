@@ -183,7 +183,7 @@
           "surfaces": {
             "mobile": [
               {
-                "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                "key": "design:surfaces/sundal/employee-app/cart",
                 "anchor": "cart-list"
               }
             ]
@@ -194,7 +194,7 @@
           "surfaces": {
             "mobile": [
               {
-                "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                "key": "design:surfaces/sundal/employee-app/categories",
                 "anchor": "categories-list"
               }
             ]
@@ -205,7 +205,7 @@
           "surfaces": {
             "mobile": [
               {
-                "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                "key": "design:surfaces/sundal/employee-app/category-items",
                 "anchor": "category-items-list"
               }
             ]
@@ -240,7 +240,7 @@
           "surfaces": {
             "mobile": [
               {
-                "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                "key": "design:surfaces/sundal/employee-app/purchase-detail",
                 "anchor": "purchase-detail-detail"
               }
             ]

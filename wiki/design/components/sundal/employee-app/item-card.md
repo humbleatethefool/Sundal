@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[components/sundal/employee-app/line-notice]]", "[[components/sundal/employee-app/quantity-stepper]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
+related: ["[[components/sundal/employee-app/line-notice]]", "[[components/sundal/employee-app/quantity-stepper]]", "[[surfaces/sundal/employee-app/category-items]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -113,4 +113,4 @@ The name and description are the vendor's own text and show in full, wrapping wh
 
 - [[components/sundal/employee-app/line-notice]] — the message shown under the card when a change could not be saved.
 - [[components/sundal/employee-app/quantity-stepper]] — the control the action slot holds once the item is in the cart.
-- [[surfaces/sundal/employee-app/record-a-purchase]] — the Category items surface that lists the cards.
+- [[surfaces/sundal/employee-app/category-items]] — the Category items surface that lists the cards.

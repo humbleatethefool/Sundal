@@ -6,7 +6,10 @@
 - [Employee — Record a purchase](journeys\employee-record-a-purchase.md) — This journey follows an employee from taking snacks at the shop to recording the purchase and checking it later.
 
 ## UI Surface (SLO: 90d)
-- [Record a purchase](surfaces\sundal\employee-app\record-a-purchase.md) — The employee records a purchase through these screens: the categories, a category's items, the cart and the purchase.
+- [Cart](surfaces\sundal\employee-app\cart.md) — The employee checks the purchase cart and its total on the Cart screen, changes quantities if needed and records the…
+- [Categories](surfaces\sundal\employee-app\categories.md) — The employee scans the vendor's categories on the Categories screen and opens the one that holds the snack they took.
+- [Category items](surfaces\sundal\employee-app\category-items.md) — The employee looks through the items of one category on the Category items screen and adds the snacks they took to the…
+- [Purchase detail](surfaces\sundal\employee-app\purchase-detail.md) — The employee sees one recorded purchase on the Purchase detail screen: what they took, what it cost and when it was…
 
 ## UI Component (SLO: 180d)
 - [Button](components\sundal\employee-app\button.md) — The button is the control an employee taps to do something or to go somewhere on a screen.
