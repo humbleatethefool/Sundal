@@ -5,7 +5,7 @@
 ## Domain Object (SLO: 180d)
 - [Cart](entities\cart.md) — A cart is the set of items an employee has added to a purchase and not yet recorded.
 - [Catalog](entities\catalog.md) — A catalog is everything a vendor offers in the shop: the categories the vendor creates and the items in them.
-- [Category](entities\category.md) — A category is a named group of items in a snack shop's catalog, which the vendor creates and names.
+- [Category](entities\category.md) — A category is a named group of items in a snack shop's catalog, which the vendor creates, names and gives an image.
 - [Entry](entities\entry.md) — An entry is one snack line of a purchase: one item, the quantity taken and the price the employee saw.
 - [Item](entities\item.md) — An item is a snack the vendor sells, listed in a category.
 - [OTP](entities\otp.md) — An OTP, short for one-time password, is a code that works for a single sign-in.

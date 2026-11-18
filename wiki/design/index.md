@@ -5,6 +5,21 @@
 ## User Journey (SLO: 180d)
 - [Employee — Record a purchase](journeys\employee-record-a-purchase.md) — This journey follows an employee from taking snacks at the shop to recording the purchase and checking it later.
 
+## UI Surface (SLO: 90d)
+- [Record a purchase](surfaces\sundal\employee-app\record-a-purchase.md) — The employee records a purchase through these screens: the categories, a category's items, the cart and the purchase.
+
+## UI Component (SLO: 180d)
+- [Button](components\sundal\employee-app\button.md) — The button is the control an employee taps to do something or to go somewhere on a screen.
+- [Cart bar](components\sundal\employee-app\cart-bar.md) — The cart bar shows an employee what their purchase cart holds, with the item count and the total, and opens the Cart.
+- [Category card](components\sundal\employee-app\category-card.md) — The category card shows one of the vendor's categories as a tappable card, with the category's image above its name.
+- [Item card](components\sundal\employee-app\item-card.md) — The item card shows one item in a category, with its image, name, description and price, and the control for adding it…
+- [Line notice](components\sundal\employee-app\line-notice.md) — The line notice is a short message directly under one cart line or one item card, about that item only.
+- [Message block](components\sundal\employee-app\message-block.md) — The message block fills a screen's content region with a message when the screen has nothing else to show: an empty…
+- [Page header](components\sundal\employee-app\page-header.md) — The page header is the strip at the top of every employee-app screen after sign-in.
+- [Quantity stepper](components\sundal\employee-app\quantity-stepper.md) — The quantity stepper lets an employee change how many of an item they are adding, one step per tap.
+- [Tab bar](components\sundal\employee-app\tab-bar.md) — The tab bar is the bar at the bottom of the employee app that moves the employee between its areas: Browse, Logs and…
+- [Toast](components\sundal\employee-app\toast.md) — The toast is a short message that appears over a screen and leaves the screen as it is.
+
 ## Layout Pattern (SLO: 180d)
 - [Employee app shell](layout-patterns\employee-app-shell.md) — The employee app shell is the arrangement every employee-app page sits in: a header, the page's content, a cart bar and…
 

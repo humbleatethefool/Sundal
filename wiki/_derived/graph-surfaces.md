@@ -4,4 +4,15 @@
 
 The named surfaces of every `ui-surface` page, and where each one's actions lead. An edge runs from a surface to the surface an action's `Leads to` names, labeled with the action; a destination that is a component, `back`, `external` or pending is in the document only. Rebuild with `/wiki-reindex`.
 
-No surfaces.
+## design — sundal/employee-app
+
+```mermaid
+flowchart LR
+    design_surfaces_sundal_employee_app_record_a_purchase_categories_list["Categories"]
+    design_surfaces_sundal_employee_app_record_a_purchase_category_items_list["Category items"]
+    design_surfaces_sundal_employee_app_record_a_purchase_cart_list["Cart"]
+    design_surfaces_sundal_employee_app_record_a_purchase_purchase_detail_detail["Purchase detail"]
+    design_surfaces_sundal_employee_app_record_a_purchase_categories_list -->|"[[design:components/sundal/employee-app/category-card]], labeled with the category's name"| design_surfaces_sundal_employee_app_record_a_purchase_category_items_list
+    design_surfaces_sundal_employee_app_record_a_purchase_cart_list -->|"Record purchase, a primary [[design:components/sundal/employee-app/button]]"| design_surfaces_sundal_employee_app_record_a_purchase_purchase_detail_detail
+    design_surfaces_sundal_employee_app_record_a_purchase_cart_list -->|"Browse snacks, a [[design:components/sundal/employee-app/button]]"| design_surfaces_sundal_employee_app_record_a_purchase_categories_list
+```

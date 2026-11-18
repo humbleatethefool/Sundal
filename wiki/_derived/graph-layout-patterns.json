@@ -55,7 +55,28 @@
           }
         }
       ],
-      "surfaces": [],
+      "surfaces": [
+        {
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+          "anchor": "cart-list",
+          "platform": null
+        },
+        {
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+          "anchor": "categories-list",
+          "platform": null
+        },
+        {
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+          "anchor": "category-items-list",
+          "platform": null
+        },
+        {
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+          "anchor": "purchase-detail-detail",
+          "platform": null
+        }
+      ],
       "applications": [
         "design:information-architecture/employee-app"
       ]

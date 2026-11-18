@@ -33,7 +33,9 @@
             "assumptions": 2
           },
           "surfaces": [],
-          "placements": {}
+          "placements": {
+            "design:information-architecture/employee-app": {}
+          }
         },
         {
           "id": "sign-in",
@@ -47,10 +49,12 @@
           },
           "evidence": {
             "links": [],
-            "assumptions": 2
+            "assumptions": 1
           },
           "surfaces": [],
-          "placements": {}
+          "placements": {
+            "design:information-architecture/employee-app": {}
+          }
         },
         {
           "id": "choose-snacks",
@@ -68,8 +72,24 @@
             "links": [],
             "assumptions": 3
           },
-          "surfaces": [],
-          "placements": {}
+          "surfaces": [
+            {
+              "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+              "anchor": "categories-list"
+            },
+            {
+              "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+              "anchor": "category-items-list"
+            }
+          ],
+          "placements": {
+            "design:information-architecture/employee-app": {
+              "mobile": [
+                "design:information-architecture/employee-app#categories",
+                "design:information-architecture/employee-app#category-items"
+              ]
+            }
+          }
         },
         {
           "id": "review-and-record",
@@ -87,8 +107,24 @@
             "links": [],
             "assumptions": 3
           },
-          "surfaces": [],
-          "placements": {}
+          "surfaces": [
+            {
+              "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+              "anchor": "cart-list"
+            },
+            {
+              "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+              "anchor": "purchase-detail-detail"
+            }
+          ],
+          "placements": {
+            "design:information-architecture/employee-app": {
+              "mobile": [
+                "design:information-architecture/employee-app#cart",
+                "design:information-architecture/employee-app#purchase-detail"
+              ]
+            }
+          }
         },
         {
           "id": "look-back",
@@ -102,22 +138,25 @@
             "links": [],
             "assumptions": 2
           },
-          "surfaces": [],
-          "placements": {}
+          "surfaces": [
+            {
+              "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+              "anchor": "purchase-detail-detail"
+            }
+          ],
+          "placements": {
+            "design:information-architecture/employee-app": {
+              "mobile": [
+                "design:information-architecture/employee-app#purchase-detail"
+              ]
+            }
+          }
         }
       ],
-      "opportunities": [
-        {
-          "id": "move-to-new-phone",
-          "stage": "sign-in",
-          "change": "Give an employee who changes phone a clear way to carry on, given one sign-in on one phone at a time",
-          "owner": "design",
-          "metric": null,
-          "openQuestion": "how often do employees change phone",
-          "surfaces": []
-        }
-      ],
-      "citedBy": []
+      "opportunities": [],
+      "citedBy": [
+        "design:information-architecture/employee-app"
+      ]
     }
   ]
 }

@@ -11,22 +11,33 @@ reports a mismatch between this file and the current page set.
 
 | Page | Cited by |
 |---|---|
-| `information-architecture\employee-app.md` | `design:journeys/employee-record-a-purchase.md` (related) |
-| `journeys\employee-record-a-purchase.md` | — |
-| `layout-patterns\employee-app-shell.md` | `design:information-architecture/employee-app.md` (layout-patterns) |
+| `components\sundal\employee-app\button.md` | `design:components/sundal/employee-app/message-block.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\cart-bar.md` | `design:layout-patterns/employee-app-shell.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\category-card.md` | `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\item-card.md` | `design:components/sundal/employee-app/line-notice.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\line-notice.md` | `design:components/sundal/employee-app/item-card.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\message-block.md` | `design:components/sundal/employee-app/button.md` (related), `design:components/sundal/employee-app/toast.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\page-header.md` | `design:layout-patterns/employee-app-shell.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\quantity-stepper.md` | `design:components/sundal/employee-app/cart-bar.md` (related), `design:components/sundal/employee-app/item-card.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\tab-bar.md` | `design:layout-patterns/employee-app-shell.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `components\sundal\employee-app\toast.md` | `design:components/sundal/employee-app/message-block.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `information-architecture\employee-app.md` | `design:components/sundal/employee-app/tab-bar.md` (related), `design:journeys/employee-record-a-purchase.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `journeys\employee-record-a-purchase.md` | `design:information-architecture/employee-app.md` (journeys), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `layout-patterns\employee-app-shell.md` | `design:components/sundal/employee-app/cart-bar.md` (related), `design:components/sundal/employee-app/page-header.md` (related), `design:components/sundal/employee-app/tab-bar.md` (related), `design:information-architecture/employee-app.md` (layout-patterns), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related) |
+| `surfaces\sundal\employee-app\record-a-purchase.md` | `design:components/sundal/employee-app/button.md` (related), `design:components/sundal/employee-app/cart-bar.md` (related), `design:components/sundal/employee-app/category-card.md` (related), `design:components/sundal/employee-app/item-card.md` (related), `design:components/sundal/employee-app/line-notice.md` (related), `design:components/sundal/employee-app/message-block.md` (related), `design:components/sundal/employee-app/page-header.md` (related), `design:components/sundal/employee-app/quantity-stepper.md` (related), `design:components/sundal/employee-app/toast.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` |
 
 ## domain
 
 | Page | Cited by |
 |---|---|
-| `entities\cart.md` | `design:information-architecture/employee-app.md`, `domain:entities/purchase.md` |
+| `entities\cart.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/purchase.md` |
 | `entities\catalog.md` | `design:information-architecture/employee-app.md` |
-| `entities\category.md` | `design:information-architecture/employee-app.md`, `domain:entities/catalog.md`, `domain:entities/item.md` |
-| `entities\entry.md` | `domain:entities/item.md`, `domain:entities/purchase.md` |
-| `entities\item.md` | `design:information-architecture/employee-app.md`, `domain:entities/cart.md`, `domain:entities/catalog.md`, `domain:entities/category.md`, `domain:entities/entry.md` |
+| `entities\category.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/catalog.md`, `domain:entities/item.md` |
+| `entities\entry.md` | `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/item.md`, `domain:entities/purchase.md` |
+| `entities\item.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/cart.md`, `domain:entities/catalog.md`, `domain:entities/category.md`, `domain:entities/entry.md` |
 | `entities\otp.md` | `design:information-architecture/employee-app.md` |
 | `entities\profile.md` | `design:information-architecture/employee-app.md`, `domain:entities/otp.md` |
-| `entities\purchase.md` | `design:information-architecture/employee-app.md`, `domain:entities/cart.md`, `domain:entities/entry.md` |
+| `entities\purchase.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/cart.md`, `domain:entities/entry.md` |
 
 ## product
 
@@ -34,9 +45,9 @@ reports a mismatch between this file and the current page set.
 |---|---|
 | `app-base.md` | `design:layout-patterns/employee-app-shell.md` (realizes) |
 | `catalogs\roles.md` | `design:information-architecture/employee-app.md` |
-| `features\sundal\employee-app\record-a-purchase.md` | `product:flows/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
-| `flows\sundal\employee-app\record-a-purchase.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `product:features/sundal/employee-app/record-a-purchase.md` |
+| `features\sundal\employee-app\record-a-purchase.md` | `design:components/sundal/employee-app/cart-bar.md` (realizes), `design:components/sundal/employee-app/category-card.md` (realizes), `design:components/sundal/employee-app/item-card.md` (realizes), `design:components/sundal/employee-app/line-notice.md` (realizes), `design:components/sundal/employee-app/message-block.md` (realizes), `design:components/sundal/employee-app/quantity-stepper.md` (realizes), `design:surfaces/sundal/employee-app/record-a-purchase.md` (feature, related), `product:flows/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
+| `flows\sundal\employee-app\record-a-purchase.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (flows, related), `product:features/sundal/employee-app/record-a-purchase.md` |
 | `modules\sundal.md` | `product:app-base.md`, `product:catalogs/roles.md`, `product:modules/sundal/employee-app.md` (related) |
-| `modules\sundal\employee-app.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `product:app-base.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:personas/employee.md` (related) |
-| `personas\employee.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (actor, related), `product:features/sundal/employee-app/record-a-purchase.md`, `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
+| `modules\sundal\employee-app.md` | `design:components/sundal/employee-app/button.md` (realizes), `design:components/sundal/employee-app/message-block.md` (related), `design:components/sundal/employee-app/page-header.md` (realizes), `design:components/sundal/employee-app/quantity-stepper.md` (related), `design:components/sundal/employee-app/tab-bar.md` (realizes), `design:components/sundal/employee-app/toast.md` (realizes), `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md`, `product:app-base.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:personas/employee.md` (related) |
+| `personas\employee.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (actor, related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `product:features/sundal/employee-app/record-a-purchase.md`, `product:flows/sundal/employee-app/record-a-purchase.md`, `product:modules/sundal.md`, `product:modules/sundal/employee-app.md` |
 | `prds\sundal.md` | `design:information-architecture/employee-app.md`, `design:journeys/employee-record-a-purchase.md` (related), `product:catalogs/roles.md`, `product:features/sundal/employee-app/record-a-purchase.md` (related), `product:modules/sundal.md` (related), `product:personas/employee.md` (related) |
