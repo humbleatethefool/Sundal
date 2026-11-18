@@ -12,7 +12,7 @@ Sundal is a mobile-first app that lets snack shop vendors manage stock, see what
 
 - Each company's purchases are totalled per month. The month closes automatically at midnight Indian time on its last day, and a closed month never changes. A void of an entry in a closed month appears in the open month as a labeled line.
 - Each purchase keeps the price shown when it was made.
-- The vendor builds the catalog: creates a category and names it, then adds items to it. Each item has a name, an image, a description, a stock quantity, and a price per item. Categories hold items directly, with no subcategories.
+- The vendor builds the catalog: creates a category, names it and uploads its image, then adds items to it.
 - Employees never see the stock number. Recording a purchase takes its quantity out of stock, and an employee cannot add more of an item than its stock allows; an item at zero shows "Out of stock". Voiding an entry returns its quantity to stock. Only the vendor changes stock counts directly.
 - The employee's purchase cart is kept on their account until they record it or empty it, and shows the same items at the next sign-in. The cart bar is hidden while the cart is empty.
 - Employees change quantity with + and − buttons only, one per tap, with no typing and no repeat on hold. The vendor's stock quantity is a number field with + and − buttons.
