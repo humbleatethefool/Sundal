@@ -1,0 +1,20 @@
+{
+  "formatVersion": 4,
+  "slug": "purchase-detail",
+  "heading": "Purchase detail",
+  "program": "root = Screen([page])\npage = Stack([header, confirmation, linesCard, totals, details, tabs], false, \"3\")\nheader = PageHeader(\"Purchase\")\nconfirmation = Alert(\"Your purchase has been recorded\", \"success\")\nlinesCard = Card(null, null, [count, l1, l2, l3])\ncount = Heading(\"3 items in this purchase\", \"6\")\nl1 = PurchaseLine(\"Lemon soda\", \"₹15 x 2\", \"₹30\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f6d28b'/%3E%3C/svg%3E\")\nl2 = PurchaseLine(\"Cold coffee\", \"₹35 x 1\", \"₹35\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f1b5a8'/%3E%3C/svg%3E\")\nl3 = PurchaseLine(\"Mango juice\", \"₹25 x 3\", \"₹75\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23b7dcc0'/%3E%3C/svg%3E\")\ntotals = DetailCard(null, [{label: \"Items\", value: \"3\"}, {label: \"Total\", value: \"₹140\", strong: true}])\ndetails = DetailCard(\"Purchase details\", [{label: \"Recorded on\", value: \"Wed, 18 Nov 2026, 3:42 pm\"}])\ntabs = TabBar(false, true, false)",
+  "source": {
+    "threadId": "89475afe-1003-4941-a5e8-71064a6060c9",
+    "designId": "c74d03d9-0f5f-4b89-8495-344ec28a987b",
+    "version": 4
+  },
+  "surface": "design/surfaces/sundal/employee-app/record-a-purchase.md",
+  "surfaceName": "Purchase detail",
+  "platform": "mobile",
+  "size": {
+    "kind": "phone",
+    "width": 390,
+    "height": 844
+  },
+  "savedAt": "2026-11-19T11:43:52.531Z"
+}

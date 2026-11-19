@@ -1,0 +1,20 @@
+{
+  "formatVersion": 4,
+  "slug": "categories",
+  "heading": "Categories",
+  "program": "root = Screen([page])\npage = Stack([header, content, cartBar, tabBar], false, \"3\")\nheader = PageHeader(\"Categories\")\ncontent = Row([k1, k2, k3, k4, k5], \"2\", \"3\")\nk1 = Column([card1])\nk2 = Column([card2])\nk3 = Column([card3])\nk4 = Column([card4])\nk5 = Column([card5])\ncard1 = CategoryCard(\"blue\", null, [link1])\ncard2 = CategoryCard(\"peach\", null, [link2])\ncard3 = CategoryCard(\"coral\", null, [link3])\ncard4 = CategoryCard(\"yellow\", null, [link4])\ncard5 = CategoryCard(\"lavender\", null, [link5])\nlink1 = Button(\"Beverages\", \"link\")\nlink2 = Button(\"Tea and coffee\", \"link\")\nlink3 = Button(\"Cake\", \"link\")\nlink4 = Button(\"Biscuits\", \"link\")\nlink5 = Button(\"Sweets\", \"link\")\ncartBar = CartBar(\"6 items · ₹140\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f6d28b'/%3E%3C/svg%3E\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f1b5a8'/%3E%3C/svg%3E\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23b7dcc0'/%3E%3C/svg%3E\", [viewCart])\nviewCart = Button(\"View cart\", \"link\")\ntabBar = TabBar(true, false, false)",
+  "source": {
+    "threadId": "ec566007-ee67-46fb-8ef6-a7494c7f88ec",
+    "designId": "c5c668fa-00c4-4cf3-ae10-7bff5a0c587b",
+    "version": 8
+  },
+  "surface": "design/surfaces/sundal/employee-app/record-a-purchase.md",
+  "surfaceName": "Categories",
+  "platform": "mobile",
+  "size": {
+    "kind": "phone",
+    "width": 390,
+    "height": 844
+  },
+  "savedAt": "2026-11-19T11:42:23.835Z"
+}

@@ -1,0 +1,20 @@
+{
+  "formatVersion": 4,
+  "slug": "category-items",
+  "heading": "Category items",
+  "program": "root = Screen([page])\npage = Stack([header, content, cartBar, tabBar], false, \"3\")\nheader = PageHeader(\"Beverages\", true, [back])\nback = Button(\"Back\", \"link\")\ncontent = Row([k1, k2, k3, k4, k5], \"2\", \"3\")\nk1 = Column([card1])\nk2 = Column([card2])\nk3 = Column([card3])\nk4 = Column([card4])\nk5 = Column([card5])\ncard1 = ItemCard(\"Lemon soda\", \"Fizzy lemon drink, served cold.\", \"₹15\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f6d28b'/%3E%3C/svg%3E\", [QuantityStepper(\"Lemon soda\", \"2\")])\ncard2 = ItemCard(\"Cold coffee\", \"Creamy iced coffee with a hint of chocolate.\", \"₹35\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f1b5a8'/%3E%3C/svg%3E\", [QuantityStepper(\"Cold coffee\", \"1\")])\ncard3 = ItemCard(\"Mango juice\", \"Thick mango juice made from ripe mangoes.\", \"₹25\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23b7dcc0'/%3E%3C/svg%3E\", [QuantityStepper(\"Mango juice\", \"3\", true)])\ncard4 = ItemCard(\"Iced tea\", \"Lemon iced tea, lightly sweet.\", \"₹30\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f6d28b'/%3E%3C/svg%3E\", [QuantityStepper(\"Iced tea\")])\ncard5 = ItemCard(\"Bottled water\", \"One litre of packaged drinking water.\", \"₹20\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f1b5a8'/%3E%3C/svg%3E\", [Badge(\"Out of stock\", \"secondary\")])\ncartBar = CartBar(\"6 items · ₹140\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f6d28b'/%3E%3C/svg%3E\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f1b5a8'/%3E%3C/svg%3E\", \"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23b7dcc0'/%3E%3C/svg%3E\", [viewCart])\nviewCart = Button(\"View cart\", \"link\")\ntabBar = TabBar(true, false, false)",
+  "source": {
+    "threadId": "7d4c8212-5c55-44a5-bc41-a3f48648480c",
+    "designId": "43c45027-f85a-4bdd-98f5-e253682e5a40",
+    "version": 5
+  },
+  "surface": "design/surfaces/sundal/employee-app/record-a-purchase.md",
+  "surfaceName": "Category items",
+  "platform": "mobile",
+  "size": {
+    "kind": "phone",
+    "width": 390,
+    "height": 844
+  },
+  "savedAt": "2026-11-19T11:43:04.363Z"
+}
