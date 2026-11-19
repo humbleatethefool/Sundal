@@ -1,0 +1,48 @@
+{
+  "formatVersion": 5,
+  "id": "quantity-stepper",
+  "name": "Quantity stepper",
+  "group": "components",
+  "description": "The control that sets how many of an item an employee takes, one step per tap: the Add button while the quantity is zero, and a solid green − quantity + group once the item is in the cart.",
+  "page": "design:components/sundal/employee-app/quantity-stepper",
+  "props": {
+    "type": "object",
+    "properties": {
+      "item": {
+        "type": "string",
+        "description": "The item's name, used to name the buttons for screen readers."
+      },
+      "quantity": {
+        "type": "string",
+        "description": "The quantity in the cart, such as \"2\". Leave it out when the quantity is zero, to show the Add button."
+      },
+      "atLimit": {
+        "type": "boolean",
+        "description": "The quantity has reached the available stock, so + is turned off."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "quantity-stepper",
+      "props": {
+        "item": "Masala chips"
+      }
+    },
+    {
+      "component": "quantity-stepper",
+      "props": {
+        "item": "Masala chips",
+        "quantity": "1"
+      }
+    },
+    {
+      "component": "quantity-stepper",
+      "props": {
+        "item": "Masala chips",
+        "quantity": "3",
+        "atLimit": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": 5,
+  "id": "screen",
+  "name": "Screen",
+  "group": "components",
+  "description": "The frame of an employee-app screen: it paints the page color behind the content and leaves room at the bottom, so the content ends clear of the fixed cart bar, action bar and tab bar.",
+  "page": "design:components/sundal/employee-app/screen",
+  "props": {
+    "type": "object",
+    "properties": {
+      "children": {
+        "type": "array",
+        "description": "The screen's content, from the page header to the last block. The fixed bars sit inside it too."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "screen",
+      "props": {
+        "children": [
+          {
+            "component": "heading",
+            "props": {
+              "text": "A screen",
+              "level": "1"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

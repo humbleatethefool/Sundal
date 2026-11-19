@@ -1,0 +1,80 @@
+{
+  "formatVersion": 5,
+  "id": "category-card",
+  "name": "Category card",
+  "group": "components",
+  "description": "One of the vendor's categories: a pale colored rounded box, with a different color for each category, and the category's name as a link below it that opens the category's items.",
+  "page": "design:components/sundal/employee-app/category-card",
+  "props": {
+    "type": "object",
+    "properties": {
+      "tone": {
+        "type": "string",
+        "enum": [
+          "yellow",
+          "blue",
+          "coral",
+          "lavender",
+          "peach",
+          "teal"
+        ],
+        "description": "The box's color, a tone from the category palette. Each category takes a different one. Left out, the box is yellow."
+      },
+      "image": {
+        "type": "string",
+        "description": "The category's picture, shown inside the box. Leave it out to show the plain colored box."
+      },
+      "children": {
+        "type": "array",
+        "description": "The link under the box: a Button of the link variant whose label is the category's name. It opens the category's items."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "category-card",
+      "props": {
+        "tone": "blue",
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "Beverages",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "category-card",
+      "props": {
+        "tone": "peach",
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "Tea and coffee",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "category-card",
+      "props": {
+        "tone": "coral",
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "Cake",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

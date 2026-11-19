@@ -1,0 +1,49 @@
+{
+  "formatVersion": 5,
+  "id": "purchase-line",
+  "name": "Purchase line",
+  "group": "components",
+  "description": "One item of a recorded purchase: a rounded photo, the item's name with its price and quantity beneath, and the line's total on the right. It holds no control.",
+  "page": "design:components/sundal/employee-app/purchase-line",
+  "props": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "The item's name."
+      },
+      "detail": {
+        "type": "string",
+        "description": "The price of one item and the quantity, such as \"₹20 x 2\"."
+      },
+      "total": {
+        "type": "string",
+        "description": "The line's total, such as \"₹40\"."
+      },
+      "image": {
+        "type": "string",
+        "description": "The item's photo. Leave it out to show a plain tile."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "purchase-line",
+      "props": {
+        "name": "Masala chips",
+        "detail": "₹20 x 2",
+        "total": "₹40",
+        "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f6d28b'/%3E%3Ccircle cx='60' cy='60' r='26' fill='%23ffffff' fill-opacity='.55'/%3E%3C/svg%3E"
+      }
+    },
+    {
+      "component": "purchase-line",
+      "props": {
+        "name": "Roasted peanuts, salted and roasted in small batches",
+        "detail": "₹15 x 1",
+        "total": "₹15",
+        "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='100%25' height='100%25' fill='%23f1b5a8'/%3E%3Ccircle cx='60' cy='60' r='26' fill='%23ffffff' fill-opacity='.55'/%3E%3C/svg%3E"
+      }
+    }
+  ]
+}

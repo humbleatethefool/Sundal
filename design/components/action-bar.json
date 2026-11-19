@@ -1,0 +1,34 @@
+{
+  "formatVersion": 5,
+  "id": "action-bar",
+  "name": "Action bar",
+  "group": "components",
+  "description": "A bar fixed to the bottom of the phone, directly above the tab bar, that holds the screen's one main action as a full-width button.",
+  "page": "design:components/sundal/employee-app/action-bar",
+  "props": {
+    "type": "object",
+    "properties": {
+      "children": {
+        "type": "array",
+        "description": "The screen's main action: one Button, such as \"Record purchase\". It fills the bar's width."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "action-bar",
+      "props": {
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "Record purchase",
+              "variant": "primary",
+              "size": "lg"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

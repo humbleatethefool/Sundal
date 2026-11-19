@@ -1,0 +1,50 @@
+{
+  "formatVersion": 5,
+  "id": "tab-bar",
+  "name": "Tab bar",
+  "group": "components",
+  "description": "The employee app's main navigation: a floating white card fixed to the bottom of the phone, with Browse, Logs and Profile tabs, each an icon above its label.",
+  "props": {
+    "type": "object",
+    "properties": {
+      "browseSelected": {
+        "type": "boolean",
+        "description": "Browse is the selected tab."
+      },
+      "logsSelected": {
+        "type": "boolean",
+        "description": "Logs is the selected tab."
+      },
+      "profileSelected": {
+        "type": "boolean",
+        "description": "Profile is the selected tab."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "tab-bar",
+      "props": {
+        "browseSelected": true,
+        "logsSelected": false,
+        "profileSelected": false
+      }
+    },
+    {
+      "component": "tab-bar",
+      "props": {
+        "browseSelected": false,
+        "logsSelected": true,
+        "profileSelected": false
+      }
+    },
+    {
+      "component": "tab-bar",
+      "props": {
+        "browseSelected": false,
+        "logsSelected": false,
+        "profileSelected": true
+      }
+    }
+  ]
+}

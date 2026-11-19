@@ -1,0 +1,65 @@
+{
+  "formatVersion": 5,
+  "id": "page-header",
+  "name": "Page header",
+  "group": "components",
+  "description": "The strip at the top of an employee-app screen: the screen's title in bold, and, on a screen below a tab, a round Back button at its start.",
+  "page": "design:components/sundal/employee-app/page-header",
+  "props": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "The screen's title."
+      },
+      "back": {
+        "type": "boolean",
+        "description": "Show the round Back button. Turn it on for Category items, and for Purchase detail when it was opened from Logs."
+      },
+      "children": {
+        "type": "array",
+        "description": "The Back button: a Button of the link variant whose label is \"Back\". It is stretched invisibly over the round button. Needed only when back is on."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "page-header",
+      "props": {
+        "title": "Categories"
+      }
+    },
+    {
+      "component": "page-header",
+      "props": {
+        "title": "Beverages",
+        "back": true,
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "Back",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "page-header",
+      "props": {
+        "title": "Purchase",
+        "back": true,
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "Back",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

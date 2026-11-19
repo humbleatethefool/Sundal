@@ -1,0 +1,68 @@
+{
+  "formatVersion": 5,
+  "id": "detail-card",
+  "name": "Detail card",
+  "group": "components",
+  "description": "A white rounded card with an optional title and rows of a label and a value. A row can be strong, in bold with a rule above it, for a total.",
+  "page": "design:components/sundal/employee-app/detail-card",
+  "props": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "The card's title. Leave it out for a card with no title."
+      },
+      "rows": {
+        "type": "array",
+        "description": "The rows, each with a label and a value, and strong set for a total.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "label": {
+              "type": "string",
+              "description": "The row's label."
+            },
+            "value": {
+              "type": "string",
+              "description": "The row's value."
+            },
+            "strong": {
+              "type": "boolean",
+              "description": "Show the row in bold with a rule above it."
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "detail-card",
+      "props": {
+        "rows": [
+          {
+            "label": "Items",
+            "value": "3"
+          },
+          {
+            "label": "Total",
+            "value": "₹95",
+            "strong": true
+          }
+        ]
+      }
+    },
+    {
+      "component": "detail-card",
+      "props": {
+        "title": "Purchase details",
+        "rows": [
+          {
+            "label": "Recorded on",
+            "value": "Wed, 18 Nov 2026, 3:42 pm"
+          }
+        ]
+      }
+    }
+  ]
+}

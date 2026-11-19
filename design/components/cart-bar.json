@@ -1,0 +1,86 @@
+{
+  "formatVersion": 5,
+  "id": "cart-bar",
+  "name": "Cart bar",
+  "group": "components",
+  "description": "The employee app's cart bar: a green pill fixed above the tab bar, with up to three overlapping item photos, \"View cart\", the item count and total, and a chevron. A button stretched invisibly over the whole pill opens the Cart.",
+  "page": "design:components/sundal/employee-app/cart-bar",
+  "props": {
+    "type": "object",
+    "properties": {
+      "summary": {
+        "type": "string",
+        "description": "The item count and total, such as \"3 items · ₹95\"."
+      },
+      "image1": {
+        "type": "string",
+        "description": "The photo of the first item in the cart. Leave it out when the cart has no item."
+      },
+      "image2": {
+        "type": "string",
+        "description": "The photo of the second item. Leave it out when the cart has fewer than two items."
+      },
+      "image3": {
+        "type": "string",
+        "description": "The photo of the third item. Leave it out when the cart has fewer than three items."
+      },
+      "children": {
+        "type": "array",
+        "description": "The button that opens the Cart: a Button of the link variant labeled \"View cart\". It is stretched invisibly over the whole pill."
+      }
+    }
+  },
+  "examples": [
+    {
+      "component": "cart-bar",
+      "props": {
+        "summary": "1 item · ₹20",
+        "image1": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='100%25' height='100%25' fill='%23dee2e6'/%3E%3C/svg%3E",
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "View cart",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "cart-bar",
+      "props": {
+        "summary": "2 items · ₹60",
+        "image1": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='100%25' height='100%25' fill='%23dee2e6'/%3E%3C/svg%3E",
+        "image2": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='100%25' height='100%25' fill='%23ffe08a'/%3E%3C/svg%3E",
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "View cart",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "component": "cart-bar",
+      "props": {
+        "summary": "3 items · ₹95",
+        "image1": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='100%25' height='100%25' fill='%23dee2e6'/%3E%3C/svg%3E",
+        "image2": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='100%25' height='100%25' fill='%23ffe08a'/%3E%3C/svg%3E",
+        "image3": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='100%25' height='100%25' fill='%23a3cfbb'/%3E%3C/svg%3E",
+        "children": [
+          {
+            "component": "button",
+            "props": {
+              "label": "View cart",
+              "variant": "link"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
