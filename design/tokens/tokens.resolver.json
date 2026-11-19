@@ -1,0 +1,83 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/resolver.json",
+  "version": "2025.10",
+  "sets": {
+    "primitives": {
+      "sources": [
+        {
+          "$ref": "primitives.tokens.json"
+        }
+      ]
+    },
+    "semantic": {
+      "sources": [
+        {
+          "$ref": "semantic.tokens.json"
+        }
+      ]
+    },
+    "components": {
+      "sources": [
+        {
+          "$ref": "components.tokens.json"
+        }
+      ]
+    },
+    "project": {
+      "sources": [
+        {
+          "$ref": "project.tokens.json"
+        }
+      ]
+    },
+    "pack": {
+      "sources": [
+        {
+          "$ref": "pack.tokens.json"
+        }
+      ]
+    }
+  },
+  "modifiers": {
+    "mode": {
+      "contexts": {
+        "light": [
+          {
+            "$ref": "semantic-light.tokens.json"
+          }
+        ],
+        "dark": [
+          {
+            "$ref": "semantic-dark.tokens.json"
+          }
+        ]
+      },
+      "default": "light"
+    }
+  },
+  "resolutionOrder": [
+    {
+      "$ref": "#/sets/primitives"
+    },
+    {
+      "$ref": "#/sets/semantic"
+    },
+    {
+      "$ref": "#/modifiers/mode"
+    },
+    {
+      "$ref": "#/sets/components"
+    },
+    {
+      "$ref": "#/sets/project"
+    },
+    {
+      "$ref": "#/sets/pack"
+    }
+  ],
+  "$extensions": {
+    "dev.vyasa.ui-kit": {
+      "formatVersion": 1
+    }
+  }
+}

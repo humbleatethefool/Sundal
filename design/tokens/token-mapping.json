@@ -1,0 +1,26 @@
+{
+  "formatVersion": 1,
+  "names": {
+    "category.yellow": "project.category.yellow",
+    "category.blue": "project.category.blue",
+    "category.coral": "project.category.coral",
+    "category.lavender": "project.category.lavender",
+    "category.peach": "project.category.peach",
+    "category.teal": "project.category.teal",
+    "surface.page": "project.surface.page",
+    "surface.card": "project.surface.card",
+    "size.tap-min": "project.size.tap-min",
+    "size.thumb": "project.size.thumb",
+    "size.thumb-sm": "project.size.thumb-sm",
+    "size.thumb-overlap": "project.size.thumb-overlap",
+    "size.round-button": "project.size.round-button",
+    "size.chevron": "project.size.chevron",
+    "size.bar-offset": "project.size.bar-offset",
+    "size.bottom-room": "project.size.bottom-room",
+    "btn-padding-y": "component.btn-padding-y",
+    "btn-padding-y-sm": "component.btn-padding-y-sm",
+    "btn-font-weight": "component.btn-font-weight",
+    "badge-font-size": "component.badge-font-size"
+  },
+  "modes": {}
+}

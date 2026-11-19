@@ -1,0 +1,31 @@
+{
+  "btn-padding-y": {
+    "$type": "dimension",
+    "$value": {
+      "value": 9,
+      "unit": "px"
+    },
+    "$description": "Vertical padding of a button, so a regular button is 44 px tall."
+  },
+  "btn-padding-y-sm": {
+    "$type": "dimension",
+    "$value": {
+      "value": 10.5,
+      "unit": "px"
+    },
+    "$description": "Vertical padding of a small button, so it is 44 px tall."
+  },
+  "btn-font-weight": {
+    "$type": "fontWeight",
+    "$value": 600,
+    "$description": "Weight of a button label, so Add, Record purchase and the rest agree."
+  },
+  "badge-font-size": {
+    "$type": "dimension",
+    "$value": {
+      "value": 0.875,
+      "unit": "rem"
+    },
+    "$description": "Size of badge text, so the smallest text on a screen is 14 px."
+  }
+}

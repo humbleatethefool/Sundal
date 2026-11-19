@@ -1,0 +1,47 @@
+{
+  "border-radius": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "The one corner radius of the design system: cards, boxes, photos, alerts and buttons."
+  },
+  "border-radius-sm": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "Kept equal to the default radius, so no component has a smaller corner."
+  },
+  "border-radius-lg": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "Kept equal to the default radius, so no component has a larger corner."
+  },
+  "border-radius-xl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "Kept equal to the default radius."
+  },
+  "border-radius-xxl": {
+    "$type": "dimension",
+    "$value": {
+      "value": 16,
+      "unit": "px"
+    },
+    "$description": "Kept equal to the default radius."
+  },
+  "headings-font-weight": {
+    "$type": "fontWeight",
+    "$value": 700,
+    "$description": "Weight of every heading, so a section title reads the same everywhere."
+  }
+}

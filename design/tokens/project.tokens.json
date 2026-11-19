@@ -1,0 +1,179 @@
+{
+  "category": {
+    "$description": "The pale box colors a category card can take, one color for each category.",
+    "yellow": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.9137254901960784,
+          0.7215686274509804
+        ],
+        "hex": "#FFE9B8"
+      },
+      "$description": "Warm yellow category box."
+    },
+    "blue": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8352941176470589,
+          0.9098039215686274,
+          0.9686274509803922
+        ],
+        "hex": "#D5E8F7"
+      },
+      "$description": "Soft blue category box."
+    },
+    "coral": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.9764705882352941,
+          0.8392156862745098,
+          0.8156862745098039
+        ],
+        "hex": "#F9D6D0"
+      },
+      "$description": "Soft coral category box."
+    },
+    "lavender": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8901960784313725,
+          0.8549019607843137,
+          0.9529411764705882
+        ],
+        "hex": "#E3DAF3"
+      },
+      "$description": "Soft lavender category box."
+    },
+    "peach": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.984313725490196,
+          0.8784313725490196,
+          0.7647058823529411
+        ],
+        "hex": "#FBE0C3"
+      },
+      "$description": "Soft peach category box."
+    },
+    "teal": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.8470588235294118,
+          0.9372549019607843,
+          0.9098039215686274
+        ],
+        "hex": "#D8EFE8"
+      },
+      "$description": "Soft teal category box."
+    }
+  },
+  "surface": {
+    "$description": "The two backgrounds of an employee-app screen: the page, and the cards that sit on it.",
+    "page": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#FFFFFF"
+      },
+      "$description": "The screen background, white."
+    },
+    "card": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#FFFFFF"
+      },
+      "$description": "The fill of a card, a bar or a round button that sits on the page."
+    }
+  },
+  "size": {
+    "$description": "Sizes shared by controls and parts.",
+    "tap-min": {
+      "$type": "dimension",
+      "$value": {
+        "value": 44,
+        "unit": "px"
+      },
+      "$description": "The least height of a button an employee taps."
+    },
+    "thumb": {
+      "$type": "dimension",
+      "$value": {
+        "value": 64,
+        "unit": "px"
+      },
+      "$description": "The photo of an item on a list line."
+    },
+    "thumb-sm": {
+      "$type": "dimension",
+      "$value": {
+        "value": 40,
+        "unit": "px"
+      },
+      "$description": "The small round item photos on the cart bar."
+    },
+    "thumb-overlap": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      },
+      "$description": "How far each cart bar photo overlaps the one before it."
+    },
+    "round-button": {
+      "$type": "dimension",
+      "$value": {
+        "value": 44,
+        "unit": "px"
+      },
+      "$description": "A round button an employee taps, such as Back."
+    },
+    "chevron": {
+      "$type": "dimension",
+      "$value": {
+        "value": 36,
+        "unit": "px"
+      },
+      "$description": "The chevron chip at the end of the cart bar."
+    },
+    "bar-offset": {
+      "$type": "dimension",
+      "$value": {
+        "value": 104,
+        "unit": "px"
+      },
+      "$description": "The distance from the bottom of the screen to the cart bar or action bar, which clears the tab bar."
+    },
+    "bottom-room": {
+      "$type": "dimension",
+      "$value": {
+        "value": 168,
+        "unit": "px"
+      },
+      "$description": "The room a screen leaves at the bottom so its content ends clear of the fixed bars."
+    }
+  }
+}
