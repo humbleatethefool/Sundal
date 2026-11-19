@@ -1,0 +1,74 @@
+{
+  "formatVersion": 3,
+  "platform": "mobile",
+  "library": {
+    "name": "app",
+    "type": "html",
+    "manifestHash": "b2a776d1a737823e"
+  },
+  "inputs": {
+    "designs": [
+      {
+        "slug": "cart",
+        "hash": "7e2c96c111c5f6f3"
+      },
+      {
+        "slug": "categories",
+        "hash": "32d7ddad357a4640"
+      },
+      {
+        "slug": "category-items",
+        "hash": "66cd39d214eec676"
+      },
+      {
+        "slug": "purchase-detail",
+        "hash": "20b6bc35244abe31"
+      }
+    ],
+    "pages": [
+      {
+        "path": "design/surfaces/sundal/employee-app/record-a-purchase.md",
+        "updated": "2026-11-19"
+      },
+      {
+        "path": "product/flows/sundal/employee-app/record-a-purchase.md",
+        "updated": "2026-11-16"
+      }
+    ],
+    "designSystem": "94e085e99134aaaf",
+    "choices": null,
+    "shell": "89e049200cb4e8d9",
+    "samples": [],
+    "sampleValues": null
+  },
+  "screens": [
+    {
+      "name": "Categories",
+      "slug": "categories-list",
+      "source": "design",
+      "design": "categories",
+      "alternatives": []
+    },
+    {
+      "name": "Category items",
+      "slug": "category-items-list",
+      "source": "design",
+      "design": "category-items",
+      "alternatives": []
+    },
+    {
+      "name": "Cart",
+      "slug": "cart-list",
+      "source": "design",
+      "design": "cart",
+      "alternatives": []
+    },
+    {
+      "name": "Purchase detail",
+      "slug": "purchase-detail-detail",
+      "source": "design",
+      "design": "purchase-detail",
+      "alternatives": []
+    }
+  ]
+}
