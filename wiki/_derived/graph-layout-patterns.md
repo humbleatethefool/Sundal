@@ -6,4 +6,4 @@ Every `layout-pattern` page, the platforms and surface kinds it suits, and how m
 
 | Pattern | Platforms | Kinds | Regions | Surfaces | Applications |
 |---|---|---|---|---|---|
-| `design:layout-patterns/employee-app-shell` | mobile | list, detail | 4 | 4 | 1 |
+| `design:layout-patterns/employee-app-shell` | mobile | list, detail | 5 | 4 | 1 |

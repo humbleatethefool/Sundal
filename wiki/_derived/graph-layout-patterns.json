@@ -21,7 +21,7 @@
         {
           "id": "header",
           "name": "Header",
-          "role": "The page title, and a Back control on Items and Purchase",
+          "role": "The page title, and a Back control on Items and on Purchase when it is opened from Logs",
           "landmark": {
             "role": "banner",
             "note": null
@@ -46,9 +46,18 @@
           }
         },
         {
+          "id": "action-bar",
+          "name": "Action bar",
+          "role": "The screen's one main action as a full-width button, such as Record purchase on the Cart. It takes the cart bar's place and shows only on a screen with such an action.",
+          "landmark": {
+            "role": "region",
+            "note": "labeled \"Actions\""
+          }
+        },
+        {
           "id": "tab-bar",
           "name": "Tab bar",
-          "role": "The Browse, Logs and Profile tabs",
+          "role": "The Browse, Logs and Profile tabs, each an icon above its label, in a floating card fixed to the bottom of the screen",
           "landmark": {
             "role": "navigation",
             "note": "labeled \"Main\""
@@ -57,22 +66,22 @@
       ],
       "surfaces": [
         {
-          "key": "design:surfaces/sundal/employee-app/cart",
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
           "anchor": "cart-list",
           "platform": null
         },
         {
-          "key": "design:surfaces/sundal/employee-app/categories",
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
           "anchor": "categories-list",
           "platform": null
         },
         {
-          "key": "design:surfaces/sundal/employee-app/category-items",
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
           "anchor": "category-items-list",
           "platform": null
         },
         {
-          "key": "design:surfaces/sundal/employee-app/purchase-detail",
+          "key": "design:surfaces/sundal/employee-app/record-a-purchase",
           "anchor": "purchase-detail-detail",
           "platform": null
         }

@@ -118,7 +118,7 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 ## Wayfinding
 
 - **You are here.** Every page shows its title, and the tab it belongs to is the selected one in the tab bar. Category items shows the category's name as its title, and Purchase shows its own title.
-- **Going back.** Below the tabs, Category items and Purchase each have a Back control that returns to the page above, in place of breadcrumbs. Breadcrumbs would take space a phone doesn't have, and the structure is only two levels deep.
+- **Going back.** Below the tabs, Category items, and Purchase when it is opened from Logs, each have a Back control that returns to the page above, in place of breadcrumbs. After recording, Purchase has no Back and the employee leaves by the tab bar. Breadcrumbs would take space a phone doesn't have, and the structure is only two levels deep.
 - **Landing.** A signed-in employee opening the app sees the Categories list, with the Browse tab selected. A signed-out employee sees the mobile number screen, and lands on Categories after the OTP.
 - **Empty states point to the next step.** An empty catalog shows the empty message from the task flow (E1). An empty Logs list points the employee to Browse to record a first purchase.
 - **Errors and recovery.** Offline shows "You're offline" with Retry. A failed save shows "Something went wrong. Please try again." Both are in [[product:modules/sundal/employee-app]] and [[product:flows/sundal/employee-app/record-a-purchase]].
@@ -141,6 +141,7 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 | Purchase detail sits under Logs only. Landing on it after recording is a flow step, not a second parent. | proposed | |
 | Cart is a root node reached by utility navigation | proposed | |
 | A Back control replaces breadcrumbs | proposed | |
+| The tabs use a grid for Browse, a receipt for Logs and a person for Profile, filled when selected and an outline otherwise | proposed | |
 | An empty Logs list points the employee to Browse | proposed | |
 | A signed-out employee opens on the mobile number screen | proposed | |
 | Log out ends the saved sign-in | proposed | |
@@ -151,7 +152,7 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 |---|---|---|
 | Can employees find a past purchase and an item in this structure? | Shivani Erlewad | A tree test of the structure has been run |
 | Do Browse, Logs and Profile read clearly as tab labels? | Shivani Erlewad | A click test on a prototype has been run |
-| Which icons do the tabs use? | Shivani Erlewad | The icon catalog exists |
+| Does the app need an icon catalog beyond the three tab icons, and which icon set does it draw from? | Shivani Erlewad | The icon catalog exists |
 | Should "Log out" read "Sign out", given "Logs" and the wiki's "sign-in"? | Shivani Erlewad | The glossary gets an entry for the action |
 | Does the cart bar show on the Cart screen and on Purchase detail? | Shivani Erlewad | The surface pages are written |
 | Does the app need search? | Shivani Erlewad | The vendor's catalog size is known |

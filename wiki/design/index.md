@@ -6,25 +6,30 @@
 - [Employee — Record a purchase](journeys\employee-record-a-purchase.md) — This journey follows an employee from taking snacks at the shop to recording the purchase and checking it later.
 
 ## UI Surface (SLO: 90d)
-- [Cart](surfaces\sundal\employee-app\cart.md) — On the Cart screen the employee checks the cart and its total, changes quantities if needed and records the purchase.
-- [Categories](surfaces\sundal\employee-app\categories.md) — The employee scans the vendor's categories on the Categories screen and opens the one that holds the snack they took.
-- [Category items](surfaces\sundal\employee-app\category-items.md) — On the Category items screen the employee browses one category's items and adds the snacks they took to the cart.
-- [Purchase detail](surfaces\sundal\employee-app\purchase-detail.md) — On the Purchase detail screen the employee sees one purchase: what they took, what it cost and when.
+- [Record a purchase](surfaces\sundal\employee-app\record-a-purchase.md) — The employee records a purchase across four screens: they scan the vendor's categories, add snacks from one category's…
 
 ## UI Component (SLO: 180d)
+- [Action bar](components\sundal\employee-app\action-bar.md) — The action bar holds a screen's one main action as a full-width button, fixed to the bottom of the screen directly…
 - [Button](components\sundal\employee-app\button.md) — The button is the control an employee taps to do something or to go somewhere on a screen.
-- [Cart bar](components\sundal\employee-app\cart-bar.md) — The cart bar shows an employee what their purchase cart holds, with the item count and the total, and opens the Cart.
-- [Category card](components\sundal\employee-app\category-card.md) — The category card shows one of the vendor's categories as a tappable card, with the category's image above its name.
-- [Item card](components\sundal\employee-app\item-card.md) — The item card shows one item in a category: its image, name, description, price and the control for adding it.
+- [Cart bar](components\sundal\employee-app\cart-bar.md) — The cart bar is a green pill that shows an employee what their purchase cart holds, with photos of the first items, the…
+- [Cart line](components\sundal\employee-app\cart-line.md) — The cart line shows one item in the employee's purchase cart: a rounded photo, the item's name, the quantity stepper…
+- [Category card](components\sundal\employee-app\category-card.md) — The category card shows one of the vendor's categories as a card: a colored rounded box, different for each category,…
+- [Detail card](components\sundal\employee-app\detail-card.md) — The detail card is a white rounded card that lists facts as rows of a label and a value, with an optional title.
+- [Item card](components\sundal\employee-app\item-card.md) — The item card shows one item in a category as a tall card: its photo on top, then its price, name and description, with…
 - [Line notice](components\sundal\employee-app\line-notice.md) — The line notice is a short message directly under one cart line or one item card, about that item only.
 - [Message block](components\sundal\employee-app\message-block.md) — The message block fills a screen's content region with a message when the screen has nothing else to show.
 - [Page header](components\sundal\employee-app\page-header.md) — The page header is the strip at the top of every employee-app screen after sign-in.
+- [Purchase line](components\sundal\employee-app\purchase-line.md) — The purchase line shows one item of a recorded purchase: a rounded photo, the item's name with its price and quantity…
 - [Quantity stepper](components\sundal\employee-app\quantity-stepper.md) — The quantity stepper lets an employee change how many of an item they are adding, one step per tap.
-- [Tab bar](components\sundal\employee-app\tab-bar.md) — The tab bar is the bar at the bottom of the employee app that moves the employee between Browse, Logs and Profile.
+- [Screen](components\sundal\employee-app\screen.md) — The screen is the frame of an employee-app screen after sign-in.
+- [Tab bar](components\sundal\employee-app\tab-bar.md) — The tab bar is a floating card at the bottom of the employee app that moves the employee between Browse, Logs and…
 - [Toast](components\sundal\employee-app\toast.md) — The toast is a short message that appears over a screen and leaves the screen as it is.
 
 ## Layout Pattern (SLO: 180d)
 - [Employee app shell](layout-patterns\employee-app-shell.md) — The employee app shell is what every employee-app page sits in: a header, the content, a cart bar and a tab bar.
+
+## Design System (SLO: 180d)
+- [Design system](design-system.md) — The Sundal design system is the set of tokens, components and rules that every employee-app screen draws on, so that…
 
 ## Information Architecture (SLO: 180d)
 - [Employee app](information-architecture\employee-app.md) — The employee app is the phone app where an employee records purchases, looks back at them and sees their details.
