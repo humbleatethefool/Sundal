@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[components/sundal/employee-app/button]]", "[[components/sundal/employee-app/toast]]", "[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/categories]]", "[[surfaces/sundal/employee-app/category-items]]", "[[surfaces/sundal/employee-app/purchase-detail]]", "[[product:modules/sundal/employee-app]]"]
+related: ["[[components/sundal/employee-app/button]]", "[[components/sundal/employee-app/toast]]", "[[surfaces/sundal/employee-app/record-a-purchase]]", "[[product:modules/sundal/employee-app]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -101,8 +101,5 @@ Each message says what happened and then what to do, in the reader's words. It l
 
 - [[components/sundal/employee-app/button]] — the control the block's action uses.
 - [[components/sundal/employee-app/toast]] — the short message used instead when the screen should stay as it is.
-- [[surfaces/sundal/employee-app/cart]] — a surface that uses the block, with its own wording.
-- [[surfaces/sundal/employee-app/categories]] — a surface that uses the block, with its own wording.
-- [[surfaces/sundal/employee-app/category-items]] — a surface that uses the block, with its own wording.
-- [[surfaces/sundal/employee-app/purchase-detail]] — a surface that uses the block, with its own wording.
+- [[surfaces/sundal/employee-app/record-a-purchase]] — the surface whose screens use the block, with their own wording.
 - [[product:modules/sundal/employee-app]] — the module whose offline rules the offline variant follows.

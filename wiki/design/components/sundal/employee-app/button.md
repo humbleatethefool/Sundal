@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:modules/sundal/employee-app]]"
 sources: []
-related: ["[[components/sundal/employee-app/message-block]]", "[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/categories]]", "[[surfaces/sundal/employee-app/category-items]]", "[[surfaces/sundal/employee-app/purchase-detail]]"]
+related: ["[[components/sundal/employee-app/message-block]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -47,7 +47,14 @@ Content configuration: a label that is too long for one line wraps. Labels are k
 
 ## Tokens & measurements
 
-None. No token set exists, so the gap is recorded under Open questions.
+The button is Bootstrap's own, so the design system's tokens restyle it.
+
+| Part | Value | Token |
+|---|---|---|
+| Color | The primary color for a primary button | the `primary` token |
+| Corners | The default radius | the `border-radius` token |
+| Height | At least 44 px for a regular button | the `btn-padding-y` token |
+| Label weight | Semibold, so every button label agrees | the `btn-font-weight` token |
 
 ## States
 
@@ -99,14 +106,10 @@ A label names the action with a verb, in sentence case, with no article and no "
 
 | Question | Owner | Resume condition |
 |---|---|---|
-| The project has no design system or token set. Which tokens do the button's color, type and spacing take? | Shivani Erlewad | The design system page exists |
 | What size is the button, and how does the progress indicator look? | Shivani Erlewad | The design system page exists |
 | Does Browse snacks read as a secondary button or as a link? | Shivani Erlewad | A screen of the empty cart has been designed |
 
 ## Related
 
 - [[components/sundal/employee-app/message-block]] — the block whose action is a button.
-- [[surfaces/sundal/employee-app/cart]] — a surface that uses the button for its actions, such as Record purchase.
-- [[surfaces/sundal/employee-app/categories]] — a surface that uses the button for its actions, such as Retry.
-- [[surfaces/sundal/employee-app/category-items]] — a surface that uses the button for its actions, such as Retry.
-- [[surfaces/sundal/employee-app/purchase-detail]] — a surface that uses the button for its actions, such as Retry.
+- [[surfaces/sundal/employee-app/record-a-purchase]] — the surface whose screens use the button for their actions, such as Record purchase and Retry.

@@ -6,10 +6,10 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[components/sundal/employee-app/line-notice]]", "[[components/sundal/employee-app/quantity-stepper]]", "[[surfaces/sundal/employee-app/category-items]]"]
+related: ["[[components/sundal/employee-app/line-notice]]", "[[components/sundal/employee-app/quantity-stepper]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
 invalidates: []
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-19
 owner: design
 authorship: curated
 origination: originate
@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The item card shows one item in a category: its image, name, description, price and the control for adding it. It is the card the Category items screen lists. It is where an employee decides what they took.
+The item card shows one item in a category as a tall card: its photo on top, then its price, name and description, with the control for adding it overlapping the photo's bottom-right edge. It is the card the Category items screen lays out in a grid. It is where an employee decides what they took.
 
 Use it for an item in a category's list.
 - Do keep the control in the same place on every card.
@@ -30,12 +30,12 @@ Use it for an item in a category's list.
 
 | Part | Required | What it is |
 |---|---|---|
-| Container | Required | The whole card. |
-| Image | Required | The item's picture, at the start of the card. |
-| Name | Required | The item's name. |
-| Description | Required | The item's short description. |
-| Price | Required | The price of one item, in rupees. |
-| Action slot | Required | Holds the Add button, the [[components/sundal/employee-app/quantity-stepper]] or the "Out of stock" label, one at a time. |
+| Container | Required | The whole card: white, with rounded corners and a soft shadow. |
+| Image | Required | The item's photo, across the top of the card. |
+| Price | Required | The price of one item, in rupees, in bold large text under the photo. |
+| Name | Required | The item's name, in semibold text under the price. |
+| Description | Required | The item's short description, in small gray text under the name. |
+| Action slot | Required | Overlaps the photo's bottom-right edge, on a white backing. Holds the Add button, the [[components/sundal/employee-app/quantity-stepper]] or the "Out of stock" label, one at a time. |
 
 ## Variants
 
@@ -51,7 +51,21 @@ Content configurations: an item whose image is missing or fails to load shows a 
 
 ## Tokens & measurements
 
-None. No token set exists, so the gap is recorded under Open questions.
+The definition uses Bootstrap's classes only, so the design system's tokens restyle it once they exist.
+
+| Part | Value | Token or class |
+|---|---|---|
+| Card | White, rounded, soft shadow, no border | `card`, `rounded`, `shadow-sm`, `border-0` |
+| Image | 4 to 3, filling the top, cropped to fit | `ratio-4x3`, `object-fit-cover` |
+| Price | Bold, large | `fw-bold`, `fs-5` |
+| Name | Semibold, tight line height | `fw-semibold`, `lh-sm` |
+| Description | Small, muted | `small`, `text-body-secondary` |
+| Action slot | Centered on the photo's bottom edge, 8 px from the right, backed in the card color | `top-100`, `translate-middle-y`, `me-2`, the project token `surface-card` |
+| Card fill | The card color | the project token `surface-card` |
+| Minimum card width | 9 rem, so a card keeps its shape when its container sets no width | an inline `min-width` |
+| Text width | Follows the card, never the text, so long text wraps and does not widen the card | an inline `width` of 0 with a `min-width` of 100% |
+
+The image's crop, the card's padding and the action slot's inset have no fitting token, so they are recorded under Open questions.
 
 ## States
 
@@ -65,7 +79,15 @@ None. No token set exists, so the gap is recorded under Open questions.
 
 ## Props / API
 
-None documented yet.
+| Prop | Type | Default | Required | What it does |
+|---|---|---|---|---|
+| `name` | Text | None | Required | The item's name. |
+| `description` | Text | None | Required | The item's short description. |
+| `price` | Text | None | Required | The price of one item, such as ₹20. |
+| `image` | Image address | None | Optional | The item's photo. Left out, the card shows a plain tile. |
+| `children` | Control | None | Required | The action slot: the Add button, the quantity stepper or the Out of stock badge, one at a time. |
+
+The definition is `design/components/item-card.json`, with its markup in `design/components/item-card.html`.
 
 ## Behavior & interaction
 
@@ -95,7 +117,9 @@ The name and description are the vendor's own text and show in full, wrapping wh
 
 | Decision | State | Decided |
 |---|---|---|
-| The image sits at the start of the card with the name, description and price stacked beside it, to leave room for the description | proposed | |
+| The photo sits on top, with the price, name and description stacked under it, in a two-column grid of tall cards, after the product cards of Blinkit, Zepto and Instamart | proposed | |
+| The action slot overlaps the photo's bottom-right edge on a white backing, so the control is in the same place on every card | proposed | |
+| The card shows no stock count, no old price and no delivery time, which the reference cards show, because employees never see the stock number and Sundal has no discount or delivery | proposed | |
 | The action slot sits in the same place on every card | proposed | |
 | An out-of-stock card keeps full contrast and shows "Out of stock" in place of the control | proposed | |
 | The card itself opens nothing, because the app has no item detail screen | proposed | |
@@ -104,13 +128,12 @@ The name and description are the vendor's own text and show in full, wrapping wh
 
 | Question | Owner | Resume condition |
 |---|---|---|
-| The project has no design system or token set. Which tokens do the card's color, type and spacing take? | Shivani Erlewad | The design system page exists |
 | What shape and size is the item image? | Shivani Erlewad | The design system page exists |
-| Does a very long description push the action slot out of its place on the card? | Shivani Erlewad | A screen of the card has been designed |
+| How many lines may a name and a description wrap onto before the card grows too tall for its row? | Shivani Erlewad | A screen of the card has been designed |
 | Should the card open an item detail? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
 
 ## Related
 
 - [[components/sundal/employee-app/line-notice]] — the message shown under the card when a change could not be saved.
 - [[components/sundal/employee-app/quantity-stepper]] — the control the action slot holds once the item is in the cart.
-- [[surfaces/sundal/employee-app/category-items]] — the Category items surface that lists the cards.
+- [[surfaces/sundal/employee-app/record-a-purchase]] — the surface whose Category items screen lists the cards.

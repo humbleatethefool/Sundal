@@ -6,10 +6,10 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/category-items]]", "[[product:modules/sundal/employee-app]]"]
+related: ["[[surfaces/sundal/employee-app/record-a-purchase]]", "[[product:modules/sundal/employee-app]]"]
 invalidates: []
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-19
 owner: design
 authorship: curated
 origination: originate
@@ -52,7 +52,18 @@ Content configurations: a quantity of one, two or three digits fits without wrap
 
 ## Tokens & measurements
 
-None. No token set exists, so the gap is recorded under Open questions. The parts' spacing is not annotated for the same reason, except that − and + sit apart so that a tap hits only one of them.
+The definition uses Bootstrap's classes only, so the design system's tokens restyle it once they exist.
+
+| Part | Value | Token or class |
+|---|---|---|
+| Add button | Outline in the primary color, bold label | `btn-outline-primary`, `fw-bold` |
+| Stepper group | Solid in the primary color, with white − and +, and a bold white quantity between them | `btn-group`, `btn-primary`, `fw-bold` |
+| Quantity | Not tappable, at full strength | `disabled`, `opacity-100` |
+| − and + | 12 px of space either side of the symbol, so a tap hits one button | `px-3` |
+| + at the limit | Paler green, not tappable | `disabled` |
+| Button height | At least 44 px, so a thumb taps one button | the project token `size-tap-min` |
+
+The buttons' height and the gap between − and + have no fitting token, so they are recorded under Open questions.
 
 ## States
 
@@ -67,7 +78,13 @@ None. No token set exists, so the gap is recorded under Open questions. The part
 
 ## Props / API
 
-None documented yet.
+| Prop | Type | Default | Required | What it does |
+|---|---|---|---|---|
+| `item` | Text | None | Required | The item's name, used to name the buttons for screen readers. |
+| `quantity` | Text | None | Optional | The quantity in the cart, such as "2". Left out when the quantity is zero, which shows the Add button. |
+| `atLimit` | Boolean | `false` | Optional | The quantity has reached the available stock, so + is turned off. |
+
+The definition is `design/components/quantity-stepper.json`, with its markup in `design/components/quantity-stepper.html`.
 
 ## Behavior & interaction
 
@@ -109,12 +126,13 @@ The visible strings are the Add button's label and the limit message. Everything
 | − from 1 removes the item, on a card as on a cart line | proposed | |
 | At the available stock + is disabled and the limit message shows, with no number | proposed | |
 | The Add button reads "Add" in sentence case | proposed | |
+| The stepper and the Add button take their color from the design system's primary token, so a change to the token recolors them | proposed | |
+| The stepper is a solid green group with white symbols and a bold white quantity, and the Add button is a green outline, after the steppers of Blinkit, Zepto and Instamart | proposed | |
 
 ## Open questions
 
 | Question | Owner | Resume condition |
 |---|---|---|
-| The project has no design system or token set. Which tokens do the stepper's color, type and spacing take? | Shivani Erlewad | The design system page exists |
 | What size are the stepper's buttons, and how far apart are − and +? | Shivani Erlewad | The design system page exists |
 | What does the progress indicator look like, and where does it sit on the tapped button? | Shivani Erlewad | The design system page exists |
 | Does a change show at once and then confirm, or wait for the server? The decision above proposes waiting. | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
@@ -123,6 +141,5 @@ The visible strings are the Add button's label and the limit message. Everything
 
 ## Related
 
-- [[surfaces/sundal/employee-app/cart]] — the surface that shows the stepper beside each cart line.
-- [[surfaces/sundal/employee-app/category-items]] — the surface that shows the stepper on an item's card.
+- [[surfaces/sundal/employee-app/record-a-purchase]] — the surface whose Cart screen shows the stepper beside each cart line and whose Category items screen shows it on an item's card.
 - [[product:modules/sundal/employee-app]] — the module whose rule keeps quantity changes to + and −.

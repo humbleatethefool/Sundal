@@ -6,7 +6,7 @@ status: draft
 realizes:
   - "[[product:features/sundal/employee-app/record-a-purchase]]"
 sources: []
-related: ["[[components/sundal/employee-app/item-card]]", "[[surfaces/sundal/employee-app/cart]]", "[[surfaces/sundal/employee-app/category-items]]"]
+related: ["[[components/sundal/employee-app/item-card]]", "[[surfaces/sundal/employee-app/record-a-purchase]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-18
@@ -99,5 +99,4 @@ Each notice says what changed and what happened to the quantity, in the reader's
 ## Related
 
 - [[components/sundal/employee-app/item-card]] — the card the notice sits under on Category items.
-- [[surfaces/sundal/employee-app/cart]] — a surface that shows the notice under a cart line.
-- [[surfaces/sundal/employee-app/category-items]] — a surface that shows the notice under an item card.
+- [[surfaces/sundal/employee-app/record-a-purchase]] — the surface whose Cart screen shows the notice under a cart line and whose Category items screen shows it under an item card.
