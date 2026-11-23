@@ -6,6 +6,7 @@
 - [Employee — Record a purchase](journeys\employee-record-a-purchase.md) — This journey follows an employee from taking snacks at the shop to recording the purchase and checking it later.
 
 ## UI Surface (SLO: 90d)
+- [Purchase log](surfaces\sundal\employee-app\purchase-log.md) — The employee scans their own recorded purchases and opens the one they want to check.
 - [Record a purchase](surfaces\sundal\employee-app\record-a-purchase.md) — The employee records a purchase across four screens.
 - [Sign in](surfaces\sundal\employee-app\sign-in.md) — The employee enters their mobile number and then the one-time code they receive, to sign in.
 

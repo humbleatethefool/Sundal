@@ -11,7 +11,7 @@ journeys:
 layout-patterns:
   - "[[design:layout-patterns/employee-app-shell]]"
 sources: []
-related: ["[[product:flows/sundal/employee-app/log]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/sign-in]]"]
+related: ["[[product:flows/sundal/employee-app/purchase-log]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/sign-in]]"]
 invalidates: []
 created: 2026-11-17
 updated: 2026-11-19
@@ -104,7 +104,7 @@ The labels fall into three groups. The three tab labels, Browse, Logs and Profil
 | Browse | [[domain:entities/catalog]] | None. |
 | Categories | [[domain:entities/category]] | None. |
 | Items | [[domain:entities/item]] | Products. The reference apps use it, but the shop sells snacks it lists as items. |
-| Logs | [[domain:entities/log]] | History, since the employee's list is called a log. |
+| Logs | [[domain:entities/purchase-log]] | History, since the employee's list is called a log. |
 | Purchase | [[domain:entities/purchase]] | Order, because Sundal has no payment or delivery. Entry, which is one snack line of a purchase. |
 | Cart | [[domain:entities/cart]] | None. |
 | Profile | [[domain:entities/profile]] | None. |
@@ -164,11 +164,11 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 - [[domain:entities/catalog]] — the concept behind the Browse label.
 - [[domain:entities/category]] — the concept behind the Categories label.
 - [[domain:entities/item]] — the concept behind the Items label.
-- [[domain:entities/log]] — the concept behind the Logs label.
 - [[domain:entities/profile]] — the concept behind the Profile and Mobile number labels.
 - [[domain:entities/purchase]] — the concept behind the Purchase label.
+- [[domain:entities/purchase-log]] — the concept behind the Logs label.
 - [[product:catalogs/roles]] — the roles the sitemap's "Shown to" column names.
-- [[product:flows/sundal/employee-app/log]] — the task flow an employee follows from the Logs tab to a past purchase.
+- [[product:flows/sundal/employee-app/purchase-log]] — the task flow an employee follows from the Logs tab to a past purchase.
 - [[product:flows/sundal/employee-app/record-a-purchase]] — the task flow the structure supports.
 - [[product:flows/sundal/employee-app/sign-in]] — the task flow through the mobile number and OTP screens.
 - [[product:modules/sundal/employee-app]] — the module this map organizes.

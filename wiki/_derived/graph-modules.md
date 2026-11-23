@@ -37,5 +37,6 @@ Employee app · kind `area` · parent `product:modules/sundal` · level 0
 - Dependents:
   - none
 - Features:
+  - `product:features/sundal/employee-app/purchase-log` — Purchase log; depends on `product:features/sundal/employee-app/record-a-purchase`
   - `product:features/sundal/employee-app/record-a-purchase` — Record a purchase
   - `product:features/sundal/employee-app/sign-in` — Sign in

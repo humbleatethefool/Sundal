@@ -149,7 +149,7 @@
           "flows": {
             "kind": "links",
             "keys": [
-              "product:flows/sundal/employee-app/log"
+              "product:flows/sundal/employee-app/purchase-log"
             ]
           },
           "evidence": {
@@ -158,6 +158,10 @@
           },
           "surfaces": [
             {
+              "key": "design:surfaces/sundal/employee-app/purchase-log",
+              "anchor": "purchase-log-list"
+            },
+            {
               "key": "design:surfaces/sundal/employee-app/record-a-purchase",
               "anchor": "purchase-detail-detail"
             }
@@ -165,6 +169,7 @@
           "placements": {
             "design:information-architecture/employee-app": {
               "mobile": [
+                "design:information-architecture/employee-app#logs",
                 "design:information-architecture/employee-app#purchase-detail"
               ]
             }

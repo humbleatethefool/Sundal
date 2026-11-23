@@ -6,7 +6,7 @@ actor: "[[product:personas/employee]]"
 scenario: Record a purchase
 roles: ["employee"]
 sources: []
-related: ["[[information-architecture/employee-app]]", "[[product:flows/sundal/employee-app/log]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/sign-in]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]", "[[product:prds/sundal]]"]
+related: ["[[information-architecture/employee-app]]", "[[product:flows/sundal/employee-app/purchase-log]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/sign-in]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]", "[[product:prds/sundal]]"]
 created: 2026-11-17
 updated: 2026-11-19
 owner: design
@@ -68,7 +68,7 @@ This journey follows an employee from taking snacks at the shop to recording the
 ### Look back at purchases
 - **Id** — look-back
 - **Actions** — Later, the employee opens Logs to see the purchases they recorded and opens one to see its lines, quantities, prices and total.
-- **Flows** — [[product:flows/sundal/employee-app/log]]
+- **Flows** — [[product:flows/sundal/employee-app/purchase-log]]
 - **Touchpoints** — The employee's own phone.
 - **Mindset** — The employee wants to check what they recorded, all the more because they cannot cancel an entry. This rests on no research.
 - **Pain points** — An employee cannot cancel an entry. A wrong line stays until the vendor voids it, and the app gives the employee no way to ask for that.

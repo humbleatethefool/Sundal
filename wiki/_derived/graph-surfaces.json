@@ -8,6 +8,324 @@
   ],
   "pages": [
     {
+      "key": "design:surfaces/sundal/employee-app/purchase-log",
+      "title": "Purchase log",
+      "templateVersion": 2,
+      "platforms": [
+        "mobile"
+      ],
+      "codes": [],
+      "flows": [
+        {
+          "key": "product:flows/sundal/employee-app/purchase-log",
+          "type": "task-flow"
+        }
+      ],
+      "surfaces": [
+        {
+          "name": "Purchase log",
+          "kind": "list",
+          "anchor": "purchase-log-list",
+          "codes": [],
+          "platforms": [
+            "mobile"
+          ],
+          "flowSteps": [
+            {
+              "platform": null,
+              "raw": "[[product:flows/sundal/employee-app/purchase-log]] S1, S2, S3, S5, E1, E2, E3, T1, T2, T3",
+              "graded": true,
+              "value": [
+                {
+                  "flow": "product:flows/sundal/employee-app/purchase-log",
+                  "ids": [
+                    "S1",
+                    "S2",
+                    "S3",
+                    "S5",
+                    "E1",
+                    "E2",
+                    "E3",
+                    "T1",
+                    "T2",
+                    "T3"
+                  ]
+                }
+              ],
+              "codes": []
+            }
+          ],
+          "fields": [
+            {
+              "label": "Logs",
+              "platform": null,
+              "format": "text, as the page title",
+              "source": {
+                "raw": "static",
+                "graded": true,
+                "value": {
+                  "kind": "static",
+                  "note": null
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Recorded on",
+              "platform": null,
+              "format": "date and time in Indian time, such as Wed, 18 Nov 2026, 3:42 pm, as the row's main line",
+              "source": {
+                "raw": "[[domain:entities/purchase]] `time`",
+                "graded": true,
+                "value": {
+                  "kind": "entity-field",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/purchase",
+                      "field": "time"
+                    }
+                  ]
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Items",
+              "platform": null,
+              "format": "text under the time, such as \"3 items\", and \"1 item\" for one",
+              "source": {
+                "raw": "derived from [[domain:entities/entry]] `item` — the number of entries in the purchase",
+                "graded": true,
+                "value": {
+                  "kind": "derived",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/entry",
+                      "field": "item"
+                    }
+                  ],
+                  "rule": "the number of entries in the purchase"
+                },
+                "codes": []
+              }
+            },
+            {
+              "label": "Total",
+              "platform": null,
+              "format": "money, in rupees, in bold at the end of the row",
+              "source": {
+                "raw": "[[domain:entities/purchase]] `total`",
+                "graded": true,
+                "value": {
+                  "kind": "entity-field",
+                  "refs": [
+                    {
+                      "entity": "domain:entities/purchase",
+                      "field": "total"
+                    }
+                  ]
+                },
+                "codes": []
+              }
+            }
+          ],
+          "actions": [
+            {
+              "label": "Purchase row, the whole row",
+              "platform": null,
+              "kind": {
+                "raw": "nav",
+                "graded": true,
+                "value": "nav",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/record-a-purchase#purchase-detail-detail]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                      "anchor": "purchase-detail-detail"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "Browse snacks, a [[design:components/sundal/employee-app/button]]",
+              "platform": null,
+              "kind": {
+                "raw": "nav",
+                "graded": true,
+                "value": "nav",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/record-a-purchase#categories-list]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                      "anchor": "categories-list"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "Retry, a [[design:components/sundal/employee-app/button]]",
+              "platform": null,
+              "kind": {
+                "raw": "secondary",
+                "graded": true,
+                "value": "secondary",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "—",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "stay"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            },
+            {
+              "label": "View cart",
+              "platform": null,
+              "kind": {
+                "raw": "nav",
+                "graded": true,
+                "value": "nav",
+                "codes": []
+              },
+              "leadsTo": {
+                "raw": "[[design:surfaces/sundal/employee-app/record-a-purchase#cart-list]]",
+                "graded": true,
+                "value": [
+                  {
+                    "target": {
+                      "kind": "surface",
+                      "key": "design:surfaces/sundal/employee-app/record-a-purchase",
+                      "anchor": "cart-list"
+                    },
+                    "platform": null,
+                    "scope": null,
+                    "condition": null
+                  }
+                ],
+                "codes": []
+              }
+            }
+          ],
+          "container": [
+            {
+              "platform": null,
+              "raw": "page",
+              "graded": true,
+              "value": "page",
+              "codes": []
+            }
+          ],
+          "platformsCell": [
+            {
+              "platform": null,
+              "raw": "mobile",
+              "graded": true,
+              "value": [
+                "mobile"
+              ],
+              "codes": []
+            }
+          ],
+          "node": [
+            {
+              "platform": null,
+              "raw": "[[design:information-architecture/employee-app]] logs",
+              "graded": true,
+              "value": [
+                {
+                  "kind": "node",
+                  "page": "design:information-architecture/employee-app",
+                  "node": "logs"
+                }
+              ],
+              "codes": []
+            }
+          ],
+          "shownIn": [
+            {
+              "platform": null,
+              "raw": "None.",
+              "graded": true,
+              "value": [],
+              "codes": []
+            }
+          ],
+          "openedFrom": [
+            {
+              "platform": null,
+              "raw": "None.",
+              "graded": true,
+              "value": [],
+              "codes": []
+            }
+          ],
+          "layoutPatterns": [
+            {
+              "platform": null,
+              "raw": "[[design:layout-patterns/employee-app-shell]]",
+              "graded": true,
+              "value": [
+                "design:layout-patterns/employee-app-shell"
+              ],
+              "codes": []
+            }
+          ],
+          "journeyStages": [
+            {
+              "platform": null,
+              "raw": "[[design:journeys/employee-record-a-purchase]] look-back",
+              "graded": true,
+              "value": [
+                {
+                  "journey": "design:journeys/employee-record-a-purchase",
+                  "ids": [
+                    "look-back"
+                  ]
+                }
+              ],
+              "codes": []
+            }
+          ],
+          "sameAs": {
+            "Field inventory": null,
+            "Input rules": null,
+            "State transitions": null
+          }
+        }
+      ]
+    },
+    {
       "key": "design:surfaces/sundal/employee-app/record-a-purchase",
       "title": "Record a purchase",
       "templateVersion": 2,
@@ -2101,6 +2419,56 @@
     }
   ],
   "flows": [
+    {
+      "key": "product:flows/sundal/employee-app/purchase-log",
+      "title": "Purchase log",
+      "steps": [
+        {
+          "id": "S1",
+          "offSurface": null
+        },
+        {
+          "id": "S2",
+          "offSurface": null
+        },
+        {
+          "id": "S3",
+          "offSurface": null
+        },
+        {
+          "id": "S4",
+          "offSurface": null
+        },
+        {
+          "id": "S5",
+          "offSurface": null
+        },
+        {
+          "id": "E1",
+          "offSurface": null
+        },
+        {
+          "id": "E2",
+          "offSurface": null
+        },
+        {
+          "id": "E3",
+          "offSurface": null
+        },
+        {
+          "id": "T1",
+          "offSurface": null
+        },
+        {
+          "id": "T2",
+          "offSurface": null
+        },
+        {
+          "id": "T3",
+          "offSurface": null
+        }
+      ]
+    },
     {
       "key": "product:flows/sundal/employee-app/record-a-purchase",
       "title": "Record a purchase",

@@ -1,9 +1,9 @@
 ---
-title: Log
+title: Purchase log
 type: feature
 template-version: 1
 sources: []
-related: ["[[modules/sundal/employee-app]]", "[[prds/sundal]]", "[[features/sundal/employee-app/record-a-purchase]]"]
+related: ["[[features/sundal/employee-app/record-a-purchase]]", "[[modules/sundal/employee-app]]", "[[prds/sundal]]"]
 depends-on: ["[[features/sundal/employee-app/record-a-purchase]]"]
 created: 2026-11-23
 updated: 2026-11-23
@@ -16,7 +16,7 @@ confidence: low
 
 ## Summary
 
-Log lets an employee look through the purchases they recorded and open one to check what it holds.
+Purchase log lets an employee look through the purchases they recorded and open one to check what it holds.
 
 
 ## Problem it solves
@@ -43,12 +43,12 @@ None.
 
 ## Task flows
 
-- [[flows/sundal/employee-app/log]] — an employee finds a purchase they recorded earlier and checks what it holds
+- [[flows/sundal/employee-app/purchase-log]] — an employee finds a purchase they recorded earlier and checks what it holds
 
 
 ## Surfaces
 
-- **Log** (list) — the employee's recorded purchases, each opening that purchase. States: loading, empty, error.
+- **Purchase log** (list) — the employee's recorded purchases, each opening that purchase. States: loading, empty, error.
 
 
 ## Success metrics & instrumentation
@@ -65,5 +65,7 @@ None.
 
 ## Open questions
 
-- Which feature lists the Purchase detail surface? Record a purchase lists it, and this feature opens it too. Owner: Shivani Erlewad. Resume when the feature pages are reviewed together.
-- In what order does the list show purchases, and how does a purchase with a voided entry show? The Entry entity has no void state yet. Owner: Shivani Erlewad. Resume when the vendor's void screens are designed.
+| Question | Owner | Resume condition |
+|---|---|---|
+| Which feature lists the Purchase detail surface? Record a purchase lists it, and this feature opens it too. | Shivani Erlewad | The feature pages are reviewed together |
+| In what order does the list show purchases, and how does a purchase with a voided entry show? The Entry entity has no void state yet. | Shivani Erlewad | The vendor's void screens are designed |

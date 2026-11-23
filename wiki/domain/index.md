@@ -11,3 +11,4 @@
 - [OTP](entities\otp.md) — An OTP, short for one-time password, is a code that works for a single sign-in.
 - [Profile](entities\profile.md) — A profile is the details that identify an employee in Sundal: their picture, name and sign-in mobile number.
 - [Purchase](entities\purchase.md) — A purchase is a record that an employee took snacks from the shop, made when the server confirms a recorded cart.
+- [Purchase log](entities\purchase-log.md) — A purchase log is an employee's own list of every purchase they have recorded, from the first to the latest.

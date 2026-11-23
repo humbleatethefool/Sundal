@@ -66,6 +66,11 @@
       ],
       "surfaces": [
         {
+          "key": "design:surfaces/sundal/employee-app/purchase-log",
+          "anchor": "purchase-log-list",
+          "platform": null
+        },
+        {
           "key": "design:surfaces/sundal/employee-app/record-a-purchase",
           "anchor": "cart-list",
           "platform": null

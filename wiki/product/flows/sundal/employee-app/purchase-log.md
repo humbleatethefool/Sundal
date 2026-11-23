@@ -1,9 +1,9 @@
 ---
-title: Log
+title: Purchase log
 type: task-flow
 template-version: 1
 sources: []
-related: ["[[features/sundal/employee-app/log]]"]
+related: ["[[features/sundal/employee-app/purchase-log]]"]
 created: 2026-11-23
 updated: 2026-11-23
 owner: product
@@ -15,7 +15,7 @@ confidence: low
 
 ## Task
 
-An employee ([[product:personas/employee]]) finds a purchase they recorded earlier and checks what it holds. This flow realizes [[product:features/sundal/employee-app/log]].
+An employee ([[product:personas/employee]]) finds a purchase they recorded earlier and checks what it holds. This flow realizes [[product:features/sundal/employee-app/purchase-log]].
 
 The employee opens the purchase from the Logs tab. Landing on the same purchase right after recording is step S8 of [[product:flows/sundal/employee-app/record-a-purchase]], not this flow.
 
@@ -23,7 +23,7 @@ The employee opens the purchase from the Logs tab. Landing on the same purchase 
 
 - The employee is signed in on this phone ([[product:flows/sundal/employee-app/sign-in]]).
 - The phone is online.
-- The employee has recorded zero or more purchases ([[domain:entities/log]]).
+- The employee has recorded zero or more purchases ([[domain:entities/purchase-log]]).
 
 ## Delta from the shared flow
 
@@ -113,7 +113,7 @@ flowchart TD
 
 | Question | Owner | Resume condition |
 |---|---|---|
-| In what order does the list show purchases, and does a purchase with a voided entry show differently? | Shivani Erlewad | The Log list screen is specified |
+| In what order does the list show purchases, and does a purchase with a voided entry show differently? | Shivani Erlewad | The Purchase log list screen is specified |
 | How does a line show when the vendor has voided its entry? The Entry entity has no void state yet. | Shivani Erlewad | The vendor's void screens are designed |
-| The record-a-purchase feature lists the Purchase detail surface, and the Log feature opens it too. Which feature lists it? | Shivani Erlewad | The feature pages are written |
+| The record-a-purchase feature lists the Purchase detail surface, and the Purchase log feature opens it too. Which feature lists it? | Shivani Erlewad | The feature pages are written |
 | Do employees check past purchases, and how often is a recorded line wrong? | Shivani Erlewad | The vendor has voided entries for some time or employees have been asked |

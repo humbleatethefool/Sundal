@@ -27,6 +27,16 @@
       "dependents": [],
       "features": [
         {
+          "key": "product:features/sundal/employee-app/purchase-log",
+          "title": "Purchase log",
+          "dependsOn": [
+            {
+              "key": "product:features/sundal/employee-app/record-a-purchase",
+              "type": "feature"
+            }
+          ]
+        },
+        {
           "key": "product:features/sundal/employee-app/record-a-purchase",
           "title": "Record a purchase",
           "dependsOn": []

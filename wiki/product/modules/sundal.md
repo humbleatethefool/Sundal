@@ -42,7 +42,7 @@ Each person sees only the area for their role: employees record purchases, vendo
 
 - [[features/sundal/employee-app/sign-in]] — an employee signs in with their mobile number and a one-time code
 - [[features/sundal/employee-app/record-a-purchase]] — an employee records what they took from the shop
-- [[features/sundal/employee-app/log]] — an employee looks through the purchases they recorded and checks one
+- [[features/sundal/employee-app/purchase-log]] — an employee looks through the purchases they recorded and checks one
 
 
 ## Entities

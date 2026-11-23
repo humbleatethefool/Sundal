@@ -18,6 +18,7 @@
   - [Employee app](modules\sundal\employee-app.md) — The employee app is where an employee of a company the vendor serves records their own purchases.
 
 ## Feature (SLO: 90d)
+- [Purchase log](features\sundal\employee-app\purchase-log.md) — Purchase log lets an employee look through the purchases they recorded and open one to check what it holds.
 - [Record a purchase](features\sundal\employee-app\record-a-purchase.md) — Record a purchase lets an employee add the snacks they took to a purchase cart, review the total, and record it.
 - [Sign in](features\sundal\employee-app\sign-in.md) — Sign in lets an employee sign in to the employee app with their mobile number and a one-time code.
 
@@ -25,5 +26,6 @@
 - [Sundal](prds\sundal.md) — A snack shop vendor serves the employees of several companies.
 
 ## Task Flow (SLO: 90d)
+- [Purchase log](flows\sundal\employee-app\purchase-log.md) — An employee (Employee) finds a purchase they recorded earlier and checks what it holds.
 - [Record a purchase](flows\sundal\employee-app\record-a-purchase.md) — An employee (Employee) records the snacks they took from the shop on their phone.
 - [Sign in](flows\sundal\employee-app\sign-in.md) — An employee (Employee) signs in to the employee app on their phone with their mobile number and a one-time code.
