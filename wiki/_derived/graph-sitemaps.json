@@ -220,13 +220,23 @@
         {
           "node": "design:information-architecture/employee-app#mobile-number",
           "surfaces": {
-            "mobile": []
+            "mobile": [
+              {
+                "key": "design:surfaces/sundal/employee-app/sign-in",
+                "anchor": "mobile-number-form"
+              }
+            ]
           }
         },
         {
           "node": "design:information-architecture/employee-app#otp",
           "surfaces": {
-            "mobile": []
+            "mobile": [
+              {
+                "key": "design:surfaces/sundal/employee-app/sign-in",
+                "anchor": "otp-form"
+              }
+            ]
           }
         },
         {

@@ -38,3 +38,4 @@ Employee app · kind `area` · parent `product:modules/sundal` · level 0
   - none
 - Features:
   - `product:features/sundal/employee-app/record-a-purchase` — Record a purchase
+  - `product:features/sundal/employee-app/sign-in` — Sign in

@@ -44,16 +44,32 @@
             "choose-snacks"
           ],
           "flows": {
-            "kind": "none",
-            "keys": []
+            "kind": "links",
+            "keys": [
+              "product:flows/sundal/employee-app/sign-in"
+            ]
           },
           "evidence": {
             "links": [],
             "assumptions": 1
           },
-          "surfaces": [],
+          "surfaces": [
+            {
+              "key": "design:surfaces/sundal/employee-app/sign-in",
+              "anchor": "mobile-number-form"
+            },
+            {
+              "key": "design:surfaces/sundal/employee-app/sign-in",
+              "anchor": "otp-form"
+            }
+          ],
           "placements": {
-            "design:information-architecture/employee-app": {}
+            "design:information-architecture/employee-app": {
+              "mobile": [
+                "design:information-architecture/employee-app#mobile-number",
+                "design:information-architecture/employee-app#otp"
+              ]
+            }
           }
         },
         {
@@ -131,8 +147,10 @@
           "name": "Look back at purchases",
           "next": [],
           "flows": {
-            "kind": "none",
-            "keys": []
+            "kind": "links",
+            "keys": [
+              "product:flows/sundal/employee-app/log"
+            ]
           },
           "evidence": {
             "links": [],

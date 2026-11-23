@@ -12,6 +12,8 @@ flowchart LR
     design_surfaces_sundal_employee_app_record_a_purchase_category_items_list["Category items"]
     design_surfaces_sundal_employee_app_record_a_purchase_cart_list["Cart"]
     design_surfaces_sundal_employee_app_record_a_purchase_purchase_detail_detail["Purchase detail"]
+    design_surfaces_sundal_employee_app_sign_in_mobile_number_form["Mobile number"]
+    design_surfaces_sundal_employee_app_sign_in_otp_form["OTP"]
     design_surfaces_sundal_employee_app_record_a_purchase_categories_list -->|"Beverages"| design_surfaces_sundal_employee_app_record_a_purchase_category_items_list
     design_surfaces_sundal_employee_app_record_a_purchase_categories_list -->|"Tea and coffee"| design_surfaces_sundal_employee_app_record_a_purchase_category_items_list
     design_surfaces_sundal_employee_app_record_a_purchase_categories_list -->|"Cake"| design_surfaces_sundal_employee_app_record_a_purchase_category_items_list
@@ -23,4 +25,7 @@ flowchart LR
     design_surfaces_sundal_employee_app_record_a_purchase_cart_list -->|"Record purchase"| design_surfaces_sundal_employee_app_record_a_purchase_purchase_detail_detail
     design_surfaces_sundal_employee_app_record_a_purchase_cart_list -->|"Browse snacks"| design_surfaces_sundal_employee_app_record_a_purchase_categories_list
     design_surfaces_sundal_employee_app_record_a_purchase_purchase_detail_detail -->|"View cart"| design_surfaces_sundal_employee_app_record_a_purchase_cart_list
+    design_surfaces_sundal_employee_app_sign_in_mobile_number_form -->|"Continue, a [[design:components/sundal/employee-app/button]]"| design_surfaces_sundal_employee_app_sign_in_otp_form
+    design_surfaces_sundal_employee_app_sign_in_otp_form -->|"Sign in, a [[design:components/sundal/employee-app/button]]"| design_surfaces_sundal_employee_app_record_a_purchase_categories_list
+    design_surfaces_sundal_employee_app_sign_in_otp_form -->|"Change number"| design_surfaces_sundal_employee_app_sign_in_mobile_number_form
 ```
