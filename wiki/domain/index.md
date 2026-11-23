@@ -2,6 +2,10 @@
 
 # Domain Wiki Index
 
+## Concept (SLO: 365d)
+- [Running account](concepts\running-account.md) — A running account is a balance that grows as a customer buys now and pays later, usually in one payment.
+- [Stock](concepts\stock.md) — Stock is the number of units of an item that a shop currently holds and can sell.
+
 ## Domain Object (SLO: 180d)
 - [Cart](entities\cart.md) — A cart is the set of items a shopper has chosen and not yet bought.
 - [Catalog](entities\catalog.md) — A catalog is everything a shop offers for sale, grouped into categories.

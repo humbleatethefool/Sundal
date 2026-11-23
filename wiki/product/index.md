@@ -2,6 +2,9 @@
 
 # Product Wiki Index
 
+## Concept (SLO: 365d)
+- [Void](concepts\policies\void.md) — To void an entry is to remove one snack line of a purchase, which only the vendor can do.
+
 ## Data Model Entity (SLO: 180d)
 - [Entry](entities\sundal\entry.md) — An entry is one snack line of a purchase: one item, the quantity taken and the price the employee saw.
 - [Purchase log](entities\sundal\purchase-log.md) — A purchase log is an employee's own list of every purchase they have recorded, from the first to the latest.
