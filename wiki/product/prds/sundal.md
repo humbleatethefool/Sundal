@@ -6,7 +6,7 @@ status: draft
 sources: []
 related: []
 created: 2026-11-16
-updated: 2026-11-16
+updated: 2026-11-23
 owner: product
 authorship: canonical
 origination: originate
@@ -68,7 +68,7 @@ For the first release, an employee can record their everyday purchase easily. Th
 | As an employee, I record my own purchases from my phone. | Must |
 | As a vendor, I set prices and manage stock from my phone. | Must |
 | As a vendor, I see what each company's employees have bought and the monthly total each company owes. | Must |
-| As a vendor, I void one entry. | Must |
+| As a vendor, I void one entry, and its quantity returns to stock. | Must |
 | As a company admin, I see my company's monthly total from my phone. | Must |
 | A purchase keeps the price shown when it was made. | Must |
 
