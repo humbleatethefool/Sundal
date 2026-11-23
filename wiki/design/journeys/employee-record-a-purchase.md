@@ -8,7 +8,7 @@ roles: ["employee"]
 sources: []
 related: ["[[information-architecture/employee-app]]", "[[product:flows/sundal/employee-app/purchase-log]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/sign-in]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]", "[[product:prds/sundal]]"]
 created: 2026-11-17
-updated: 2026-11-19
+updated: 2026-11-23
 owner: design
 authorship: curated
 origination: originate
@@ -60,7 +60,7 @@ This journey follows an employee from taking snacks at the shop to recording the
 - **Flows** — [[product:flows/sundal/employee-app/record-a-purchase]]
 - **Touchpoints** — The employee's own phone, with a connection, since every screen needs the internet.
 - **Mindset** — The employee wants to know the purchase is recorded and correct. This rests on no research.
-- **Pain points** — A changed price or short stock means one more tap before anything is recorded. A failed save records nothing and shows "Something went wrong. Please try again." An employee without a connection sees "You're offline" with Retry and records nothing until the phone is back online.
+- **Pain points** — A changed price or short stock means one more tap before anything is recorded. A failed save records nothing and shows "Something went wrong. Try again." An employee without a connection sees "You're offline" with Retry and records nothing until the phone is back online.
 - **Opportunities** — None.
 - **Evidence** — Assumption: the employee reads the cart total before recording; Assumption: a changed price or short stock while the cart is open is rare; Assumption: employees often have a connection wherever they record
 - **Next** — None.

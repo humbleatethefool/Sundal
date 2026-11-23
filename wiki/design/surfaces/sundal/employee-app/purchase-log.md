@@ -107,7 +107,6 @@ None. The surface is shown in the one compact layout.
 | How does a row show a purchase that holds a voided entry: its original total, its total after the void or a mark? The Entry entity has no void state yet. | Shivani Erlewad | The vendor's void screens are designed |
 | Does the list keep its place when the employee returns with Back, or start at the top? | Shivani Erlewad | A click test on a prototype has been run |
 | The "Purchase details" card shows the time as "Wed, 18 Nov 2026, 3:42 pm", and the record-a-purchase surface's decisions show "17 Nov 2026, 3:42 pm". Which format do the rows use? | Shivani Erlewad | The two pages are reconciled |
-| The save-failure wording in the record-a-purchase flow reads "Please try again", and the design system's voice and tone leaves out "please". This screen follows the voice and tone. | Shivani Erlewad | The two pages are reconciled |
 
 ## Related
 

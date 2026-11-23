@@ -14,7 +14,7 @@ sources: []
 related: ["[[product:flows/sundal/employee-app/purchase-log]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/sign-in]]"]
 invalidates: []
 created: 2026-11-17
-updated: 2026-11-19
+updated: 2026-11-23
 owner: design
 authorship: curated
 origination: originate
@@ -121,7 +121,7 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 - **Going back.** Below the tabs, Category items, and Purchase when it is opened from Logs, each have a Back control that returns to the page above, in place of breadcrumbs. After recording, Purchase has no Back and the employee leaves by the tab bar. Breadcrumbs would take space a phone doesn't have, and the structure is only two levels deep.
 - **Landing.** A signed-in employee opening the app sees the Categories list, with the Browse tab selected. A signed-out employee sees the mobile number screen, and lands on Categories after the OTP.
 - **Empty states point to the next step.** An empty catalog shows the empty message from the task flow (E1). An empty Logs list points the employee to Browse to record a first purchase.
-- **Errors and recovery.** Offline shows "You're offline" with Retry. A failed save shows "Something went wrong. Please try again." Both are in [[product:modules/sundal/employee-app]] and [[product:flows/sundal/employee-app/record-a-purchase]].
+- **Errors and recovery.** Offline shows "You're offline" with Retry. A failed save shows "Something went wrong. Try again." Both are in [[product:modules/sundal/employee-app]] and [[product:flows/sundal/employee-app/record-a-purchase]].
 
 ## Decisions
 

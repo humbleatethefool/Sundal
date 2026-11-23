@@ -5,7 +5,7 @@ template-version: 1
 sources: []
 related: ["[[features/sundal/employee-app/record-a-purchase]]"]
 created: 2026-11-16
-updated: 2026-11-16
+updated: 2026-11-23
 owner: product
 authorship: canonical
 origination: originate
@@ -106,7 +106,7 @@ flowchart TD
 
 **E4 — A price changed, an item was removed or stock ran short while the cart was open.** This includes items saved from an earlier visit. A notice appears under that item and the quantity is lowered. Nothing is recorded until the employee taps Record purchase again.
 
-**E5 — The server cannot save the purchase.** The screen shows "Something went wrong. Please try again." Nothing is recorded. Any other save failure uses this same message.
+**E5 — The server cannot save the purchase.** The screen shows "Something went wrong. Try again." Nothing is recorded. Any other save failure uses this same message.
 
 
 ## Anytime actions

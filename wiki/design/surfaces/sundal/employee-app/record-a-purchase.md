@@ -313,7 +313,6 @@ None. The surface is shown in the one compact layout.
 | The flow describes changing a quantity with − only in the cart (A1). Does − on the items screen also remove an item at 1? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
 | How does the employee leave the Cart? The shell puts Back on Items, and on Purchase when it is opened from Logs, so the Cart has the tab bar alone. | Shivani Erlewad | The shell's header is settled |
 | The overview says an employee can empty the cart. Is a clear-all action needed beyond − on each item? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
-| The task flow's E5 message reads "Something went wrong. Please try again." The UX-writing standard leaves out "please". Should E5 change? | Shivani Erlewad | The flow's wording is next reviewed |
 | What shape and size is the item image on a cart line? The item card asks the same question. | Shivani Erlewad | The design system page exists |
 | How does a line show when the vendor has voided its entry? The Entry entity has no void state yet. | Shivani Erlewad | The vendor's void screens are designed |
 | What does the employee do after recording: does Purchase detail offer a way to record another purchase, or do they leave by the tab bar? | Shivani Erlewad | The record-a-purchase flow has been tested with employees |
