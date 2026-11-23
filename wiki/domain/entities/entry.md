@@ -5,7 +5,7 @@ template-version: 1
 sources: []
 related: []
 created: 2026-11-17
-updated: 2026-11-17
+updated: 2026-11-23
 owner: domain
 authorship: curated
 confidence: medium
@@ -13,13 +13,13 @@ confidence: medium
 
 ## Definition
 
-An entry is one snack line of a purchase: one item, the quantity taken and the price the employee saw. The vendor can void one entry. It is not a purchase, which holds one entry for each snack line.
+An entry is one line of a purchase: one item, the quantity bought and the price at the time. It is not a purchase, which holds one entry for each line.
 
 ## Attributes
 
-- item — item — the snack the employee took.
-- quantity — whole number — how many of the item were taken.
-- price — money — the price per item shown when the purchase was made.
+- item — item — the snack bought.
+- quantity — whole number — how many units of the item were bought.
+- price — money — the price per unit shown when the purchase was made.
 
 ## Invariants
 
@@ -27,7 +27,7 @@ None.
 
 ## Lifecycle
 
-An entry exists once its purchase is confirmed. It keeps the price it was made at. The vendor can void it, which returns its quantity to stock. An employee cannot cancel it.
+An entry exists once its purchase exists. It keeps the price it was made at.
 
 ## Related entities
 

@@ -13,12 +13,12 @@ confidence: medium
 
 ## Definition
 
-A purchase log is an employee's own list of every purchase they have recorded, from the first to the latest. It shows only that employee's purchases. It is not a purchase, and it holds nothing that a purchase does not already hold.
+A purchase log is a shopper's own list of the purchases they have made, from the first to the latest. It is not a purchase, and it holds nothing that a purchase does not already hold.
 
 ## Attributes
 
-- employee — person — the employee this purchase log belongs to. It lists only that employee's purchases.
-- purchases — list — every purchase the employee has recorded.
+- shopper — person — the person this purchase log belongs to.
+- purchases — list — every purchase the shopper has made.
 
 ## Invariants
 
@@ -26,7 +26,7 @@ None.
 
 ## Lifecycle
 
-A purchase log is empty until the employee records a purchase. It gains a purchase each time one is confirmed.
+A purchase log is empty until the shopper makes a purchase. It gains a purchase each time one is made.
 
 ## Related entities
 

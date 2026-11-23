@@ -5,7 +5,7 @@ template-version: 1
 sources: []
 related: []
 created: 2026-11-17
-updated: 2026-11-17
+updated: 2026-11-23
 owner: domain
 authorship: curated
 confidence: medium
@@ -13,15 +13,15 @@ confidence: medium
 
 ## Definition
 
-An item is a snack the vendor sells, listed in a category. It has a name, an image, a description, a stock quantity and a price per item. It is not a purchase and not an entry, which record that an employee took it.
+An item is a snack a shop sells, listed in a category. It has a name, an image, a description, a price per item and a stock quantity. It is not a purchase and not an entry, which record that someone bought it.
 
 ## Attributes
 
 - name — text — what the item is called.
 - image — image — a picture of the item.
 - description — text — a short description of the item.
-- stock quantity — whole number — how many of the item the vendor has.
-- price per item — money — what one of the item costs.
+- stock quantity — whole number — how many units of the item the shop has.
+- price per item — money — what one unit of the item costs.
 
 ## Invariants
 
@@ -29,9 +29,9 @@ None.
 
 ## Lifecycle
 
-An item exists once the vendor adds it to a category. It is in stock while its stock quantity is above zero, and out of stock at zero. Its stock quantity goes down when a purchase of it is recorded and back up when an entry for it is voided.
+An item exists once the shop lists it. It is in stock while its stock quantity is above zero, and out of stock at zero. Its stock quantity goes down as units are sold and up when the shop restocks.
 
 ## Related entities
 
 - [[entities/category]] — the group that holds the item.
-- [[entities/entry]] — one snack line of a purchase, which takes an item.
+- [[entities/entry]] — one line of a purchase, which takes an item.
