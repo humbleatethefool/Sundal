@@ -104,7 +104,7 @@ The labels fall into three groups. The three tab labels, Browse, Logs and Profil
 | Browse | [[domain:entities/catalog]] | None. |
 | Categories | [[domain:entities/category]] | None. |
 | Items | [[domain:entities/item]] | Products. The reference apps use it, but the shop sells snacks it lists as items. |
-| Logs | [[domain:entities/purchase-log]] | History, since the employee's list is called a log. |
+| Logs | [[domain:entities/purchase-log]] | History, since the employee's list is called a purchase log. |
 | Purchase | [[domain:entities/purchase]] | Order, because Sundal has no payment or delivery. Entry, which is one snack line of a purchase. |
 | Cart | [[domain:entities/cart]] | None. |
 | Profile | [[domain:entities/profile]] | None. |
@@ -140,6 +140,7 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 | An employee on a new phone signs in with their mobile number and an OTP, as in any sign-in | adopted | Designer sign-off, 2026-11-17 |
 | Purchase detail sits under Logs only. Landing on it after recording is a flow step, not a second parent. | proposed | |
 | Cart is a root node reached by utility navigation | proposed | |
+| The cart bar shows on Purchase detail while the cart holds items, and is hidden on the Cart, which is the cart | proposed | |
 | A Back control replaces breadcrumbs | proposed | |
 | The tabs use a grid for Browse, a receipt for Logs and a person for Profile, filled when selected and an outline otherwise | proposed | |
 | An empty Logs list points the employee to Browse | proposed | |
@@ -154,9 +155,8 @@ None. The app is mobile and has no addressable routes, so every Route cell in th
 | Do Browse, Logs and Profile read clearly as tab labels? | Shivani Erlewad | A click test on a prototype has been run |
 | Does the app need an icon catalog beyond the three tab icons, and which icon set does it draw from? | Shivani Erlewad | The icon catalog exists |
 | Should "Log out" read "Sign out", given "Logs" and the wiki's "sign-in"? | Shivani Erlewad | The glossary gets an entry for the action |
-| Does the cart bar show on the Cart screen and on Purchase detail? | Shivani Erlewad | The surface pages are written |
 | Does the app need search? | Shivani Erlewad | The vendor's catalog size is known |
-| In what order does Logs list purchases, and does a voided entry show? | Shivani Erlewad | The Logs surface is written |
+| Does Logs list the newest purchase first, and how does a purchase with a voided entry show? | Shivani Erlewad | Employees have been asked how they look for a purchase, and the vendor's void screens are designed |
 
 ## Related
 
