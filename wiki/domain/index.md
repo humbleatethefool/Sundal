@@ -14,3 +14,8 @@
 - [OTP](entities\otp.md) — An OTP, short for one-time password, is a code that works for a single sign-in.
 - [Profile](entities\profile.md) — A profile is the details that identify a person in a service: their picture, name and mobile number.
 - [Purchase](entities\purchase.md) — A purchase is a record that a shopper bought items from a shop.
+
+## Persona (SLO: 180d)
+- [Company admin](personas\company-admin.md) — A company admin is a person at a company who handles its bills and pays the shops and suppliers its staff buy from.
+- [Office employee](personas\office-employee.md) — An office employee works at a company and buys snacks and drinks from a shop near their workplace during the day.
+- [Snack shop vendor](personas\snack-shop-vendor.md) — A snack shop vendor runs a small shop that sells snacks and drinks, often alone and mostly to regular customers.

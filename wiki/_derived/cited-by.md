@@ -38,8 +38,8 @@ reports a mismatch between this file and the current page set.
 
 | Page | Cited by |
 |---|---|
-| `concepts\running-account.md` | — |
-| `concepts\stock.md` | `product:concepts/policies/void.md` |
+| `concepts\running-account.md` | `domain:personas/company-admin.md` (related), `domain:personas/office-employee.md` (related), `domain:personas/snack-shop-vendor.md` (related) |
+| `concepts\stock.md` | `domain:personas/snack-shop-vendor.md` (related), `product:concepts/policies/void.md` |
 | `entities\cart.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/purchase.md` |
 | `entities\catalog.md` | `design:information-architecture/employee-app.md`, `domain:concepts/stock.md` |
 | `entities\category.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/catalog.md`, `domain:entities/item.md` |
@@ -47,6 +47,9 @@ reports a mismatch between this file and the current page set.
 | `entities\otp.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/sign-in.md` (related), `product:flows/sundal/employee-app/sign-in.md` |
 | `entities\profile.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/sign-in.md` (related), `domain:entities/otp.md`, `product:flows/sundal/employee-app/sign-in.md` |
 | `entities\purchase.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/purchase-log.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:concepts/running-account.md`, `domain:entities/cart.md`, `product:entities/sundal/entry.md` (related), `product:entities/sundal/purchase-log.md` (related) |
+| `personas\company-admin.md` | — |
+| `personas\office-employee.md` | `domain:personas/company-admin.md` (related) |
+| `personas\snack-shop-vendor.md` | `domain:personas/company-admin.md` (related), `domain:personas/office-employee.md` (related) |
 
 ## product
 
