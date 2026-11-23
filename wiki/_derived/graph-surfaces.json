@@ -335,6 +335,10 @@
       "codes": [],
       "flows": [
         {
+          "key": "product:flows/sundal/employee-app/purchase-log",
+          "type": "task-flow"
+        },
+        {
           "key": "product:flows/sundal/employee-app/record-a-purchase",
           "type": "task-flow"
         }
@@ -1497,9 +1501,15 @@
           "flowSteps": [
             {
               "platform": null,
-              "raw": "[[product:flows/sundal/employee-app/record-a-purchase]] S8",
+              "raw": "[[product:flows/sundal/employee-app/purchase-log]] S4; [[product:flows/sundal/employee-app/record-a-purchase]] S8",
               "graded": true,
               "value": [
+                {
+                  "flow": "product:flows/sundal/employee-app/purchase-log",
+                  "ids": [
+                    "S4"
+                  ]
+                },
                 {
                   "flow": "product:flows/sundal/employee-app/record-a-purchase",
                   "ids": [

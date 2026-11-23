@@ -4,13 +4,14 @@ type: ui-surface
 template-version: 2
 feature: "[[product:features/sundal/employee-app/record-a-purchase]]"
 flows:
+  - "[[product:flows/sundal/employee-app/purchase-log]]"
   - "[[product:flows/sundal/employee-app/record-a-purchase]]"
 platforms: [mobile]
 sources: []
 related: ["[[components/sundal/employee-app/action-bar]]", "[[components/sundal/employee-app/button]]", "[[components/sundal/employee-app/cart-bar]]", "[[components/sundal/employee-app/cart-line]]", "[[components/sundal/employee-app/category-card]]", "[[components/sundal/employee-app/detail-card]]", "[[components/sundal/employee-app/item-card]]", "[[components/sundal/employee-app/line-notice]]", "[[components/sundal/employee-app/message-block]]", "[[components/sundal/employee-app/page-header]]", "[[components/sundal/employee-app/purchase-line]]", "[[components/sundal/employee-app/quantity-stepper]]", "[[components/sundal/employee-app/screen]]", "[[components/sundal/employee-app/tab-bar]]", "[[components/sundal/employee-app/toast]]", "[[information-architecture/employee-app]]", "[[journeys/employee-record-a-purchase]]", "[[layout-patterns/employee-app-shell]]", "[[domain:entities/cart]]", "[[domain:entities/category]]", "[[domain:entities/entry]]", "[[domain:entities/item]]", "[[domain:entities/purchase]]", "[[product:features/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]"]
 invalidates: []
 created: 2026-11-18
-updated: 2026-11-19
+updated: 2026-11-23
 owner: design
 authorship: curated
 origination: originate
@@ -223,7 +224,7 @@ The employee sees one recorded purchase: what they took, what it cost and when i
 - **Shown in** — None.
 - **Opened from** — None.
 - **Journey stages** — [[design:journeys/employee-record-a-purchase]] review-and-record, look-back
-- **Flow steps** — [[product:flows/sundal/employee-app/record-a-purchase]] S8
+- **Flow steps** — [[product:flows/sundal/employee-app/purchase-log]] S4; [[product:flows/sundal/employee-app/record-a-purchase]] S8
 - **Layout patterns** — [[design:layout-patterns/employee-app-shell]]
 - **Layout intent** — A page, because it is the whole outcome of recording and the whole of one purchase when the employee opens it later. It sits under the Logs tab, so Logs is the selected tab, whether the employee arrives from recording or from the Logs list. The shell supplies the [[design:components/sundal/employee-app/page-header]], which carries the title "Purchase" and, only when the employee opened the purchase from the Logs list, the Back control; after recording, the header holds the title alone and the employee leaves by the tab bar. The shell also supplies the [[design:components/sundal/employee-app/cart-bar]] and the [[design:components/sundal/employee-app/tab-bar]]. The cart bar shows only when the cart holds items, as it does on every tab, and tapping it opens the Cart. The content runs top to bottom on the white page color: a confirmation message when the employee has just recorded the purchase, then a white card headed "3 items in this purchase" with one [[design:components/sundal/employee-app/purchase-line]] for each entry, then a [[design:components/sundal/employee-app/detail-card]] with the item count and the total, then a [[design:components/sundal/employee-app/detail-card]] titled "Purchase details" with the time the purchase was recorded. A line shows the item's photo, its name, its price and quantity beneath, and the line's total on the right. The eye meets the confirmation first when it shows, and otherwise the heading. The totals come after the lines and stand apart from them. The screen holds nothing to change: an employee cannot cancel an entry, so it offers no cancel, edit or void action. The content scrolls inside the content region.
 - **Field inventory** —
