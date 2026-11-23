@@ -19,7 +19,7 @@ confidence: low
 
 ## Surface reference
 
-The employee records a purchase across four screens: they scan the vendor's categories, add snacks from one category's items, check the cart and record it, then see the recorded purchase.
+The employee records a purchase across four screens. They scan the vendor's categories, add snacks from one category's items, check the cart and record it, then see the recorded purchase.
 
 ## Platform scope
 

@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The purchase line shows one item of a recorded purchase: a rounded photo, the item's name with its price and quantity beneath, and the line's total on the right. It is the line the Purchase detail screen lists, and it holds no control, because a recorded purchase cannot change.
+The purchase line shows one item of a recorded purchase, with its price, quantity and line total. It has a rounded photo and the item's name, with the price and quantity beneath and the total on the right. It is the line the Purchase detail screen lists, and it holds no control, because a recorded purchase cannot change.
 
 Use it for an entry in a recorded purchase.
 - Do show the price of one item as it was when the purchase was recorded.

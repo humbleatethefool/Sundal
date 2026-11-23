@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The cart bar is a green pill that shows an employee what their purchase cart holds, with photos of the first items, the item count and the total, and opens the Cart. The shell places it. It is hidden while the cart is empty, and appears the moment the first item is added.
+The cart bar is a green pill that shows what an employee's purchase cart holds and opens the Cart. It shows photos of the first items, the item count and the total. The shell places it. It is hidden while the cart is empty, and appears the moment the first item is added.
 
 Use it to keep the cart in sight while the employee browses.
 - Do show it while the cart holds at least one item, on Browse, Logs and Profile.

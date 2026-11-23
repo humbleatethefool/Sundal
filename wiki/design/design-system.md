@@ -17,7 +17,7 @@ confidence: low
 
 ## Overview
 
-The Sundal design system is the set of tokens, components and rules that every employee-app screen draws on, so that the app looks and reads the same everywhere. The tokens live as design-token files in `design/tokens/`, which UX Studio reads and turns into the library the prototype uses. Each component has its own page under `components/`, and each screen's layout is a surface page. Blinkit, Zepto and Instamart are the references for the patterns, adapted to Sundal's rules: it has no payment, delivery, discounts or wishlist, and each entry holds one snack.
+The Sundal design system is the tokens, components and rules every employee-app screen draws on. That way the app looks and reads the same everywhere. The tokens live as design-token files in `design/tokens/`, which UX Studio reads and turns into the library the prototype uses. Each component has its own page under `components/`, and each screen's layout is a surface page. Blinkit, Zepto and Instamart are the references for the patterns, adapted to Sundal's rules: it has no payment, delivery, discounts or wishlist, and each entry holds one snack.
 
 ## Principles
 

@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The action bar holds a screen's one main action as a full-width button, fixed to the bottom of the screen directly above the tab bar, so the action is always in reach. The Cart screen uses it for Record purchase. It takes the place the cart bar has on the other screens, because the Cart screen is the cart.
+The action bar holds a screen's one main action as a full-width button at the bottom of the screen. It is fixed directly above the tab bar, so the action is always in reach. The Cart screen uses it for Record purchase. It takes the place the cart bar has on the other screens, because the Cart screen is the cart.
 
 Use it for the one action that finishes a screen's task.
 - Do keep it to one button.

@@ -6,9 +6,9 @@ actor: "[[product:personas/employee]]"
 scenario: Record a purchase
 roles: ["employee"]
 sources: []
-related: ["[[information-architecture/employee-app]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]", "[[product:prds/sundal]]"]
+related: ["[[information-architecture/employee-app]]", "[[product:flows/sundal/employee-app/log]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/sign-in]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]", "[[product:prds/sundal]]"]
 created: 2026-11-17
-updated: 2026-11-17
+updated: 2026-11-19
 owner: design
 authorship: curated
 origination: originate
@@ -35,7 +35,7 @@ This journey follows an employee from taking snacks at the shop to recording the
 ### Sign in
 - **Id** — sign-in
 - **Actions** — An employee who is signed out opens the app, enters their mobile number and then the OTP they receive. An employee the app already keeps signed in skips this stage. An employee on a new phone signs in the same way, with their mobile number and an OTP.
-- **Flows** — None.
+- **Flows** — [[product:flows/sundal/employee-app/sign-in]]
 - **Touchpoints** — The employee's own phone.
 - **Mindset** — The employee wants to get past sign-in and start recording. This rests on no research.
 - **Pain points** — None. An employee signs in with their mobile number and an OTP on any phone, so moving to a new phone is the same sign-in.
@@ -68,7 +68,7 @@ This journey follows an employee from taking snacks at the shop to recording the
 ### Look back at purchases
 - **Id** — look-back
 - **Actions** — Later, the employee opens Logs to see the purchases they recorded and opens one to see its lines, quantities, prices and total.
-- **Flows** — None.
+- **Flows** — [[product:flows/sundal/employee-app/log]]
 - **Touchpoints** — The employee's own phone.
 - **Mindset** — The employee wants to check what they recorded, all the more because they cannot cancel an entry. This rests on no research.
 - **Pain points** — An employee cannot cancel an entry. A wrong line stays until the vendor voids it, and the app gives the employee no way to ask for that.
@@ -80,7 +80,7 @@ This journey follows an employee from taking snacks at the shop to recording the
 
 - The time and place of recording are open. The employee may record at the shop, wanting it quick, or later and elsewhere, relying on memory and on a connection (take-snacks, choose-snacks, review-and-record). The stages must hold for both.
 - A purchase is final once recorded. review-and-record can stop a wrong price or short stock before it is saved, and look-back shows a wrong line the employee cannot undo (review-and-record, look-back).
-- Two stages that the product carries out have no task flow yet: sign-in and look-back. Writing them is the backlog for `/user-flows`.
+- Every stage the product carries out links its task flow: sign-in, choose-snacks, review-and-record and look-back.
 
 ## Open questions
 

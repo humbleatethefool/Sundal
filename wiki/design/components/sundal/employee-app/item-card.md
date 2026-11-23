@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The item card shows one item in a category as a tall card: its photo on top, then its price, name and description, with the control for adding it overlapping the photo's bottom-right edge. It is the card the Category items screen lays out in a grid. It is where an employee decides what they took.
+The item card shows one item in a category as a tall card, with a control for adding it. It has the photo on top, then the price, name and description, with the control overlapping the photo's bottom-right edge. It is the card the Category items screen lays out in a grid. It is where an employee decides what they took.
 
 Use it for an item in a category's list.
 - Do keep the control in the same place on every card.

@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The category card shows one of the vendor's categories as a card: a colored rounded box, different for each category, with the category's name as a link below it. It is the card the Categories screen lays out in a grid. Tapping the link opens that category's items.
+The category card shows one of the vendor's categories as a colored box with its name as a link. The box is rounded and differs for each category, and the link sits below it. It is the card the Categories screen lays out in a grid. Tapping the link opens that category's items.
 
 Use it for a category in the grid of categories.
 - Do keep it to the box and the name link.

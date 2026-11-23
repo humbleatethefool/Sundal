@@ -18,7 +18,7 @@ confidence: low
 
 ## Purpose & usage
 
-The cart line shows one item in the employee's purchase cart: a rounded photo, the item's name, the quantity stepper with the price under it, and room beneath for a notice about that line. It is the line the Cart screen lists, and it is where an employee changes a quantity before recording.
+The cart line shows one item in the employee's purchase cart, with its quantity stepper and price. It has a rounded photo, the item's name, the stepper with the price under it, and room beneath for a notice about that line. It is the line the Cart screen lists, and it is where an employee changes a quantity before recording.
 
 Use it for an item in the cart.
 - Do keep the stepper and the price in the same place on every line.
