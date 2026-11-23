@@ -41,11 +41,9 @@ reports a mismatch between this file and the current page set.
 | `entities\cart.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/purchase.md` |
 | `entities\catalog.md` | `design:information-architecture/employee-app.md` |
 | `entities\category.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/catalog.md`, `domain:entities/item.md` |
-| `entities\entry.md` | — |
 | `entities\item.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/cart.md`, `domain:entities/catalog.md`, `domain:entities/category.md`, `product:entities/sundal/entry.md` (related) |
 | `entities\otp.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/sign-in.md` (related), `product:flows/sundal/employee-app/sign-in.md` |
 | `entities\profile.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/sign-in.md` (related), `domain:entities/otp.md`, `product:flows/sundal/employee-app/sign-in.md` |
-| `entities\purchase-log.md` | — |
 | `entities\purchase.md` | `design:information-architecture/employee-app.md`, `design:surfaces/sundal/employee-app/purchase-log.md` (related), `design:surfaces/sundal/employee-app/record-a-purchase.md` (related), `domain:entities/cart.md`, `product:entities/sundal/entry.md` (related), `product:entities/sundal/purchase-log.md` (related) |
 
 ## product

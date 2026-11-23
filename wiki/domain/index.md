@@ -10,7 +10,3 @@
 - [OTP](entities\otp.md) — An OTP, short for one-time password, is a code that works for a single sign-in.
 - [Profile](entities\profile.md) — A profile is the details that identify a person in a service: their picture, name and mobile number.
 - [Purchase](entities\purchase.md) — A purchase is a record that a shopper bought items from a shop.
-
-## Archived/redirected
-- [Entry](entities\entry.md) → _archive/entities/entry
-- [Purchase log](entities\purchase-log.md) → _archive/entities/purchase-log
