@@ -94,13 +94,13 @@
               "platform": null,
               "format": "text under the time, such as \"3 items\", and \"1 item\" for one",
               "source": {
-                "raw": "derived from [[domain:entities/entry]] `item` — the number of entries in the purchase",
+                "raw": "derived from [[product:entities/sundal/entry]] `item` — the number of entries in the purchase",
                 "graded": true,
                 "value": {
                   "kind": "derived",
                   "refs": [
                     {
-                      "entity": "domain:entities/entry",
+                      "entity": "product:entities/sundal/entry",
                       "field": "item"
                     }
                   ],
@@ -1554,13 +1554,13 @@
               "platform": null,
               "format": "text, such as \"3 items in this purchase\"",
               "source": {
-                "raw": "derived from [[domain:entities/entry]] `item` — the number of entries in the purchase",
+                "raw": "derived from [[product:entities/sundal/entry]] `item` — the number of entries in the purchase",
                 "graded": true,
                 "value": {
                   "kind": "derived",
                   "refs": [
                     {
-                      "entity": "domain:entities/entry",
+                      "entity": "product:entities/sundal/entry",
                       "field": "item"
                     }
                   ],
@@ -1593,13 +1593,13 @@
               "platform": null,
               "format": "text",
               "source": {
-                "raw": "[[domain:entities/entry]] `item`",
+                "raw": "[[product:entities/sundal/entry]] `item`",
                 "graded": true,
                 "value": {
                   "kind": "entity-field",
                   "refs": [
                     {
-                      "entity": "domain:entities/entry",
+                      "entity": "product:entities/sundal/entry",
                       "field": "item"
                     }
                   ]
@@ -1612,13 +1612,13 @@
               "platform": null,
               "format": "text under the name, such as \"₹20 x 2\": the price of one item as shown when the purchase was recorded, then the entry's quantity",
               "source": {
-                "raw": "[[domain:entities/entry]] `price`",
+                "raw": "[[product:entities/sundal/entry]] `price`",
                 "graded": true,
                 "value": {
                   "kind": "entity-field",
                   "refs": [
                     {
-                      "entity": "domain:entities/entry",
+                      "entity": "product:entities/sundal/entry",
                       "field": "price"
                     }
                   ]
@@ -1631,13 +1631,13 @@
               "platform": null,
               "format": "money, in rupees, in bold at the end of the line",
               "source": {
-                "raw": "derived from [[domain:entities/entry]] `price` — the price times the entry's quantity",
+                "raw": "derived from [[product:entities/sundal/entry]] `price` — the price times the entry's quantity",
                 "graded": true,
                 "value": {
                   "kind": "derived",
                   "refs": [
                     {
-                      "entity": "domain:entities/entry",
+                      "entity": "product:entities/sundal/entry",
                       "field": "price"
                     }
                   ],
@@ -1651,13 +1651,13 @@
               "platform": null,
               "format": "number, in the totals card",
               "source": {
-                "raw": "derived from [[domain:entities/entry]] `item` — the number of entries",
+                "raw": "derived from [[product:entities/sundal/entry]] `item` — the number of entries",
                 "graded": true,
                 "value": {
                   "kind": "derived",
                   "refs": [
                     {
-                      "entity": "domain:entities/entry",
+                      "entity": "product:entities/sundal/entry",
                       "field": "item"
                     }
                   ],

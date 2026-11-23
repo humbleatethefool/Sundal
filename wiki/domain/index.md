@@ -6,9 +6,11 @@
 - [Cart](entities\cart.md) — A cart is the set of items a shopper has chosen and not yet bought.
 - [Catalog](entities\catalog.md) — A catalog is everything a shop offers for sale, grouped into categories.
 - [Category](entities\category.md) — A category is a named group of items in a shop's catalog, such as drinks or chips.
-- [Entry](entities\entry.md) — An entry is one line of a purchase: one item, the quantity bought and the price at the time.
 - [Item](entities\item.md) — An item is a snack a shop sells, listed in a category.
 - [OTP](entities\otp.md) — An OTP, short for one-time password, is a code that works for a single sign-in.
 - [Profile](entities\profile.md) — A profile is the details that identify a person in a service: their picture, name and mobile number.
 - [Purchase](entities\purchase.md) — A purchase is a record that a shopper bought items from a shop.
-- [Purchase log](entities\purchase-log.md) — A purchase log is a shopper's own list of the purchases they have made, from the first to the latest.
+
+## Archived/redirected
+- [Entry](entities\entry.md) → _archive/entities/entry
+- [Purchase log](entities\purchase-log.md) → _archive/entities/purchase-log

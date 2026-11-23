@@ -6,7 +6,114 @@
     "domain",
     "product"
   ],
-  "entities": [],
+  "entities": [
+    {
+      "key": "product:entities/sundal/entry",
+      "title": "Entry",
+      "domain": "product",
+      "module": "sundal",
+      "type": "data-model-entity",
+      "instanceScope": "user",
+      "fields": [
+        {
+          "name": "item",
+          "type": "ID",
+          "required": "Y",
+          "searchable": "N",
+          "references": [],
+          "description": "The snack the employee took.",
+          "source": null,
+          "position": 1,
+          "enumOwner": null,
+          "typeKind": "atom",
+          "enumName": null,
+          "referenceVia": null
+        },
+        {
+          "name": "price",
+          "type": "Money",
+          "required": "Y",
+          "searchable": "N",
+          "references": [],
+          "description": "The price of one item, as shown when the purchase was made.",
+          "source": null,
+          "position": 3,
+          "enumOwner": null,
+          "typeKind": "atom",
+          "enumName": null,
+          "referenceVia": null
+        },
+        {
+          "name": "purchase",
+          "type": "ID",
+          "required": "Y",
+          "searchable": "N",
+          "references": [],
+          "description": "The purchase that holds this entry.",
+          "source": null,
+          "position": 0,
+          "enumOwner": null,
+          "typeKind": "atom",
+          "enumName": null,
+          "referenceVia": null
+        },
+        {
+          "name": "quantity",
+          "type": "Integer",
+          "required": "Y",
+          "searchable": "N",
+          "references": [],
+          "description": "How many of the item the employee took.",
+          "source": null,
+          "position": 2,
+          "enumOwner": null,
+          "typeKind": "atom",
+          "enumName": null,
+          "referenceVia": null
+        }
+      ],
+      "enums": []
+    },
+    {
+      "key": "product:entities/sundal/purchase-log",
+      "title": "Purchase log",
+      "domain": "product",
+      "module": "sundal",
+      "type": "data-model-entity",
+      "instanceScope": "user",
+      "fields": [
+        {
+          "name": "employee",
+          "type": "ID",
+          "required": "Y",
+          "searchable": "N",
+          "references": [],
+          "description": "The employee this purchase log belongs to.",
+          "source": null,
+          "position": 0,
+          "enumOwner": null,
+          "typeKind": "atom",
+          "enumName": null,
+          "referenceVia": null
+        },
+        {
+          "name": "purchases",
+          "type": "List<ID>",
+          "required": "Y",
+          "searchable": "N",
+          "references": [],
+          "description": "Every purchase the employee has recorded.",
+          "source": null,
+          "position": 1,
+          "enumOwner": null,
+          "typeKind": "list",
+          "enumName": null,
+          "referenceVia": null
+        }
+      ],
+      "enums": []
+    }
+  ],
   "edges": [],
   "abstractEntities": []
 }

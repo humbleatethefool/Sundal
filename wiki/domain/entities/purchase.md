@@ -33,4 +33,3 @@ A purchase exists once the shopper has bought the items. It is a record of what 
 ## Related entities
 
 - [[entities/cart]] — what a purchase comes from.
-- [[entities/entry]] — one line of the purchase.

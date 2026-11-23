@@ -34,4 +34,3 @@ An item exists once the shop lists it. It is in stock while its stock quantity i
 ## Related entities
 
 - [[entities/category]] — the group that holds the item.
-- [[entities/entry]] — one line of a purchase, which takes an item.

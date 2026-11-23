@@ -8,7 +8,7 @@ flows:
   - "[[product:flows/sundal/employee-app/record-a-purchase]]"
 platforms: [mobile]
 sources: []
-related: ["[[components/sundal/employee-app/action-bar]]", "[[components/sundal/employee-app/button]]", "[[components/sundal/employee-app/cart-bar]]", "[[components/sundal/employee-app/cart-line]]", "[[components/sundal/employee-app/category-card]]", "[[components/sundal/employee-app/detail-card]]", "[[components/sundal/employee-app/item-card]]", "[[components/sundal/employee-app/line-notice]]", "[[components/sundal/employee-app/message-block]]", "[[components/sundal/employee-app/page-header]]", "[[components/sundal/employee-app/purchase-line]]", "[[components/sundal/employee-app/quantity-stepper]]", "[[components/sundal/employee-app/screen]]", "[[components/sundal/employee-app/tab-bar]]", "[[components/sundal/employee-app/toast]]", "[[information-architecture/employee-app]]", "[[journeys/employee-record-a-purchase]]", "[[layout-patterns/employee-app-shell]]", "[[domain:entities/cart]]", "[[domain:entities/category]]", "[[domain:entities/entry]]", "[[domain:entities/item]]", "[[domain:entities/purchase]]", "[[product:features/sundal/employee-app/record-a-purchase]]", "[[product:flows/sundal/employee-app/record-a-purchase]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]"]
+related: ["[[components/sundal/employee-app/action-bar]]","[[components/sundal/employee-app/button]]","[[components/sundal/employee-app/cart-bar]]","[[components/sundal/employee-app/cart-line]]","[[components/sundal/employee-app/category-card]]","[[components/sundal/employee-app/detail-card]]","[[components/sundal/employee-app/item-card]]","[[components/sundal/employee-app/line-notice]]","[[components/sundal/employee-app/message-block]]","[[components/sundal/employee-app/page-header]]","[[components/sundal/employee-app/purchase-line]]","[[components/sundal/employee-app/quantity-stepper]]","[[components/sundal/employee-app/screen]]","[[components/sundal/employee-app/tab-bar]]","[[components/sundal/employee-app/toast]]","[[information-architecture/employee-app]]","[[journeys/employee-record-a-purchase]]","[[layout-patterns/employee-app-shell]]","[[domain:entities/cart]]","[[domain:entities/category]]","[[domain:entities/item]]","[[domain:entities/purchase]]","[[product:entities/sundal/entry]]","[[product:features/sundal/employee-app/record-a-purchase]]","[[product:flows/sundal/employee-app/record-a-purchase]]","[[product:modules/sundal/employee-app]]","[[product:personas/employee]]"]
 invalidates: []
 created: 2026-11-18
 updated: 2026-11-23
@@ -233,12 +233,12 @@ The employee sees one recorded purchase: what they took, what it cost and when i
   |---|---|---|---|
   | Purchase | static | text, as the page title | Always |
   | Confirmation | system: the employee has just recorded this purchase | text reading "Your purchase has been recorded" | Only when the employee arrives from recording |
-  | Items heading | derived from [[domain:entities/entry]] `item` — the number of entries in the purchase | text, such as "3 items in this purchase" | Always |
+  | Items heading | derived from [[product:entities/sundal/entry]] `item` — the number of entries in the purchase | text, such as "3 items in this purchase" | Always |
   | Item image | [[domain:entities/item]] `image` | image, a rounded square at the start of the line | One line for each entry |
-  | Item name | [[domain:entities/entry]] `item` | text | One line for each entry |
-  | Price and quantity | [[domain:entities/entry]] `price` | text under the name, such as "₹20 x 2": the price of one item as shown when the purchase was recorded, then the entry's quantity | One line for each entry |
-  | Line total | derived from [[domain:entities/entry]] `price` — the price times the entry's quantity | money, in rupees, in bold at the end of the line | One line for each entry |
-  | Items | derived from [[domain:entities/entry]] `item` — the number of entries | number, in the totals card | Always |
+  | Item name | [[product:entities/sundal/entry]] `item` | text | One line for each entry |
+  | Price and quantity | [[product:entities/sundal/entry]] `price` | text under the name, such as "₹20 x 2": the price of one item as shown when the purchase was recorded, then the entry's quantity | One line for each entry |
+  | Line total | derived from [[product:entities/sundal/entry]] `price` — the price times the entry's quantity | money, in rupees, in bold at the end of the line | One line for each entry |
+  | Items | derived from [[product:entities/sundal/entry]] `item` — the number of entries | number, in the totals card | Always |
   | Total | [[domain:entities/purchase]] `total` | money, in rupees, in bold under a rule in the totals card | Always |
   | Recorded on | [[domain:entities/purchase]] `time` | date and time, in Indian time, such as Wed, 18 Nov 2026, 3:42 pm, in a card titled "Purchase details" | Always |
 
@@ -339,9 +339,9 @@ None. The surface is shown in the one compact layout.
 - [[layout-patterns/employee-app-shell]] — the frame these screens sit in.
 - [[domain:entities/cart]] — the entity that holds the quantity an item has in the cart.
 - [[domain:entities/category]] — the entity whose name and image each category card shows.
-- [[domain:entities/entry]] — the entity whose item, quantity and price each line of a purchase shows.
 - [[domain:entities/item]] — the entity whose image, name, description and price each item card shows.
 - [[domain:entities/purchase]] — the entity whose time and total the purchase shows.
+- [[product:entities/sundal/entry]] — the entity whose item, quantity and price each line of a purchase shows.
 - [[product:features/sundal/employee-app/record-a-purchase]] — the feature these screens realize.
 - [[product:flows/sundal/employee-app/record-a-purchase]] — the flow whose steps happen on these screens.
 - [[product:modules/sundal/employee-app]] — the employee app's module page, which holds its offline behavior.

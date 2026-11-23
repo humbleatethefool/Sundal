@@ -7,7 +7,7 @@ flows:
   - "[[product:flows/sundal/employee-app/purchase-log]]"
 platforms: [mobile]
 sources: []
-related: ["[[components/sundal/employee-app/button]]", "[[components/sundal/employee-app/cart-bar]]", "[[components/sundal/employee-app/message-block]]", "[[components/sundal/employee-app/page-header]]", "[[components/sundal/employee-app/tab-bar]]", "[[components/sundal/employee-app/toast]]", "[[information-architecture/employee-app]]", "[[journeys/employee-record-a-purchase]]", "[[layout-patterns/employee-app-shell]]", "[[surfaces/sundal/employee-app/record-a-purchase]]", "[[domain:entities/entry]]", "[[domain:entities/purchase]]", "[[domain:entities/purchase-log]]", "[[product:features/sundal/employee-app/purchase-log]]", "[[product:flows/sundal/employee-app/purchase-log]]", "[[product:modules/sundal/employee-app]]", "[[product:personas/employee]]"]
+related: ["[[components/sundal/employee-app/button]]","[[components/sundal/employee-app/cart-bar]]","[[components/sundal/employee-app/message-block]]","[[components/sundal/employee-app/page-header]]","[[components/sundal/employee-app/tab-bar]]","[[components/sundal/employee-app/toast]]","[[information-architecture/employee-app]]","[[journeys/employee-record-a-purchase]]","[[layout-patterns/employee-app-shell]]","[[surfaces/sundal/employee-app/record-a-purchase]]","[[domain:entities/purchase]]","[[product:entities/sundal/entry]]","[[product:entities/sundal/purchase-log]]","[[product:features/sundal/employee-app/purchase-log]]","[[product:flows/sundal/employee-app/purchase-log]]","[[product:modules/sundal/employee-app]]","[[product:personas/employee]]"]
 invalidates: []
 created: 2026-11-19
 updated: 2026-11-23
@@ -46,7 +46,7 @@ The employee looks through the purchases they recorded and opens one. Purchase d
   |---|---|---|---|
   | Logs | static | text, as the page title | Always |
   | Recorded on | [[domain:entities/purchase]] `time` | date and time in Indian time, such as Wed, 18 Nov 2026, 3:42 pm, as the row's main line | One row for each purchase |
-  | Items | derived from [[domain:entities/entry]] `item` — the number of entries in the purchase | text under the time, such as "3 items", and "1 item" for one | One row for each purchase |
+  | Items | derived from [[product:entities/sundal/entry]] `item` — the number of entries in the purchase | text under the time, such as "3 items", and "1 item" for one | One row for each purchase |
   | Total | [[domain:entities/purchase]] `total` | money, in rupees, in bold at the end of the row | One row for each purchase |
 
 - **Input rules** — None. The employee fills in nothing on this screen; they only tap a row.
@@ -61,7 +61,7 @@ The employee looks through the purchases they recorded and opens one. Purchase d
 
 - **Resilience states** —
   - **Loading** — The whole content region loads. Row-shaped placeholders show while the list arrives, in the shape of the rows. The header and the tab bar are already in view.
-  - **Empty** — One version occurs: the employee has recorded no purchase ([[domain:entities/purchase-log]] is empty until the first one is confirmed). The [[design:components/sundal/employee-app/message-block]] fills the content region. Its title reads "No purchases yet" and its body reads "Add snacks from the shop to record a purchase.", with Browse snacks below it. A cleared list and no results cannot occur, because the employee cannot remove a purchase or search the list.
+  - **Empty** — One version occurs: the employee has recorded no purchase ([[product:entities/sundal/purchase-log]] is empty until the first one is confirmed). The [[design:components/sundal/employee-app/message-block]] fills the content region. Its title reads "No purchases yet" and its body reads "Add snacks from the shop to record a purchase.", with Browse snacks below it. A cleared list and no results cannot occur, because the employee cannot remove a purchase or search the list.
   - **Error** — Two errors occur. When the server cannot return the list, the message block fills the content region: title "Something went wrong" and body "Try again.", with Retry below it. When the phone is offline as the screen opens or on Retry, the message block shows "You're offline" with Retry, and nothing changes on the server. When the employee taps a row or the cart bar while the phone is offline, the screen shows "You're offline" with Retry, nothing changes on the server, and Retry repeats the tap. When the phone goes offline while the list is on screen, the [[design:components/sundal/employee-app/toast]] says "You're offline" and nothing else on screen changes. These are the employee app's offline rules in [[product:modules/sundal/employee-app]].
   - **Partial** — One purchase shows as one row at the top of the list, with nothing below it. The row opens its purchase like any other.
   - **Access-gated** — None. Only a signed-in employee reaches this screen, and each employee sees only their own purchases, so no other employee's purchase is ever listed.
@@ -120,9 +120,9 @@ None. The surface is shown in the one compact layout.
 - [[design:journeys/employee-record-a-purchase]] — the journey whose look-back stage this screen serves.
 - [[design:layout-patterns/employee-app-shell]] — the frame this screen sits in.
 - [[design:surfaces/sundal/employee-app/record-a-purchase]] — the surface page that specifies the Purchase detail screen this list opens.
-- [[domain:entities/entry]] — the entity whose count each row shows.
 - [[domain:entities/purchase]] — the entity whose time and total each row shows.
-- [[domain:entities/purchase-log]] — the entity this screen lists.
+- [[product:entities/sundal/entry]] — the entity whose count each row shows.
+- [[product:entities/sundal/purchase-log]] — the entity this screen lists.
 - [[product:features/sundal/employee-app/purchase-log]] — the feature this screen realizes.
 - [[product:flows/sundal/employee-app/purchase-log]] — the flow whose steps happen on this screen.
 - [[product:modules/sundal/employee-app]] — the employee app's module page, which holds its offline behavior.

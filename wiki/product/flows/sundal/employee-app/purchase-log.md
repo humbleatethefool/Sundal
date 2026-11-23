@@ -23,7 +23,7 @@ The employee opens the purchase from the Logs tab. Landing on the same purchase 
 
 - The employee is signed in on this phone ([[product:flows/sundal/employee-app/sign-in]]).
 - The phone is online.
-- The employee has recorded zero or more purchases ([[domain:entities/purchase-log]]).
+- The employee has recorded zero or more purchases ([[entities/sundal/purchase-log]]).
 
 ## Delta from the shared flow
 
